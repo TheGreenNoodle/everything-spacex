@@ -17,13 +17,13 @@ Has a section that explains what SpaceX dose and what there goals are.
 ! = not done
 ^ = done
 
-^ Add the backend with node and express.
-^ Create files for all of the different modules.
-! Plan out the routes of the site with express.
-^ Make plan for what each page route will contain.
-! Begin working on the layout of all these route pages in google slides.
-! Start working on the CSS.
-! Add Heroku url to README.
+1. ^ Add the backend with node and express.
+2. ^ Create files for all of the different modules.
+3. ! Plan out the routes of the site with express.
+4. ^ Make plan for what each page route will contain.
+5. ! Begin working on the layout of all these route pages in google slides.
+6. ! Start working on the CSS.
+7. ! Add Heroku url to README.
 
 # Route page information
 
