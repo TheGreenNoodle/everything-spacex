@@ -1,0 +1,19 @@
+{
+  "name": "spacex-info-site",
+  "version": "1.0.0",
+  "description": "SpaceX info site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "devserver": "nodemon server/index.js"
+  },
+  "author": "Anton Fleming",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
