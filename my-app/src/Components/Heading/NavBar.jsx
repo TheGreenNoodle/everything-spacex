@@ -1,21 +1,23 @@
 import { Link } from "react-router-dom";
+// CSS
+import navBar from "../../CSS/Heading/navBar.module.css";
 
 function NavBar() {
   return (
-    <div className="navBox">
-      <Link className="text" to="/">
+    <div className={navBar.navBox}>
+      <Link className={navBar.text} to="/">
         Home
       </Link>
-      <Link className="text" to="/goals">
+      <Link className={navBar.text} to="/goals">
         Goals
       </Link>
-      <Link className="text" to="/launch-vehicles">
+      <Link className={navBar.text} to="/launch-vehicles">
         Launch Vehicles
       </Link>
-      <Link className="text" to="/news">
+      <Link className={navBar.text} to="/news">
         News
       </Link>
-      <Link className="text" to="/history">
+      <Link className={navBar.text} to="/history">
         History
       </Link>
     </div>

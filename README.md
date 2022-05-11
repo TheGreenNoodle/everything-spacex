@@ -21,7 +21,7 @@ Has a section that explains what SpaceX dose and what there goals are.
 5.  Begin working on the layout of all these route pages in google slides. DONE
 6.  Add the google slide layouts to the document. HTML only. NOT DONE
 7.  Add Tweet API, YouTube API, and Weather API to backend. NOT DONE
-8.  Import all css into a Component not index.css. NOT DONE
+8.  Import all css into a Component not index.css. DONE
 9.  Start working on the CSS. NOT DONE
 10. Work on responsiveness.
 11. Add Heroku URL to README. NOT DONE

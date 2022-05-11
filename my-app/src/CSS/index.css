@@ -1,7 +1,3 @@
-@import "./Cards/LargeCard";
-@import "./Heading/navBar";
-@import "./Heading/titleLine";
-
 body {
   text-align: center;
   margin: 0;
