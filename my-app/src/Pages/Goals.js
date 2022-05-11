@@ -1,10 +1,10 @@
 // Custom Components
-import NavBar from "../Components/NavBar";
+import HeadingGroup from "../Components/Heading/HeadingGroup.jsx";
+
 function Goals() {
   return (
     <div>
-      <NavBar />
-      <h1>Goals page</h1>
+      <HeadingGroup title={"Goals"} />
     </div>
   );
 }

@@ -1,10 +1,10 @@
 // Custom Components
-import NavBar from "../Components/NavBar";
+import HeadingGroup from "../Components/Heading/HeadingGroup.jsx";
+
 function News() {
   return (
     <div>
-      <NavBar />
-      <h1>News page</h1>
+      <HeadingGroup title={"News"} />
     </div>
   );
 }

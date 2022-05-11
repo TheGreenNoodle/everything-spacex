@@ -1,10 +1,10 @@
 // Custom Components
-import NavBar from "../Components/NavBar";
+import HeadingGroup from "../Components/Heading/HeadingGroup.jsx";
+
 function LaunchVehicles() {
   return (
     <div>
-      <NavBar />
-      <h1>Launch Vehicles page</h1>
+      <HeadingGroup title={"Launch Vehicles"} />
     </div>
   );
 }

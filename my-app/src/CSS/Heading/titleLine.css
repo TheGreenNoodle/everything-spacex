@@ -1,0 +1,8 @@
+.line {
+  display: inline-block;
+  width: 50%;
+}
+
+.rocketIcon {
+  display: inline;
+}

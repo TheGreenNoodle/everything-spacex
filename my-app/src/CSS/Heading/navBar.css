@@ -1,0 +1,9 @@
+.navBox {
+  text-align: right;
+  background-color: gray;
+  padding: 20px;
+  margin: 0 0 40px;
+}
+.text {
+  margin-right: 5px;
+}
