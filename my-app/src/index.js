@@ -5,8 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //Pages
 import Home from "./Pages/Home";
 import Goals from "./Pages/Goals";
-import LaunchVehicles from "./Pages/LaunchVehicles";
-import News from "./Pages/News";
+import LaunchVehicles from "./Pages/Launch-Vehicles/LaunchVehicles";
+import VehicleDemo from "./Pages/Launch-Vehicles/VehicleDemo";
+import News from "./Pages/News/News";
 import History from "./Pages/History";
 //Testing
 import reportWebVitals from "./reportWebVitals";
@@ -21,6 +22,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/goals" element={<Goals />} />
         <Route path="/launch-vehicles" element={<LaunchVehicles />} />
+        <Route path="/vehicle-demo" element={<VehicleDemo />} />
         <Route path="/news" element={<News />} />
         <Route path="/history" element={<History />} />
       </Routes>

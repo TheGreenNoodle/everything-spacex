@@ -8,7 +8,7 @@ function LargeCard(props) {
     <div className={cardCss.textImgBox}>
       <div className={cardCss.textBox}>
         <h2 className={cardCss.title}>{props.title}</h2>
-        <p className={cardCss.desc}>{props.desc}</p>
+        <p className={cardCss.text}>{props.text}</p>
         {props.hasRoute ? <InfoBtn route={props.route} /> : null}
       </div>
       <div className={cardCss.imgBox}>

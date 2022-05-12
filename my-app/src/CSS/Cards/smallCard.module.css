@@ -1,0 +1,10 @@
+.box {
+  width: 20%;
+  margin: 10px;
+  background-color: gray;
+  height: 500px;
+  display: inline-block;
+}
+.img {
+  width: 70%;
+}

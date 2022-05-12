@@ -8,7 +8,7 @@ function History() {
       <HeadingGroup title={"History"} />
       <LargeCard
         title="2002"
-        desc="SpaceX founding."
+        text="SpaceX founding."
         src="https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/jwfa6idwrsflicfh_1617443128.jpeg"
         hasRoute={false}
         alt="mars-img"

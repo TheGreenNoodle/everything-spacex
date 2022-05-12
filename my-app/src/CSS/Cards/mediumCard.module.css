@@ -1,0 +1,7 @@
+.box {
+  background-color: gray;
+  height: 500px;
+  width: 30%;
+  margin: 10px;
+  display: inline-block;
+}

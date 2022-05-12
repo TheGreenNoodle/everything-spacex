@@ -2,11 +2,11 @@
   "name": "spacex-info-site",
   "version": "1.0.0",
   "description": "SpaceX info site.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.js",
-    "devserver": "nodemon server/index.js"
+    "start": "node server/app.js",
+    "devserver": "nodemon server/app.js"
   },
   "author": "Anton Fleming",
   "license": "ISC",
