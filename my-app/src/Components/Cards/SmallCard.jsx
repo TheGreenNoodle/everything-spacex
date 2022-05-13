@@ -7,9 +7,14 @@ function SmallCard(props) {
   return (
     <div className={smallCard.box}>
       <h2>{props.title}</h2>
-      <p>{props.text}</p>
+      <p>{props.subTitle}</p>
       <img className={smallCard.img} src={props.src} alt={props.alt} />
-      <InfoBtn route={props.route} />
+      <InfoBtn
+        title={props.title}
+        text={props.text}
+        route={props.route}
+        vidUrl={props.vidUrl}
+      />
     </div>
   );
 }
