@@ -5,9 +5,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //Pages
 import Home from "./Pages/Home";
 import Goals from "./Pages/Goals";
+//Launch vehicles and launch vehicle subpaths
 import LaunchVehicles from "./Pages/Launch-Vehicles/LaunchVehicles";
 import VehicleDemo from "./Pages/Launch-Vehicles/VehicleDemo";
+//News and news subpaths.
 import News from "./Pages/News/News";
+import Updates from "./Pages/News/Updates";
+import Weather from "./Pages/News/Weather";
 import History from "./Pages/History";
 //Testing
 import reportWebVitals from "./reportWebVitals";
@@ -21,9 +25,13 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/goals" element={<Goals />} />
+        //Launch vehicles and launch vehicle subpaths
         <Route path="/launch-vehicles" element={<LaunchVehicles />} />
         <Route path="/vehicle-demo" element={<VehicleDemo />} />
+        //News and news subpaths.
         <Route path="/news" element={<News />} />
+        <Route path="/updates" element={<Updates />} />
+        <Route path="/weather" element={<Weather />} />
         <Route path="/history" element={<History />} />
       </Routes>
     </BrowserRouter>

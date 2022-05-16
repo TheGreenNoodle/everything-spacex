@@ -13,6 +13,7 @@ function VehicleDemo() {
     <div>
       <HeadingGroup title={title} />
       <GetVid url={vidUrl} />
+      <p>{text}</p>
     </div>
   );
 }

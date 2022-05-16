@@ -13,7 +13,7 @@ function LaunchVehicles() {
         src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=730&crop=1"
         alt="img-starship-spacex"
         route="/vehicle-demo"
-        vidUrl="https://youtu.be/gA6ppby3JC8"
+        vidUrl="https://youtu.be/sZlzYzyREAI"
       />
       <SmallCard
         title="Falcon 9"
@@ -22,7 +22,7 @@ function LaunchVehicles() {
         src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=730&crop=1"
         alt="img-starship-spacex"
         route="/vehicle-demo"
-        vidUrl="https://youtu.be/gA6ppby3JC8"
+        vidUrl="https://youtu.be/Z4TXCZG_NEY"
       />
       <SmallCard
         title="Falcon Heavy"
@@ -31,7 +31,7 @@ function LaunchVehicles() {
         src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=730&crop=1"
         alt="img-starship-spacex"
         route="/vehicle-demo"
-        vidUrl="https://youtu.be/gA6ppby3JC8"
+        vidUrl="https://youtu.be/A0FZIwabctw?t=33"
       />
       <SmallCard
         title="Starship"
