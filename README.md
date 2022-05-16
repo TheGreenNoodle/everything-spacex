@@ -19,7 +19,7 @@ Has a section that explains what SpaceX dose and what there goals are.
 3.  Plan out the routes of the site with react routes. DONE
 4.  Make plan for what each page route will contain. DONE
 5.  Begin working on the layout of all these route pages in google slides. DONE
-6.  Add the google slide layouts to the document. HTML only. NOT DONE
+6.  Add the google slide layouts to the document. HTML only. DONE
 7.  Add Tweet API, YouTube API, and Weather API to backend. NOT DONE
 8.  Save all of these data points in a database. Make sure if there is more than a certain amount on a page have a load more button. NOT DONE.
 9.  Import all css into a Component not index.css. DONE

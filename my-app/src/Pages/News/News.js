@@ -7,7 +7,7 @@ function News() {
     <div>
       <HeadingGroup title={"News"} />
       <SmallCard
-        title="Updates from Twitter"
+        title="News from Twitter"
         text="text2"
         route="/updates"
         src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=730&crop=1"
@@ -21,7 +21,7 @@ function News() {
         alt="img-starship-spacex"
       />
       <SmallCard
-        title="Updates from YouTube"
+        title="News from YouTube"
         text="text2"
         route="/updates"
         src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=730&crop=1"

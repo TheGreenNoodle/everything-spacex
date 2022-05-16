@@ -1,7 +1,7 @@
 import { useLocation } from "react-router";
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup";
-import GetVid from "../../Components/GetVid";
+import GetVid from "../../Components/GetData//GetVid";
 
 function VehicleDemo() {
   // Data from InfoBtn.jsx
@@ -12,7 +12,13 @@ function VehicleDemo() {
   return (
     <div>
       <HeadingGroup title={title} />
-      <GetVid url={vidUrl} />
+      <GetVid
+        controls={false}
+        playing={true}
+        loop={true}
+        muted={true}
+        url={vidUrl}
+      />
       <p>{text}</p>
     </div>
   );
