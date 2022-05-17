@@ -9,7 +9,12 @@ function Weather() {
   return (
     <div>
       <HeadingGroup title={title} />
-      <GetWeather />
+      <GetWeather
+        city="St Louis"
+        lat="38.6270"
+        lon="-90.1994"
+        unit="imperial"
+      />
     </div>
   );
 }
