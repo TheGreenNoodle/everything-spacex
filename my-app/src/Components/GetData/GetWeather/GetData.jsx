@@ -18,7 +18,7 @@ function GetData({ setData, props }) {
       setData({
         location: [response.data.lat, response.data.lon],
         icon:
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
           response.data.current.weather[0].icon +
           "@2x.png",
         temp: response.data.current.temp,
@@ -27,16 +27,8 @@ function GetData({ setData, props }) {
         visibility: response.data.current.visibility, //in meters
         windSpeed: response.data.current.wind_speed,
         windDeg: response.data.current.wind_deg,
+        currentWeather: response.data.current,
         perHour: response.data.hourly,
-        perHoure: {
-          description: response.data.hourly[1].weather[0].description,
-          main: response.data.hourly[1].weather[0].main,
-          time: response.data.hourly[1].dt,
-          temp: response.data.hourly[1].temp,
-          visibility: response.data.hourly[1].visibility, //in meters
-          windSpeed: response.data.hourly[1].wind_speed,
-          windDeg: response.data.hourly[1].wind_deg,
-        },
       });
     })
     .catch((error) => {

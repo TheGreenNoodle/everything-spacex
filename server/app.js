@@ -1,12 +1,14 @@
-const PORT = process.env.PORT || 3001;
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
 require("dotenv").config();
 
+const PORT = process.env.PORT || 3001;
+
 const forecast = process.env.WEATHER_API;
 
 const app = express();
+const fs = require("fs");
 
 app.use(cors());
 
@@ -44,6 +46,7 @@ app.route("/api/weather/example").get((req, res) => {
     })
     .catch((error) => console.log(error));
 });
+
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
