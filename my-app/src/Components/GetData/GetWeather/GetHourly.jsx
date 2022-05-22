@@ -1,17 +1,17 @@
 import unixToTime from "./unixToTime";
 
 function GetHourly(props) {
-  const hourlyData = props.data.perHour;
+  const hourly = props.data;
 
   return (
     <div>
-      {!hourlyData ? (
+      {!hourly ? (
         <div>
           <p>Loading...</p>
         </div>
       ) : (
         <div>
-          {hourlyData.slice(1, props.numToGet + 1).map((data, index) => (
+          {hourly.slice(1, props.numToGet + 1).map((data, index) => (
             <div key={index} style={{ backgroundColor: "orange" }}>
               <p>Time: {unixToTime(data.dt)} </p>
               <img

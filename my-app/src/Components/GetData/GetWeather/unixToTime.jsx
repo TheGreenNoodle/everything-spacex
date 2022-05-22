@@ -13,7 +13,7 @@ function unixToTime(time) {
     hours = 12;
   }
 
-  let formattedTime = hours + amOrPm;
+  const formattedTime = hours + amOrPm;
 
   return formattedTime;
 }

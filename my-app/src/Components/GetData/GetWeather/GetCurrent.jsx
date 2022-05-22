@@ -1,5 +1,5 @@
 function GetCurrent(props) {
-  const current = props.data.currentWeather;
+  const current = props.data;
 
   return (
     <div>

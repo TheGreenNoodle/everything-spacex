@@ -3,7 +3,7 @@ import { useLocation } from "react-router";
 import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
 import GetVid from "../../Components/GetData/GetVid";
 import GetProfile from "../../Components/GetData/GetProfile";
-import GetDate from "../../Components/GetData/GetDate";
+
 function Updates() {
   const { state } = useLocation();
   const { title, text } = state; // Read values passed on state
@@ -19,7 +19,7 @@ function Updates() {
         muted={false}
         url={"https://www.youtube.com/watch?v=-XgByQJYRgU"}
       />
-      <GetDate />
+      //date
     </div>
   );
 }
