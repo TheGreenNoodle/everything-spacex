@@ -1,7 +1,12 @@
-import unixToDate from "./unixToDate";
+import unixToDate from "../Functions/unixToDate";
 
 function GetDaily(props) {
   const daily = props.data;
+  const unitsImperial = props.unit === "imperial" ? true : false;
+
+  const units = {
+    temp: unitsImperial ? "°F" : "°C",
+  };
   return (
     <div>
       {!daily ? (
@@ -22,7 +27,9 @@ function GetDaily(props) {
                 alt="weather-icon"
               />
               <p>{data.weather[0].main}</p>
-              <p>Temp {data.temp.day}</p>
+              <p>
+                Temp {data.temp.day} {units.temp}
+              </p>
             </div>
           ))}
         </div>

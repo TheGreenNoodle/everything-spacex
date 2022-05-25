@@ -9,7 +9,7 @@ import Goals from "./Pages/Goals";
 import LaunchVehicles from "./Pages/Launch-Vehicles/LaunchVehicles";
 import VehicleDemo from "./Pages/Launch-Vehicles/VehicleDemo";
 //News and news subpaths.
-import News from "./Pages/News/News";
+import News from "./Pages/News/NewsRoutes";
 import Updates from "./Pages/News/Updates";
 import Weather from "./Pages/News/Weather";
 import History from "./Pages/History";

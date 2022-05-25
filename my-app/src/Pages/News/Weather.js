@@ -6,14 +6,23 @@ function Weather() {
   const { state } = useLocation();
   const { title, text, vidUrl } = state; // Read values passed on state
 
+  let toggleUnit = true;
+
+  function changeUnits() {
+    toggleUnit = toggleUnit ? false : true;
+  }
+
   return (
     <div>
       <HeadingGroup title={title} />
+      <button onClick={changeUnits}>Switch to units</button>
       <GetWeather
         city="St Louis"
         lat="38.6270"
         lon="-90.1994"
-        unit="imperial"
+        zoom="500"
+        layer="precipitation_new"
+        unit={toggleUnit}
       />
     </div>
   );

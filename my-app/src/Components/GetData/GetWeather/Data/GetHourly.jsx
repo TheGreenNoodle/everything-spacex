@@ -1,7 +1,13 @@
-import unixToTime from "./unixToTime";
+import unixToTime from "../Functions/unixToTime";
 
 function GetHourly(props) {
   const hourly = props.data;
+  const unitsImperial = props.unit === "imperial" ? true : false;
+
+  const units = {
+    temp: unitsImperial ? "°F" : "°C",
+    windSpeed: unitsImperial ? "mph" : "m/s",
+  };
 
   return (
     <div>
@@ -23,11 +29,16 @@ function GetHourly(props) {
                 alt="weather-icon"
               />
               <p>{data.weather[0].main}</p>
-              <p>Temp {data.temp}</p>
+              <p>
+                Temp {data.temp} {units.temp}
+              </p>
               <p>Possibility of {data.weather[0].description}.</p>
-              <p>Visibility {data.visibility}</p>
-              <p>Wind speed {data.wind_speed}</p>
-              <p>Wind deg {data.wind_deg}</p>
+              <p>Visibility {data.visibility} m</p>
+              <p>Wind</p>
+              <p>
+                {data.wind_speed} {units.windSpeed}
+              </p>
+              <p>{data.wind_deg}°</p>
             </div>
           ))}
         </div>
