@@ -1,3 +1,4 @@
+import axios from "axios";
 import ReactPlayer from "react-player/lazy";
 
 // CSS

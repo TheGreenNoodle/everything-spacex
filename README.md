@@ -14,20 +14,12 @@ Has a section that explains what SpaceX dose and what there goals are.
 
 # Road map
 
-1.  Add the backend with node and express. DONE
-2.  Create files for all of the different modules. DONE
-3.  Plan out the routes of the site with react routes. DONE
-4.  Make plan for what each page route will contain. DONE
-5.  Begin working on the layout of all these route pages in google slides. DONE
-6.  Add the google slide layouts to the document. HTML only. DONE
-7.  Add Tweet API, YouTube API, and Weather API to backend. NOT DONE
-8.  Add button that allows unit change weather app NOT DONE
-9.  Save all of these data points in a database. Make sure if there is more than a certain amount on a page have a load more button. NOT DONE.
-10. Import all css into a Component not index.css. DONE
-11. Cut down on the number of sub pages by sending over state data to a page template. DONE.
-12. Start working on the CSS. NOT DONE
-13. Work on responsiveness. NOT DONE
-14. Add Heroku URL to README. NOT DONE
+1.  Add Tweet API, YouTube API, and Weather API to backend. NOT DONE
+2.  Add button that allows unit change weather app NOT DONE
+3.  Save all of these data points in a database. Make sure if there is more than a certain amount on a page have a load more button. NOT DONE.
+4.  Start working on the CSS. NOT DONE
+5.  Work on responsiveness. NOT DONE
+6.  Add Heroku URL to README. NOT DONE
 
 # Route page information
 
