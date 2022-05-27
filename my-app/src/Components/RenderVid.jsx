@@ -1,22 +1,21 @@
-import axios from "axios";
 import ReactPlayer from "react-player/lazy";
 
 // CSS
-import getVid from "../../CSS/GetNews/getVid.module.css";
+import renderVid from "../CSS/GetNews/renderVid.module.css";
 
-function GetVid(props) {
+function RenderVid(props) {
   return (
-    <div className={getVid.vidBox}>
+    <div className={renderVid.vidBox}>
       <ReactPlayer
-        className={getVid.vidPlayer}
+        className={renderVid.vidPlayer}
         controls={props.controls}
         loop={props.loop}
         muted={props.muted}
         playing={props.playing}
         url={props.url}
-        width={getVid.vidPlayer}
+        width={renderVid.vidPlayer}
       />
     </div>
   );
 }
-export default GetVid;
+export default RenderVid;

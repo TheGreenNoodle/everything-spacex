@@ -1,8 +1,8 @@
 import { useLocation } from "react-router";
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
-import GetVid from "../../Components/GetData/GetVid";
-import GetProfile from "../../Components/GetData/GetProfile";
+import RenderVid from "../../Components/RenderVid";
+import GetTwitterProfile from "../../Components/GetData/GetProfile/GetTwitterProfile";
 
 //Images
 import spacexPic from "../../Images/spacex.jpg";
@@ -12,23 +12,23 @@ import bocaGal from "../../Images/boca-chica-gal.jpg";
 function Updates() {
   const { state } = useLocation();
   const { title, text } = state; // Read values passed on state
-
+  // {title === "News from YouTube" ?  : null}
   return (
     <div>
       <HeadingGroup title={title} />
       {title === "News from Twitter" ? (
         <div>
-          <GetProfile
+          <GetTwitterProfile
             username="SpaceX"
             url="https://twitter.com/spacex"
             profilePic={spacexPic}
           />
-          <GetProfile
+          <GetTwitterProfile
             username="BocaChicaGal"
             url="https://twitter.com/BocaChicaGal"
             profilePic={bocaGal}
           />
-          <GetProfile
+          <GetTwitterProfile
             username="elonmusk"
             url="https://twitter.com/elonmusk/status/1529869999803965446"
             profilePic={elonPic}
@@ -36,7 +36,7 @@ function Updates() {
         </div>
       ) : (
         <div>
-          <GetVid
+          <RenderVid
             controls={true}
             playing={false}
             loop={false}

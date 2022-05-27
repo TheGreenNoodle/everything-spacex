@@ -1,7 +1,7 @@
 import { useLocation } from "react-router";
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup";
-import GetVid from "../../Components/GetData//GetVid";
+import RenderVid from "../../Components/RenderVid";
 
 function VehicleDemo() {
   // Data from InfoBtn.jsx
@@ -12,7 +12,7 @@ function VehicleDemo() {
   return (
     <div>
       <HeadingGroup title={title} />
-      <GetVid
+      <RenderVid
         controls={false}
         playing={true}
         loop={true}

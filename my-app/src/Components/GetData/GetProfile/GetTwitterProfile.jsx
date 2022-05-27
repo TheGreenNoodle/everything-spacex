@@ -6,8 +6,8 @@ import {
 } from "react-twitter-embed";
 
 //CSS
-import getProfile from "../../CSS/GetNews/getProfile.module.css";
-function GetProfile(props) {
+import getProfile from "../../../CSS/GetNews/getProfile.module.css";
+function GetTwitterProfile(props) {
   return (
     <div className={getProfile.box}>
       <h1>
@@ -37,4 +37,4 @@ function GetProfile(props) {
   );
 }
 
-export default GetProfile;
+export default GetTwitterProfile;

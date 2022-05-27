@@ -20,6 +20,7 @@ Has a section that explains what SpaceX dose and what there goals are.
 4.  Start working on the CSS. NOT DONE
 5.  Work on responsiveness. NOT DONE
 6.  Add Heroku URL to README. NOT DONE
+7.  Restrict API key usage to only Heroku domain.
 
 # Route page information
 

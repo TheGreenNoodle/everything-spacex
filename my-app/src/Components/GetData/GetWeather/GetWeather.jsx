@@ -13,10 +13,6 @@ function GetWeather(props) {
     GetData({ setData, props });
   }, []);
 
-  //remove
-  console.log("Location: " + data.location);
-  // console.log(props.unit);
-
   return (
     <div>
       {!data ? (

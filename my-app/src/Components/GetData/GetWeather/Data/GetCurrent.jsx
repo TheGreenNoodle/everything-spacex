@@ -2,7 +2,6 @@ function GetCurrent(props) {
   const current = props.data;
   const unitsImperial = props.unit;
 
-  console.log("Curremt " + props.unit);
   const units = {
     temp: unitsImperial ? "°F" : "°C",
     windSpeed: unitsImperial ? "mph" : "m/s",

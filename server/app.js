@@ -6,6 +6,7 @@ require("dotenv").config();
 const PORT = process.env.PORT || 3001;
 
 const forecast = process.env.WEATHER_API;
+const youtube = process.env.YOUTUBE_API;
 
 const app = express();
 const fs = require("fs");
@@ -35,6 +36,20 @@ app.route("/api/weather").get((req, res) => {
     .catch((error) => console.log(error));
 });
 
+const channelId = "UC1XvxnHFtWruS9egyFasP1Q";
+app.route("/api/youtube").get((req, res) => {
+  axios
+    .get(
+      "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" +
+        channelId +
+        "&maxResults=10&order=date&type=video&key=" +
+        youtube
+    )
+    .then((response) => {
+      res.json(response.data);
+    })
+    .catch((error) => console.log(error));
+});
 //remove when done
 app.route("/api/weather/example").get((req, res) => {
   axios
