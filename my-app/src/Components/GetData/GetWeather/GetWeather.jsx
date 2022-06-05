@@ -1,7 +1,7 @@
 // Components
 import { useEffect, useState } from "react";
 // Custom Components
-import GetData from "./Data/GetData";
+import GetData from "./Data/GetAllData";
 
 import GetCurrent from "./Data/GetCurrent";
 import GetHourly from "./Data/GetHourly";

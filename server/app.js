@@ -40,15 +40,13 @@ const channelId = "UC1XvxnHFtWruS9egyFasP1Q";
 app.route("/api/youtube").get((req, res) => {
   axios
     .get(
-      "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" +
-        channelId +
-        "&maxResults=10&order=date&type=video&key=" +
+      "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC1XvxnHFtWruS9egyFasP1Q&maxResults=10&order=date&type=video&key=" +
         youtube
     )
     .then((response) => {
       res.json(response.data);
     })
-    .catch((error) => console.log(error));
+    .catch((error) => console.error(error));
 });
 //remove when done
 app.route("/api/weather/example").get((req, res) => {

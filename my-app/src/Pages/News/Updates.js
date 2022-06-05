@@ -2,7 +2,9 @@ import { useLocation } from "react-router";
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
 import RenderVid from "../../Components/RenderVid";
+//Get Profiles
 import GetTwitterProfile from "../../Components/GetData/GetProfile/GetTwitterProfile";
+import GetYoutubeProfile from "../../Components/GetData/GetProfile/GetYoutubeProfile";
 
 //Images
 import spacexPic from "../../Images/spacex.jpg";
@@ -43,6 +45,7 @@ function Updates() {
             muted={false}
             url="https://www.youtube.com/watch?v=-XgByQJYRgU"
           />
+          <GetYoutubeProfile />
         </div>
       )}
     </div>
