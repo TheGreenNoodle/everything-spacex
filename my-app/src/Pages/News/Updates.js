@@ -1,7 +1,6 @@
 import { useLocation } from "react-router";
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
-import RenderVid from "../../Components/RenderVid";
 //Get Profiles
 import GetTwitterProfile from "../../Components/GetData/GetProfile/GetTwitterProfile";
 import GetYoutubeProfile from "../../Components/GetData/GetProfile/GetYoutubeProfile";
@@ -38,14 +37,7 @@ function Updates() {
         </div>
       ) : (
         <div>
-          <RenderVid
-            controls={true}
-            playing={false}
-            loop={false}
-            muted={false}
-            url="https://www.youtube.com/watch?v=-XgByQJYRgU"
-          />
-          <GetYoutubeProfile />
+          <GetYoutubeProfile channelId="UC1XvxnHFtWruS9egyFasP1Q" />
         </div>
       )}
     </div>

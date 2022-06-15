@@ -1,27 +1,28 @@
+//Components
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+//Custom Components
+import GetData from "./Data/YoutubeData";
+import RenderVid from "../../RenderVid";
 
-function GetYoutubeProfile() {
+function GetYoutubeProfile(props) {
   const [data, setData] = useState({});
-  const options = {
-    method: "GET",
-    url: "/api/youtube",
-    params: {},
-  };
 
-  axios
-    .request(options)
-    .then((response) => {
-      console.log(response.data);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+  useEffect(() => {
+    GetData({ setData, props });
+  }, []);
 
+  // <RenderVid
+  //   controls={true}
+  //   playing={false}
+  //   loop={false}
+  //   muted={false}
+  //   vidId="v6bd1NPRSpo"
+  //   title="example vid"
+  //   desc="example desc"
+  // />
   return (
-    <div>
-      <h1>Hey</h1>
-    </div>
+    <div>{!data ? <p>Loading...</p> : <div>{console.log(data)}</div>}</div>
   );
 }
 

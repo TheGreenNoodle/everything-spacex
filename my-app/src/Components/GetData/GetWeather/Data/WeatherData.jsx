@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-function GetAllData({ setData, props }) {
+function WeatherData({ setData, props }) {
   const options = {
     method: "GET",
     url: "/api/weather",
@@ -26,4 +26,4 @@ function GetAllData({ setData, props }) {
     });
 }
 
-export default GetAllData;
+export default WeatherData;

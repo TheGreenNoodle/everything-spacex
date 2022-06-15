@@ -36,13 +36,17 @@ app.route("/api/weather").get((req, res) => {
     .catch((error) => console.log(error));
 });
 
-const channelId = "UC1XvxnHFtWruS9egyFasP1Q";
 app.route("/api/youtube").get((req, res) => {
+  const channelId = req.query.channelId;
+
   axios
-    .get(
-      "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC1XvxnHFtWruS9egyFasP1Q&maxResults=10&order=date&type=video&key=" +
-        youtube
-    )
+    .get
+    // "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" +
+    //   channelId +
+    //   "&maxResults=3&order=date&type=video&key=" +
+    //   youtube
+    //use list method so it uses less quota.
+    ()
     .then((response) => {
       res.json(response.data);
     })
@@ -59,6 +63,21 @@ app.route("/api/weather/example").get((req, res) => {
       res.json(response.data);
     })
     .catch((error) => console.log(error));
+});
+
+app.route("/api/youtube/example").get((req, res) => {
+  const channelId = "UC1XvxnHFtWruS9egyFasP1Q";
+
+  axios
+    .get(
+      "https://developers.google.com/apis-explorer/#p/youtube/v3/youtube.channels.list?part=contentDetails&id=" +
+        channelId +
+        youtube
+    )
+    .then((response) => {
+      res.json(response.data);
+    })
+    .catch((error) => console.error(error));
 });
 
 app.listen(PORT, () => {

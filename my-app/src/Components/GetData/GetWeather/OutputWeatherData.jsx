@@ -1,14 +1,15 @@
 // Components
 import { useEffect, useState } from "react";
 // Custom Components
-import GetData from "./Data/GetAllData";
+import GetData from "./Data/WeatherData";
 
 import GetCurrent from "./Data/GetCurrent";
 import GetHourly from "./Data/GetHourly";
 import GetDaily from "./Data/GetDaily";
 
-function GetWeather(props) {
+function OutputWeatherData(props) {
   const [data, setData] = useState({});
+
   useEffect(() => {
     GetData({ setData, props });
   }, []);
@@ -35,4 +36,4 @@ function GetWeather(props) {
   );
 }
 
-export default GetWeather;
+export default OutputWeatherData;
