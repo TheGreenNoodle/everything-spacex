@@ -7,6 +7,7 @@ function RenderVid(props) {
   return (
     <div className={renderVid.vidBox}>
       <h2>{props.title}</h2>
+
       <ReactPlayer
         className={renderVid.vidPlayer}
         controls={props.controls}

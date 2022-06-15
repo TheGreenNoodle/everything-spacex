@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-function YoutubeData({ setData, props }) {
+function YoutubeData({ setProfileData, props }) {
   const options = {
     method: "GET",
     url: "/api/youtube",
@@ -13,7 +13,7 @@ function YoutubeData({ setData, props }) {
   axios
     .request(options)
     .then((response) => {
-      setData(response.data);
+      setProfileData(response.data.items);
     })
     .catch((error) => {
       console.error(error);

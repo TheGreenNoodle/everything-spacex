@@ -38,20 +38,33 @@ app.route("/api/weather").get((req, res) => {
 
 app.route("/api/youtube").get((req, res) => {
   const channelId = req.query.channelId;
+  let uploads = null;
 
   axios
-    .get
-    // "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" +
-    //   channelId +
-    //   "&maxResults=3&order=date&type=video&key=" +
-    //   youtube
-    //use list method so it uses less quota.
-    ()
+    .get(
+      //Gets user uploads playlist ID
+      "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=" +
+        channelId +
+        "&key=" +
+        youtube
+    )
+    .then((response) => {
+      uploads = response.data.items[0].contentDetails.relatedPlaylists.uploads;
+
+      return axios.get(
+        //Grabs the playlist id data using the uploads id
+        "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=10&playlistId=" +
+          uploads +
+          "&key=" +
+          youtube
+      );
+    })
     .then((response) => {
       res.json(response.data);
     })
     .catch((error) => console.error(error));
 });
+
 //remove when done
 app.route("/api/weather/example").get((req, res) => {
   axios
@@ -67,13 +80,26 @@ app.route("/api/weather/example").get((req, res) => {
 
 app.route("/api/youtube/example").get((req, res) => {
   const channelId = "UC1XvxnHFtWruS9egyFasP1Q";
+  let uploads = null;
 
+  //Gets user uploads playlist ID
   axios
     .get(
-      "https://developers.google.com/apis-explorer/#p/youtube/v3/youtube.channels.list?part=contentDetails&id=" +
+      "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=" +
         channelId +
+        "&key=" +
         youtube
     )
+    .then((response) => {
+      uploads = response.data.items[0].contentDetails.relatedPlaylists.uploads;
+      //Grabs the playlist id data using the uploads id
+      return axios.get(
+        "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=10&playlistId=" +
+          uploads +
+          "&key=" +
+          youtube
+      );
+    })
     .then((response) => {
       res.json(response.data);
     })

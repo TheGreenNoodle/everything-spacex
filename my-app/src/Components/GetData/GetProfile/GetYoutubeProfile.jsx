@@ -6,23 +6,34 @@ import GetData from "./Data/YoutubeData";
 import RenderVid from "../../RenderVid";
 
 function GetYoutubeProfile(props) {
-  const [data, setData] = useState({});
+  const [profileData, setProfileData] = useState([]);
 
   useEffect(() => {
-    GetData({ setData, props });
+    GetData({ setProfileData, props });
   }, []);
 
-  // <RenderVid
-  //   controls={true}
-  //   playing={false}
-  //   loop={false}
-  //   muted={false}
-  //   vidId="v6bd1NPRSpo"
-  //   title="example vid"
-  //   desc="example desc"
-  // />
   return (
-    <div>{!data ? <p>Loading...</p> : <div>{console.log(data)}</div>}</div>
+    <div>
+      {!setProfileData ? (
+        <p>Loading...</p>
+      ) : (
+        <div>
+          {profileData.map((data, index) => (
+            <div key={index}>
+              <RenderVid
+                controls={true}
+                playing={false}
+                loop={false}
+                muted={false}
+                vidId={data.snippet.resourceId.videoId}
+                title={data.snippet.title}
+                desc={data.snippet.description}
+              />
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
 

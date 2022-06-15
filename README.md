@@ -16,12 +16,11 @@ Has a section that explains what SpaceX dose and what there goals are.
 
 1.  Add Tweet API, YouTube API, and Weather API to backend. NOT DONE
 2.  Add button that allows unit change weather app NOT DONE
-3.  Save all of these data points in a database. Make sure if there is more than a certain amount on a page have a load more button. NOT DONE.
-4.  Start working on the CSS. NOT DONE
-5.  Work on responsiveness. NOT DONE
-6.  Optimize site and fix warnings NOT DONE
-7.  Add Heroku URL to README. NOT DONE
-8.  Restrict API key usage to only Heroku domain.
+3.  Start working on the CSS. NOT DONE
+4.  Work on responsiveness. NOT DONE
+5.  Optimize site and fix warnings NOT DONE
+6.  Add Heroku URL to README. NOT DONE
+7.  Restrict API key usage to only Heroku domain.
 
 # Route page information
 
