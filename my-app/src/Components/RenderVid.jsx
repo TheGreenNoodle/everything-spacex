@@ -3,11 +3,11 @@ import ReactPlayer from "react-player/lazy";
 // CSS
 import renderVid from "../CSS/GetNews/renderVid.module.css";
 
+let toggle = false;
 function RenderVid(props) {
   return (
     <div className={renderVid.vidBox}>
       <h2>{props.title}</h2>
-
       <ReactPlayer
         className={renderVid.vidPlayer}
         controls={props.controls}

@@ -1,10 +1,17 @@
 .box {
-  width: 20%;
-  margin: 10px;
-  background-color: gray;
-  height: 500px;
-  display: inline-block;
+  width: 35%;
+  margin: 20px auto;
+  padding: 20px;
+
+  border-style: solid;
+  border-radius: 5px;
+
+  color: white;
 }
 .img {
   width: 70%;
+
+  border-radius: 2px;
+
+  margin-bottom: 16px;
 }

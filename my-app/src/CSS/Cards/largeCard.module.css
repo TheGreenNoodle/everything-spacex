@@ -1,27 +1,22 @@
-.textImgBox {
+.box {
   border-style: solid;
-  color: black;
+  border-radius: 5px;
 
-  width: 75%;
-  margin: auto;
-}
-.textBox {
-  text-align: left;
+  color: white;
+  padding: 30px;
+  margin: 0 auto 20px;
   width: 50%;
-  display: inline-block;
 }
+
 .title {
+  /* font */
 }
 .text {
+  /* font */
 }
-.imgBox {
-  width: 50%;
-  display: inline-block;
-}
+
 .img {
+  border-radius: 2px;
   height: 200px;
-  margin: 0 auto -4px;
-  position: relative;
-  bottom: 0;
-  text-align: right;
+  margin: 30px auto;
 }

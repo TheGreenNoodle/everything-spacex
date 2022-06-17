@@ -17,7 +17,7 @@ function Updates() {
   return (
     <div>
       <HeadingGroup title={title} />
-      {title === "News from Twitter" ? (
+      {title === "Twitter" ? (
         <div>
           <GetTwitterProfile
             username="SpaceX"

@@ -2,6 +2,7 @@ import { useLocation } from "react-router";
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
 import OutputData from "../../Components/GetData/GetWeather/OutputWeatherData";
+
 function Weather() {
   const { state } = useLocation();
   const { title, text, vidUrl } = state; // Read values passed on state

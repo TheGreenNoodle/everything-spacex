@@ -15,6 +15,10 @@ import Weather from "./Pages/News/Weather";
 import History from "./Pages/History";
 //Testing
 import reportWebVitals from "./reportWebVitals";
+
+//Bootstrap
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 //CSS
 import "./CSS/index.css";
 

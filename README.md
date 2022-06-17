@@ -8,19 +8,21 @@ Pulls post from SpaceX twitter.
 Pulls post from Elon Musk.
 Pulls post from the guy who dose flights around SpaceX Boca Chica site
 Pulls post from Boca Chica gal.
-Has a few of there test videos from Youtube.
+Has a few of there test videos from YouTube.
 Provides weather updates on SpaceX's test sites.
 Has a section that explains what SpaceX dose and what there goals are.
 
 # Road map
 
-1.  Add Tweet API, YouTube API, and Weather API to backend. NOT DONE
-2.  Add button that allows unit change weather app NOT DONE
-3.  Start working on the CSS. NOT DONE
-4.  Work on responsiveness. NOT DONE
-5.  Optimize site and fix warnings NOT DONE
-6.  Add Heroku URL to README. NOT DONE
-7.  Restrict API key usage to only Heroku domain.
+1.  Add button that allows unit change weather app NOT DONE
+2.  Make it so user can switch between youtubers for news on SpaceX NOT DONE.
+3.  Add drop down for description on YouTube videos. NOT DONE
+4.  Allow user to switch between three different YouTube channels on news NOT DONE.
+5.  Start working on the CSS. NOT DONE
+6.  Work on responsiveness. NOT DONE
+7.  Optimize site and fix warnings NOT DONE
+8.  Add Heroku URL to README. NOT DONE
+9.  Restrict API key usage to only Heroku domain.
 
 # Route page information
 

@@ -9,12 +9,14 @@ function SmallCard(props) {
       <h2>{props.title}</h2>
       <p>{props.subTitle}</p>
       <img className={smallCard.img} src={props.src} alt={props.alt} />
-      <InfoBtn
-        title={props.title}
-        text={props.text}
-        route={props.route}
-        vidUrl={props.vidUrl}
-      />
+      {props.btn ? (
+        <InfoBtn
+          title={props.title}
+          text={props.text}
+          route={props.route}
+          vidUrl={props.vidUrl}
+        />
+      ) : null}
     </div>
   );
 }

@@ -6,11 +6,9 @@ function HeadingGroup(props) {
   return (
     <div>
       <NavBar />
-      <h1>{props.title}</h1>
-
+      <h1 className={headingGroup.heading}>{props.title}</h1>
       <div>
         <hr className={headingGroup.line} />
-        <p className={headingGroup.rocketIcon}>Rocket</p>
       </div>
     </div>
   );

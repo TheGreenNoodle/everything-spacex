@@ -1,3 +1,4 @@
+//Components
 import { useNavigate } from "react-router";
 
 function InfoBtn(props) {
@@ -16,7 +17,7 @@ function InfoBtn(props) {
 
   return (
     <div>
-      <button onClick={handleClick} type="button" className="btn btn-primary">
+      <button onClick={handleClick} type="button" className="btn btn-light">
         More Info
       </button>
     </div>

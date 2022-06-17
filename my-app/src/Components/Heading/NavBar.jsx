@@ -5,6 +5,7 @@ import navBar from "../../CSS/Heading/navBar.module.css";
 function NavBar() {
   return (
     <div className={navBar.navBox}>
+      <h1>Everything SpaceX</h1>
       <Link className={navBar.text} to="/">
         Home
       </Link>
