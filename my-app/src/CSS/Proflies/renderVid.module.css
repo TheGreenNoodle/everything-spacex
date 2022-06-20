@@ -1,0 +1,19 @@
+.vidBox {
+  width: 50%;
+  margin: 0 auto 20px;
+  padding: 10px;
+
+  color: white;
+
+  border-color: white;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 5px;
+}
+.vidPlayer {
+  display: flex;
+  justify-content: flex-end;
+  height: 300px;
+  width: 90%;
+  margin: auto;
+}

@@ -8,7 +8,9 @@ function SmallCard(props) {
     <div className={smallCard.box}>
       <h2>{props.title}</h2>
       <p>{props.subTitle}</p>
-      <img className={smallCard.img} src={props.src} alt={props.alt} />
+      {props.hasImg ? (
+        <img className={smallCard.img} src={props.src} alt={props.alt} />
+      ) : null}
       {props.btn ? (
         <InfoBtn
           title={props.title}

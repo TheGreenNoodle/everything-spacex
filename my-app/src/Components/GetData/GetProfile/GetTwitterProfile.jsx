@@ -6,11 +6,11 @@ import {
 } from "react-twitter-embed";
 
 //CSS
-import getProfile from "../../../CSS/GetNews/getProfile.module.css";
+import getProfile from "../../../CSS/Proflies/getTwitterProfile.module.css";
 function GetTwitterProfile(props) {
   return (
     <div className={getProfile.box}>
-      <h1>
+      <h1 className={getProfile.usernameAndImg}>
         <img
           className={getProfile.img}
           src={props.profilePic}
@@ -18,19 +18,12 @@ function GetTwitterProfile(props) {
         />
         @{props.username}
       </h1>
+
       <div className={getProfile.timeline}>
-        <TwitterFollowButton screenName={props.username} />
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName={props.username}
           options={{ width: 400 }}
-        />
-        <TwitterShareButton
-          url={props.url}
-          options={{
-            text: "Look at this cool Twitter account! #JustFollowed",
-            via: props.username,
-          }}
         />
       </div>
     </div>

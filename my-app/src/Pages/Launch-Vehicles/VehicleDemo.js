@@ -17,9 +17,10 @@ function VehicleDemo() {
         playing={true}
         loop={true}
         muted={true}
-        url={vidUrl}
+        onlyThumbNail={false}
+        vidId={vidUrl}
+        desc={text}
       />
-      <p>{text}</p>
     </div>
   );
 }

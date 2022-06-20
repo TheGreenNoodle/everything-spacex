@@ -1,6 +1,8 @@
 //Components
 import { useNavigate } from "react-router";
 
+//CSS
+import infoBtn from "../CSS/Buttons/infoBtn.module.css";
 function InfoBtn(props) {
   const navigate = useNavigate();
 
@@ -17,8 +19,8 @@ function InfoBtn(props) {
 
   return (
     <div>
-      <button onClick={handleClick} type="button" className="btn btn-light">
-        More Info
+      <button onClick={handleClick} type="button" className={infoBtn.btn}>
+        LEARN MORE
       </button>
     </div>
   );

@@ -25,6 +25,7 @@ function GetYoutubeProfile(props) {
                 playing={false}
                 loop={false}
                 muted={false}
+                onlyThumbNail={true}
                 vidId={data.snippet.resourceId.videoId}
                 title={data.snippet.title}
                 desc={data.snippet.description}

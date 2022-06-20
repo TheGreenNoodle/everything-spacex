@@ -18,7 +18,7 @@ function GetHourly(props) {
       ) : (
         <div>
           {hourly.slice(1, props.numToGet + 1).map((data, index) => (
-            <div key={index} style={{ backgroundColor: "orange" }}>
+            <div key={index}>
               <p>Time: {unixToTime(data.dt)} </p>
               <img
                 src={

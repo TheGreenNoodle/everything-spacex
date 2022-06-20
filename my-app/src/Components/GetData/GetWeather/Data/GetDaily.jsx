@@ -16,7 +16,7 @@ function GetDaily(props) {
       ) : (
         <div>
           {daily.slice(1, 8).map((data, index) => (
-            <div key={index} style={{ backgroundColor: "green" }}>
+            <div key={index}>
               <p>{unixToDate(data.dt)}</p>
               <img
                 src={

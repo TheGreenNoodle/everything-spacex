@@ -1,0 +1,28 @@
+.box {
+  display: inline-block;
+  color: white;
+  margin: 20px;
+
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.img {
+  border-radius: 100%;
+  width: 80px;
+  margin-right: 10px;
+}
+
+.usernameAndImg {
+  margin: 20px auto;
+}
+
+.timeline {
+  height: 500px;
+  margin: 20px;
+
+  overflow: auto;
+}
+.timeline::-webkit-scrollbar {
+  width: 0;
+}

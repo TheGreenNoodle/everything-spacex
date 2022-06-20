@@ -6,7 +6,7 @@ import GetTwitterProfile from "../../Components/GetData/GetProfile/GetTwitterPro
 import GetYoutubeProfile from "../../Components/GetData/GetProfile/GetYoutubeProfile";
 
 //Images
-import spacexPic from "../../Images/spacex.jpg";
+import spacexPic from "../../Images/spacexPic.jpg";
 import elonPic from "../../Images/elon.jpeg";
 import bocaGal from "../../Images/boca-chica-gal.jpg";
 

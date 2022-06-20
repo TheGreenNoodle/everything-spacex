@@ -21,10 +21,8 @@ function OutputWeatherData(props) {
           <p>Loading...</p>
         </div>
       ) : (
-        <div style={{ backgroundColor: "gray" }}>
+        <div>
           <h1>{props.city}</h1>
-
-          <h1>Todays forecast</h1>
           <GetCurrent data={data.getCurrent} unit={props.unit} />
           <h1>Next 14 hours</h1>
           <GetHourly data={data.getHourly} unit={props.unit} numToGet={14} />

@@ -1,3 +1,6 @@
+//CSS
+import currentWeatherCSS from "../../../../CSS/Weather/current.module.css";
+
 function GetCurrent(props) {
   const current = props.data;
   const unitsImperial = props.unit;
@@ -14,22 +17,27 @@ function GetCurrent(props) {
           <p>Loading...</p>
         </div>
       ) : (
-        <div>
-          <img
-            src={
-              "https://openweathermap.org/img/wn/" +
-              current.weather[0].icon +
-              "@2x.png"
-            }
-            alt="weather-icon"
-          />
-          <p>{current.weather[0].main}</p>
-          <p>
-            {current.temp} {units.temp}
-          </p>
-          <p>There is {current.weather[0].description}.</p>
-          <p>Visibility {current.visibility} m</p>
-          <p>Wind</p>
+        <div className={currentWeatherCSS.currentBox}>
+          <h2>Current Forecast</h2>
+          <div className={currentWeatherCSS.tempAndDesc}>
+            <img
+              className={currentWeatherCSS.img}
+              src={
+                "https://openweathermap.org/img/wn/" +
+                current.weather[0].icon +
+                "@2x.png"
+              }
+              alt="weather-icon"
+            />
+            <p className={currentWeatherCSS.desc}>{current.weather[0].main}</p>
+            <p className={currentWeatherCSS.temp}>
+              {current.temp} {units.temp}
+            </p>
+          </div>
+          <h4>Visibility</h4>
+          <p>{current.visibility} m</p>
+
+          <h4>Wind</h4>
           <p>
             {current.wind_speed} {units.windSpeed}
           </p>

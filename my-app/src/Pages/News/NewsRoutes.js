@@ -11,6 +11,7 @@ function News() {
         subTitle="Latest from Twitter"
         route="/updates"
         btn={true}
+        hasImg={true}
         src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=730&crop=1"
         alt="img-starship-spacex"
       />
@@ -19,6 +20,7 @@ function News() {
         subTitle="At launch sites"
         route="/weather"
         btn={true}
+        hasImg={true}
         src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=730&crop=1"
         alt="img-starship-spacex"
       />
@@ -27,6 +29,7 @@ function News() {
         subTitle="Latest from YouTube"
         route="/updates"
         btn={true}
+        hasImg={true}
         src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=730&crop=1"
         alt="img-starship-spacex"
       />
