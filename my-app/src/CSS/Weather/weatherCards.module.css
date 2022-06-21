@@ -1,0 +1,54 @@
+.currentBox {
+  border-radius: 5px;
+  border-style: solid;
+
+  color: white;
+
+  display: inline-block;
+
+  width: 200px;
+
+  margin: 5px 10px;
+}
+.forecastTime {
+  margin: 5px 0 0;
+  padding: 0 5px;
+  word-wrap: break-word;
+}
+
+.line {
+  border-color: white;
+
+  margin: 20px auto;
+  border-style: solid;
+  border-width: medium;
+  border-radius: 5px;
+
+  width: 50%;
+}
+
+.iconGroup {
+  margin: -20px 0 20px;
+}
+
+.makeInline {
+  display: inline-block;
+}
+
+.scroll {
+  width: 50%;
+  margin: auto;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll::-webkit-scrollbar {
+  display: none;
+}

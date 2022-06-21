@@ -1,5 +1,8 @@
 import unixToDate from "../Functions/unixToDate";
 
+//CSS
+import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
+
 function GetDaily(props) {
   const daily = props.data;
   const unitsImperial = props.unit === "imperial" ? true : false;
@@ -14,22 +17,29 @@ function GetDaily(props) {
           <p>Loading...</p>
         </div>
       ) : (
-        <div>
+        <div className={weatherCards.scroll}>
           {daily.slice(1, 8).map((data, index) => (
-            <div key={index}>
-              <p>{unixToDate(data.dt)}</p>
-              <img
-                src={
-                  "https://openweathermap.org/img/wn/" +
-                  data.weather[0].icon +
-                  "@2x.png"
-                }
-                alt="weather-icon"
-              />
-              <p>{data.weather[0].main}</p>
-              <p>
-                Temp {data.temp.day} {units.temp}
-              </p>
+            <div key={index} className={weatherCards.currentBox}>
+              <h2 className={weatherCards.forecastTime}>
+                {unixToDate(data.dt)}
+              </h2>
+
+              <hr className={weatherCards.line} />
+
+              <div className={weatherCards.iconGroup}>
+                <img
+                  src={
+                    "https://openweathermap.org/img/wn/" +
+                    data.weather[0].icon +
+                    "@2x.png"
+                  }
+                  alt="weather-icon"
+                />
+                <p>
+                  {data.temp.day} {units.temp}
+                </p>
+                <p>{data.weather[0].main}</p>
+              </div>
             </div>
           ))}
         </div>

@@ -1,5 +1,8 @@
 import unixToTime from "../Functions/unixToTime";
 
+//CSS
+import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
+
 function GetHourly(props) {
   const hourly = props.data;
   const unitsImperial = props.unit === "imperial" ? true : false;
@@ -16,25 +19,38 @@ function GetHourly(props) {
           <p>Loading...</p>
         </div>
       ) : (
-        <div>
+        <div className={weatherCards.scroll}>
           {hourly.slice(1, props.numToGet + 1).map((data, index) => (
-            <div key={index}>
-              <p>Time: {unixToTime(data.dt)} </p>
-              <img
-                src={
-                  "https://openweathermap.org/img/wn/" +
-                  data.weather[0].icon +
-                  "@2x.png"
-                }
-                alt="weather-icon"
-              />
-              <p>{data.weather[0].main}</p>
-              <p>
-                Temp {data.temp} {units.temp}
-              </p>
-              <p>Possibility of {data.weather[0].description}.</p>
-              <p>Visibility {data.visibility} m</p>
-              <p>Wind</p>
+            <div key={index} className={weatherCards.currentBox}>
+              <h2 className={weatherCards.forecastTime}>
+                {unixToTime(data.dt)}{" "}
+              </h2>
+
+              <hr className={weatherCards.line} />
+
+              <div className={weatherCards.iconGroup}>
+                <img
+                  src={
+                    "https://openweathermap.org/img/wn/" +
+                    data.weather[0].icon +
+                    "@2x.png"
+                  }
+                  alt="weather-icon"
+                />
+
+                <p>
+                  {data.temp} {units.temp}
+                </p>
+                <p>{data.weather[0].main}</p>
+              </div>
+
+              <hr className={weatherCards.line} />
+              <h4>Visibility</h4>
+              <p>{data.visibility} m</p>
+
+              <hr className={weatherCards.line} />
+
+              <h4>Wind</h4>
               <p>
                 {data.wind_speed} {units.windSpeed}
               </p>

@@ -1,5 +1,5 @@
 //CSS
-import currentWeatherCSS from "../../../../CSS/Weather/current.module.css";
+import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
 
 function GetCurrent(props) {
   const current = props.data;
@@ -17,11 +17,13 @@ function GetCurrent(props) {
           <p>Loading...</p>
         </div>
       ) : (
-        <div className={currentWeatherCSS.currentBox}>
-          <h2>Current Forecast</h2>
-          <div className={currentWeatherCSS.tempAndDesc}>
+        <div className={weatherCards.currentBox}>
+          <h2 className={weatherCards.forecastTime}>Current Forecast</h2>
+
+          <hr className={weatherCards.line} />
+
+          <div className={weatherCards.iconGroup}>
             <img
-              className={currentWeatherCSS.img}
               src={
                 "https://openweathermap.org/img/wn/" +
                 current.weather[0].icon +
@@ -29,13 +31,19 @@ function GetCurrent(props) {
               }
               alt="weather-icon"
             />
-            <p className={currentWeatherCSS.desc}>{current.weather[0].main}</p>
-            <p className={currentWeatherCSS.temp}>
+
+            <p>
               {current.temp} {units.temp}
             </p>
+            <p>{current.weather[0].main}</p>
           </div>
+
+          <hr className={weatherCards.line} />
+
           <h4>Visibility</h4>
           <p>{current.visibility} m</p>
+
+          <hr className={weatherCards.line} />
 
           <h4>Wind</h4>
           <p>

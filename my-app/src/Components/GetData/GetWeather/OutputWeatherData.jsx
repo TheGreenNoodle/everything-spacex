@@ -7,6 +7,8 @@ import GetCurrent from "./Data/GetCurrent";
 import GetHourly from "./Data/GetHourly";
 import GetDaily from "./Data/GetDaily";
 
+//CSS
+import outputWeatherCSS from "../../../CSS/Weather/outputWeather.module.css";
 function OutputWeatherData(props) {
   const [data, setData] = useState({});
 
@@ -23,11 +25,16 @@ function OutputWeatherData(props) {
       ) : (
         <div>
           <h1>{props.city}</h1>
-          <GetCurrent data={data.getCurrent} unit={props.unit} />
-          <h1>Next 14 hours</h1>
-          <GetHourly data={data.getHourly} unit={props.unit} numToGet={14} />
+
+          <div className={outputWeatherCSS.scroll}>
+            <GetCurrent data={data.getCurrent} unit={props.unit} />
+            <GetHourly data={data.getHourly} unit={props.unit} numToGet={14} />
+          </div>
           <h1>7 day forecast</h1>
-          <GetDaily data={data.getDaily} unit={props.unit} />
+
+          <div>
+            <GetDaily data={data.getDaily} unit={props.unit} />
+          </div>
         </div>
       )}
     </div>
