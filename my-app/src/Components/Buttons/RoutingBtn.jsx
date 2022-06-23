@@ -2,8 +2,8 @@
 import { useNavigate } from "react-router";
 
 //CSS
-import infoBtn from "../CSS/Buttons/infoBtn.module.css";
-function InfoBtn(props) {
+import routing from "../../CSS/Buttons/btn.module.css";
+function Routing(props) {
   const navigate = useNavigate();
 
   function handleClick() {
@@ -19,11 +19,11 @@ function InfoBtn(props) {
 
   return (
     <div>
-      <button onClick={handleClick} type="button" className={infoBtn.btn}>
+      <button onClick={handleClick} type="button" className={routing.btn}>
         LEARN MORE
       </button>
     </div>
   );
 }
 
-export default InfoBtn;
+export default Routing;

@@ -1,39 +1,51 @@
 // Components
 import { useEffect, useState } from "react";
+
 // Custom Components
 import GetData from "./Data/WeatherData";
-
-import GetCurrent from "./Data/GetCurrent";
-import GetHourly from "./Data/GetHourly";
+import CurrentAndHourly from "./Data/CurrentAndHourly";
 import GetDaily from "./Data/GetDaily";
 
+//Loading Animation
+import LoadingScreen from "../LoadingScreen";
+
 //CSS
-import outputWeatherCSS from "../../../CSS/Weather/outputWeather.module.css";
+import outputWeather from "../../../CSS/Weather/outputWeather.module.css";
+
 function OutputWeatherData(props) {
   const [data, setData] = useState({});
+  const [gotData, setGotData] = useState(false);
 
   useEffect(() => {
-    GetData({ setData, props });
+    GetData({ setData, setGotData, props });
   }, []);
 
   return (
     <div>
-      {!data ? (
+      {!gotData ? (
         <div>
-          <p>Loading...</p>
+          <LoadingScreen />
         </div>
       ) : (
-        <div>
-          <h1>{props.city}</h1>
+        <div className={outputWeather.box}>
+          <h1 className={outputWeather.headers}>{props.city}</h1>
 
-          <div className={outputWeatherCSS.scroll}>
-            <GetCurrent data={data.getCurrent} unit={props.unit} />
-            <GetHourly data={data.getHourly} unit={props.unit} numToGet={14} />
-          </div>
-          <h1>7 day forecast</h1>
+          <CurrentAndHourly
+            gotData={gotData}
+            getCurrent={data.getCurrent}
+            getHourly={data.getHourly}
+            unit={props.unit}
+            numToGet={14}
+          />
+
+          <h1 className={outputWeather.headers}>7 Days</h1>
 
           <div>
-            <GetDaily data={data.getDaily} unit={props.unit} />
+            <GetDaily
+              gotData={gotData}
+              data={data.getDaily}
+              unit={props.unit}
+            />
           </div>
         </div>
       )}

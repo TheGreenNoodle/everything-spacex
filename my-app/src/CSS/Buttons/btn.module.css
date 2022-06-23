@@ -13,3 +13,16 @@
   background-color: white;
   color: black;
 }
+
+.text {
+  width: 70%;
+  max-height: 200px;
+  padding: 10px;
+
+  margin: 30px auto;
+  overflow: auto;
+
+  border-style: solid;
+  color: white;
+  border-radius: 5px;
+}

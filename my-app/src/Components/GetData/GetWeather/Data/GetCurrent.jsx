@@ -11,47 +11,39 @@ function GetCurrent(props) {
   };
 
   return (
-    <div>
-      {!current ? (
-        <div>
-          <p>Loading...</p>
-        </div>
-      ) : (
-        <div className={weatherCards.currentBox}>
-          <h2 className={weatherCards.forecastTime}>Current Forecast</h2>
+    <div className={weatherCards.box}>
+      <h2 className={weatherCards.forecastTime}>Current</h2>
 
-          <hr className={weatherCards.line} />
+      <hr className={weatherCards.line} />
 
-          <div className={weatherCards.iconGroup}>
-            <img
-              src={
-                "https://openweathermap.org/img/wn/" +
-                current.weather[0].icon +
-                "@2x.png"
-              }
-              alt="weather-icon"
-            />
+      <div className={weatherCards.iconGroup}>
+        <img
+          src={
+            "https://openweathermap.org/img/wn/" +
+            current.weather[0].icon +
+            "@2x.png"
+          }
+          alt="weather-icon"
+        />
 
-            <p>
-              {current.temp} {units.temp}
-            </p>
-            <p>{current.weather[0].main}</p>
-          </div>
+        <p>
+          {current.temp} {units.temp}
+        </p>
+        <p>{current.weather[0].main}</p>
+      </div>
 
-          <hr className={weatherCards.line} />
+      <hr className={weatherCards.line} />
 
-          <h4>Visibility</h4>
-          <p>{current.visibility} m</p>
+      <h4>Visibility</h4>
+      <p>{current.visibility} m</p>
 
-          <hr className={weatherCards.line} />
+      <hr className={weatherCards.line} />
 
-          <h4>Wind</h4>
-          <p>
-            {current.wind_speed} {units.windSpeed}
-          </p>
-          <p>{current.wind_deg}°</p>
-        </div>
-      )}
+      <h4>Wind</h4>
+      <p>
+        {current.wind_speed} {units.windSpeed}
+      </p>
+      <p>{current.wind_deg}°</p>
     </div>
   );
 }

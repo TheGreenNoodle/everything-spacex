@@ -8,7 +8,6 @@ function VehicleDemo() {
   const { state } = useLocation();
   const { title, text, vidUrl } = state; // Read values passed on state
 
-  console.log(state);
   return (
     <div>
       <HeadingGroup title={title} />

@@ -15,17 +15,16 @@ Has a section that explains what SpaceX dose and what there goals are.
 # Road map
 
 1.  Add button that allows unit change weather app NOT DONE
-2.  Make it so user can switch between youtubers for news on SpaceX NOT DONE.
-3.  Add drop down for description on YouTube videos. NOT DONE
-4.  Allow user to switch between three different YouTube channels on news NOT DONE.
-5.  Start working on the CSS. NOT DONE
+2.  Clean up code NOT DONE.
+3.  Add footer or allow user to click 3 time on title to see code NOT DONE.
+4.  Start working on the CSS. NOT DONE
+5.  Make weather app have a carousel not scroll bar. NOT DONE
 6.  Add all the text to variables so it is easier to read. NOT DONE.
 7.  Work on responsiveness. NOT DONE
-8.  Make launch vehicle route video player look better NOT DONE.
-9.  Remove all the logs. NOT DONE
-10. Optimize site and fix warnings NOT DONE
-11. Add Heroku URL to README. NOT DONE
-12. Restrict API key usage to only Heroku domain.
+8.  Remove all the logs. NOT DONE
+9.  Optimize site and fix warnings NOT DONE
+10. Add Heroku URL to README. NOT DONE
+11. Restrict API key usage to only Heroku domain.
 
 # Route page information
 

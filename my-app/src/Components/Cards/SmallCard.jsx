@@ -1,5 +1,5 @@
 // Custom Components
-import InfoBtn from "../InfoBtn";
+import MoreInfo from "../Buttons/RoutingBtn";
 // CSS
 import smallCard from "../../CSS/Cards/smallCard.module.css";
 
@@ -12,7 +12,7 @@ function SmallCard(props) {
         <img className={smallCard.img} src={props.src} alt={props.alt} />
       ) : null}
       {props.btn ? (
-        <InfoBtn
+        <MoreInfo
           title={props.title}
           text={props.text}
           route={props.route}

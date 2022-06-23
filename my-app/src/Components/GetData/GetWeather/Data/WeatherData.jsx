@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-function WeatherData({ setData, props }) {
+function WeatherData({ setData, setGotData, props }) {
   const options = {
     method: "GET",
     url: "/api/weather",
@@ -15,12 +15,16 @@ function WeatherData({ setData, props }) {
   axios
     .request(options)
     .then((response) => {
-      setData({
-        getCurrent: response.data.current,
-        getHourly: response.data.hourly,
-        getDaily: response.data.daily,
-      });
+      setTimeout(() => {
+        setData({
+          getCurrent: response.data.current,
+          getHourly: response.data.hourly,
+          getDaily: response.data.daily,
+        });
+        setGotData(true);
+      }, 1000);
     })
+
     .catch((error) => {
       console.error(error);
     });

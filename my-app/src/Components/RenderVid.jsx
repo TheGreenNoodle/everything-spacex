@@ -1,13 +1,20 @@
+//Components
 import ReactPlayer from "react-player/lazy";
 
 // CSS
 import renderVid from "../CSS/Proflies/renderVid.module.css";
 
-let toggle = false;
 function RenderVid(props) {
   return (
+    //add loading for when video dose not come in.
     <div className={renderVid.vidBox}>
-      <h2>{props.title}</h2>
+      {props.hasHeader ? (
+        <div>
+          <h3 className={renderVid.header}>{props.title}</h3>
+          <hr className={renderVid.line} />
+        </div>
+      ) : null}
+
       <ReactPlayer
         className={renderVid.vidPlayer}
         controls={props.controls}
@@ -19,6 +26,7 @@ function RenderVid(props) {
         height={renderVid.vidPlayer}
         width={renderVid.vidPlayer}
       />
+
       <p>{props.desc}</p>
     </div>
   );

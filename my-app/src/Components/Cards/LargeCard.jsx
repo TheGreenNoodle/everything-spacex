@@ -1,5 +1,5 @@
 // Custom Components
-import InfoBtn from "../InfoBtn";
+import MoreInfo from "../Buttons/RoutingBtn";
 // CSS
 import cardCss from "../../CSS/Cards/largeCard.module.css";
 
@@ -9,7 +9,7 @@ function LargeCard(props) {
       <h2 className={cardCss.title}>{props.title}</h2>
       <img className={cardCss.img} src={props.src} alt={props.alt} />
       <p className={cardCss.text}>{props.text}</p>
-      {props.hasRoute ? <InfoBtn route={props.route} /> : null}
+      {props.hasRoute ? <MoreInfo route={props.route} /> : null}
     </div>
   );
 }

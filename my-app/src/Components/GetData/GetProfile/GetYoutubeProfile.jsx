@@ -1,21 +1,26 @@
 //Components
 import axios from "axios";
 import { useEffect, useState } from "react";
+
+//Loading Animation
+import LoadingScreen from "../LoadingScreen";
+
 //Custom Components
 import GetData from "./Data/YoutubeData";
 import RenderVid from "../../RenderVid";
 
 function GetYoutubeProfile(props) {
   const [profileData, setProfileData] = useState([]);
+  const [gotData, setGotData] = useState(false);
 
   useEffect(() => {
-    GetData({ setProfileData, props });
+    GetData({ setProfileData, setGotData, props });
   }, []);
 
   return (
     <div>
-      {!setProfileData ? (
-        <p>Loading...</p>
+      {!gotData ? (
+        <LoadingScreen />
       ) : (
         <div>
           {profileData.map((data, index) => (
@@ -28,7 +33,7 @@ function GetYoutubeProfile(props) {
                 onlyThumbNail={true}
                 vidId={data.snippet.resourceId.videoId}
                 title={data.snippet.title}
-                desc={data.snippet.description}
+                hasHeader={true}
               />
             </div>
           ))}
