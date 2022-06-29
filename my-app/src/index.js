@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //Pages
 import Home from "./Pages/Home";
-import Goals from "./Pages/Goals";
+import Mission from "./Pages/Mission";
 //Launch vehicles and launch vehicle subpaths
 import LaunchVehicles from "./Pages/Launch-Vehicles/LaunchVehicles";
 import VehicleDemo from "./Pages/Launch-Vehicles/VehicleDemo";
@@ -29,7 +29,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/goals" element={<Goals />} />
+        <Route path="/mission" element={<Mission />} />
         //Launch vehicles and launch vehicle subpaths
         <Route path="/launch-vehicles" element={<LaunchVehicles />} />
         <Route path="/vehicle-demo" element={<VehicleDemo />} />

@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
@@ -13,8 +17,8 @@
     "react-collapse": "^5.1.1",
     "react-dom": "^18.1.0",
     "react-loader-spinner": "^5.1.5",
+    "react-multi-carousel": "^2.8.2",
     "react-player": "^2.10.1",
-    "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
     "react-twitter-embed": "^4.0.4",
     "web-vitals": "^2.1.4"

@@ -1,3 +1,5 @@
+import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
+
 function unixToDate(time) {
   const unix_timestamp = time;
   // Create a new JavaScript Date object based on the timestamp
@@ -33,9 +35,12 @@ function unixToDate(time) {
   const dayNum = date.getDate();
   const dayText = weekArray[date.getDay()];
 
-  const formattedDate = dayText + " " + month + " " + dayNum;
-
-  return formattedDate;
+  return (
+    <div>
+      <p className={weatherCards.forecastText}>{dayText}</p>
+      <p className={weatherCards.forecastText}>{month + " " + dayNum}</p>
+    </div>
+  );
 }
 
 export default unixToDate;

@@ -12,7 +12,7 @@ function GetCurrent(props) {
 
   return (
     <div className={weatherCards.box}>
-      <h2 className={weatherCards.forecastTime}>Current</h2>
+      <h2 className={weatherCards.forecastDiv}>Current</h2>
 
       <hr className={weatherCards.line} />
 

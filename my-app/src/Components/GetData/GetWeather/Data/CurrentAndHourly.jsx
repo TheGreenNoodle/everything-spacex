@@ -2,10 +2,10 @@ import unixToTime from "../Functions/unixToTime";
 
 //Components
 import GetCurrent from "./GetCurrent";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from "react-multi-carousel";
 
 //CSS
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-multi-carousel/lib/styles.css";
 import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
 
 function CurrentAndHourly(props) {
@@ -17,16 +17,42 @@ function CurrentAndHourly(props) {
     windSpeed: unitsImperial ? "mph" : "m/s",
   };
 
+  //Put in css file later
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <div>
-      <Carousel>
+      <Carousel
+        minimumTouchDrag={1}
+        arrows={false}
+        className={weatherCards.carousel}
+        responsive={responsive}
+      >
         <div>
           <GetCurrent data={props.getCurrent} unit={props.unit} />
         </div>
 
         {hourly.slice(1, props.numToGet + 1).map((data, index) => (
           <div key={index} className={weatherCards.box}>
-            <h2 className={weatherCards.forecastTime}>{unixToTime(data.dt)}</h2>
+            <h2 className={weatherCards.forecastDiv}>{unixToTime(data.dt)}</h2>
 
             <hr className={weatherCards.line} />
 

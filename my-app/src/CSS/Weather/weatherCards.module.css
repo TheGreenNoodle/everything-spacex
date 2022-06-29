@@ -2,20 +2,38 @@
   border-radius: 5px;
   border-width: thick;
   border-style: solid;
-
   color: white;
 
   display: inline-block;
 
   width: 200px;
 
-  margin: 5px 15px;
+  margin: 5px 0;
+
+  /* No text highlighting */
+  /* Chrome */
+  user-select: none;
+  /* Firefox */
+  -moz-user-select: none;
+  /* Safari */
+  -webkit-user-select: none;
+  /* IOS */
+  -webkit-touch-callout: none;
+  /* IE Edge */
+  -ms-user-select: none;
 }
 
-.forecastTime {
+.carousel {
+  width: 50%;
+  margin: auto;
+}
+
+.forecastDiv {
   margin: 5px 0 0;
-  padding: 0 5px;
-  white-space: normal;
+  padding: 0 10px;
+}
+.forecastText {
+  margin: 0;
 }
 
 .line {
@@ -35,13 +53,4 @@
 
 .makeInline {
   display: inline-block;
-}
-
-.scroll {
-  width: 50%;
-  margin: auto;
-
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
 }

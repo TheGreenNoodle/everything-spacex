@@ -1,0 +1,19 @@
+.div {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+  color: gray;
+}
+
+.link:hover {
+  color: white;
+}
+
+.iconText {
+  margin: 0;
+  font-weight: bold;
+}

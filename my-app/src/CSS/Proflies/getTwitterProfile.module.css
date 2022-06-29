@@ -18,12 +18,9 @@
   margin: 20px auto;
 }
 
-.timeline {
+.timelineBox {
   height: 500px;
   margin: 20px;
 
   overflow: auto;
-}
-.timeline::-webkit-scrollbar {
-  width: 0;
 }

@@ -9,8 +9,8 @@ function NavBar() {
       <Link className={navBar.text} to="/">
         Home
       </Link>
-      <Link className={navBar.text} to="/goals">
-        Goals
+      <Link className={navBar.text} to="/mission">
+        Mission
       </Link>
       <Link className={navBar.text} to="/launch-vehicles">
         Launch Vehicles

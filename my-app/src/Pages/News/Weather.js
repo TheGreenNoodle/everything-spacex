@@ -2,6 +2,7 @@ import { useLocation } from "react-router";
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
 import OutputData from "../../Components/GetData/GetWeather/OutputWeatherData";
+import Footer from "../../Components/Footer/Footer";
 
 function Weather() {
   const { state } = useLocation();
@@ -23,6 +24,7 @@ function Weather() {
         lon="-90.1994"
         unit={toggleUnit}
       />
+      <Footer />
     </div>
   );
 }

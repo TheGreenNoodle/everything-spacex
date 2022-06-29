@@ -1,12 +1,7 @@
 .box {
-  border-style: solid;
-  border-radius: 5px;
-  border-width: thick;
-
   color: white;
   padding: 30px;
   margin: 0 auto 20px;
-  width: 50%;
 }
 
 .title {
@@ -17,7 +12,18 @@
 }
 
 .img {
-  border-radius: 2px;
-  height: 200px;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+
+  object-fit: cover;
+
   margin: 30px auto;
+}
+
+@media (min-width: 1300px) {
+  .text {
+    /* font */
+    padding: 0 50px;
+  }
 }

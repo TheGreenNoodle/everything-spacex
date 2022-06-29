@@ -6,8 +6,8 @@ import smallCard from "../../CSS/Cards/smallCard.module.css";
 function SmallCard(props) {
   return (
     <div className={smallCard.box}>
-      <h2>{props.title}</h2>
-      <p>{props.subTitle}</p>
+      <h3 className={smallCard.title}>{props.title}</h3>
+      <p className={smallCard.text}>{props.subTitle}</p>
       {props.hasImg ? (
         <img className={smallCard.img} src={props.src} alt={props.alt} />
       ) : null}

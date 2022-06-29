@@ -1,7 +1,9 @@
 import { useLocation } from "react-router";
+
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup";
 import RenderVid from "../../Components/RenderVid";
+import Footer from "../../Components/Footer/Footer";
 
 function VehicleDemo() {
   // Data from InfoBtn.jsx
@@ -20,6 +22,7 @@ function VehicleDemo() {
         vidId={vidUrl}
         desc={text}
       />
+      <Footer />
     </div>
   );
 }

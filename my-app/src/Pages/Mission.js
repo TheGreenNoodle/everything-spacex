@@ -1,11 +1,12 @@
 // Custom Components
 import HeadingGroup from "../Components/Heading/HeadingGroup";
 import SmallCard from "../Components/Cards/SmallCard";
+import Footer from "../Components/Footer/Footer";
 
-function Goals() {
+function Mission() {
   return (
     <div>
-      <HeadingGroup title={"Goals"} />
+      <HeadingGroup title={"Mission"} />
       <SmallCard
         title={"title"}
         subTitle={
@@ -30,7 +31,8 @@ function Goals() {
         btn={false}
         hasImg={false}
       />
+      <Footer />
     </div>
   );
 }
-export default Goals;
+export default Mission;

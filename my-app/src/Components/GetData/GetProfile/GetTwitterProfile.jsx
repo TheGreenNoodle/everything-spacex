@@ -19,8 +19,9 @@ function GetTwitterProfile(props) {
         @{props.username}
       </h1>
 
-      <div className={getProfile.timeline}>
+      <div className={getProfile.timelineBox}>
         <TwitterTimelineEmbed
+          theme="dark"
           sourceType="profile"
           screenName={props.username}
           options={{ width: 400 }}

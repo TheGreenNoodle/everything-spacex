@@ -1,6 +1,9 @@
 import { useLocation } from "react-router";
+
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
+import Footer from "../../Components/Footer/Footer";
+
 //Get Profiles
 import GetTwitterProfile from "../../Components/GetData/GetProfile/GetTwitterProfile";
 import GetYoutubeProfile from "../../Components/GetData/GetProfile/GetYoutubeProfile";
@@ -40,6 +43,7 @@ function Updates() {
           <GetYoutubeProfile channelId="UC1XvxnHFtWruS9egyFasP1Q" />
         </div>
       )}
+      <Footer />
     </div>
   );
 }

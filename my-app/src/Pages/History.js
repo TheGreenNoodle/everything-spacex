@@ -1,6 +1,7 @@
 // Custom Components
 import HeadingGroup from "../Components/Heading/HeadingGroup.jsx";
 import LargeCard from "../Components/Cards/LargeCard";
+import Footer from "../Components/Footer/Footer";
 
 function History() {
   return (
@@ -13,6 +14,7 @@ function History() {
         hasRoute={false}
         alt="mars-img"
       />
+      <Footer />
     </div>
   );
 }
