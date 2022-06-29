@@ -17,13 +17,14 @@ Has a section that explains what SpaceX dose and what there goals are.
 1.  Add button that allows unit change weather app NOT DONE
 2.  Make weather app scroll better. NOT DONE.
 3.  Clean up code NOT DONE.
-4.  Change favicon NOT DONE.
-5.  Add all the text to variables so it is easier to read. NOT DONE.
-6.  Work on responsiveness. NOT DONE
-7.  Remove all the logs. NOT DONE
-8.  Optimize site and fix warnings NOT DONE
-9.  Add Heroku URL to README. NOT DONE
-10. Restrict API key usage to only Heroku domain.
+4.  Download all img files. Make sure they are high res. NOT DONE.
+5.  Change favicon NOT DONE.
+6.  Add all the text to variables so it is easier to read. NOT DONE.
+7.  Work on responsiveness. NOT DONE
+8.  Remove all the logs. NOT DONE
+9.  Optimize site and fix warnings NOT DONE
+10. Add Heroku URL to README. NOT DONE
+11. Restrict API key usage to only Heroku domain.
 
 # Route page information
 

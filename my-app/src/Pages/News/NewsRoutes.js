@@ -10,7 +10,7 @@ function News() {
       <SmallCard
         title="Twitter"
         subTitle="Latest from Twitter"
-        route="/updates"
+        route="/news/twitter"
         btn={true}
         hasImg={true}
         src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=730&crop=1"
@@ -19,7 +19,7 @@ function News() {
       <SmallCard
         title="Weather"
         subTitle="At launch sites"
-        route="/weather"
+        route="/news/weather"
         btn={true}
         hasImg={true}
         src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=730&crop=1"
@@ -28,7 +28,7 @@ function News() {
       <SmallCard
         title="YouTube"
         subTitle="Latest from YouTube"
-        route="/updates"
+        route="/news/youtube"
         btn={true}
         hasImg={true}
         src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=730&crop=1"

@@ -10,38 +10,17 @@ function Home() {
   return (
     <div>
       <HeadingGroup title={"Home"} />
-      <LargeCard
-        title="Mission"
-        text={homeContent.mission.content}
-        hasRoute={true}
-        route="/mission"
-        src={homeContent.mission.imgSrc}
-        alt={homeContent.mission.imgAlt}
-      />
-      <LargeCard
-        title="Launch Vehicles"
-        text={homeContent.launchVehicles.content}
-        hasRoute={true}
-        route="/launch-vehicles"
-        src={homeContent.launchVehicles.imgSrc}
-        alt={homeContent.launchVehicles.imgAlt}
-      />
-      <LargeCard
-        title="News"
-        text={homeContent.news.content}
-        hasRoute={true}
-        route="/news"
-        src={homeContent.news.imgSrc}
-        alt={homeContent.news.imgAlt}
-      />
-      <LargeCard
-        title="History"
-        text={homeContent.history.content}
-        hasRoute={true}
-        route="/history"
-        src={homeContent.history.imgSrc}
-        alt={homeContent.history.imgAlt}
-      />
+      {homeContent.map((data, index) => (
+        <LargeCard
+          key={index}
+          title={data.title}
+          text={data.content}
+          hasRoute={true}
+          route={data.route}
+          src={data.imgSrc}
+          alt={data.imgAlt}
+        />
+      ))}
       <Footer />
     </div>
   );

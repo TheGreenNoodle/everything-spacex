@@ -10,7 +10,8 @@ import LaunchVehicles from "./Pages/Launch-Vehicles/LaunchVehicles";
 import VehicleDemo from "./Pages/Launch-Vehicles/VehicleDemo";
 //News and news subpaths.
 import News from "./Pages/News/NewsRoutes";
-import Updates from "./Pages/News/Updates";
+import Youtube from "./Pages/News/Youtube";
+import Twitter from "./Pages/News/Twitter";
 import Weather from "./Pages/News/Weather";
 import History from "./Pages/History";
 //Testing
@@ -32,11 +33,12 @@ root.render(
         <Route path="/mission" element={<Mission />} />
         //Launch vehicles and launch vehicle subpaths
         <Route path="/launch-vehicles" element={<LaunchVehicles />} />
-        <Route path="/vehicle-demo" element={<VehicleDemo />} />
+        <Route path="/launch-vehicles/vehicle-demo" element={<VehicleDemo />} />
         //News and news subpaths.
         <Route path="/news" element={<News />} />
-        <Route path="/updates" element={<Updates />} />
-        <Route path="/weather" element={<Weather />} />
+        <Route path="/news/twitter" element={<Twitter />} />
+        <Route path="/news/youtube" element={<Youtube />} />
+        <Route path="/news/weather" element={<Weather />} />
         <Route path="/history" element={<History />} />
       </Routes>
     </BrowserRouter>
