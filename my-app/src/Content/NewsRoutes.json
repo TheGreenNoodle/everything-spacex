@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Twitter",
+    "subTitle": "Latest from Twitter",
+    "route": "/news/twitter",
+    "imgSrc": "https://i2-prod.birminghammail.co.uk/incoming/article18471307.ece/ALTERNATES/s1200c/1_Twitter-new-icon-mobile-app.jpg",
+    "imgAlt": "img-twitter-logo"
+  },
+  {
+    "title": "Weather",
+    "subTitle": "At launch sites",
+    "route": "/news/weather",
+    "imgSrc": "https://i.pinimg.com/originals/06/c4/f7/06c4f70ec5931e2342e703e8a3f0a253.png",
+    "imgAlt": "img-weather-logo"
+  },
+  {
+    "title": "YouTube",
+    "subTitle": "Latest from YouTube",
+    "route": "/news/youtube",
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/YouTube_social_red_square_%282017%29.svg/2048px-YouTube_social_red_square_%282017%29.svg.png",
+    "imgAlt": "img-youtube-logo"
+  }
+]

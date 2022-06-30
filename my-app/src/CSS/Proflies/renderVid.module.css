@@ -1,10 +1,8 @@
-.vidBox {
-  width: 50%;
-  margin: 0 auto;
-  padding: 10px;
-
-  color: white;
+.desc {
+  width: 600px;
+  margin: auto;
 }
+
 .header {
   font-size: 20px;
   width: 370px;
@@ -33,4 +31,46 @@
   height: 400px;
   width: 600px;
   margin: 20px auto;
+}
+
+.vidBox {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+
+  color: white;
+}
+
+/* Laptop/Tablet */
+@media (max-width: 1270px) and (min-width: 768px) {
+  .vidPlayer {
+    height: 300px;
+    width: 400px;
+  }
+  .desc {
+    width: 100px;
+    margin: auto;
+  }
+}
+/* Large/Medium Mobile */
+@media (max-width: 767px) and (min-width: 380px) {
+  .vidPlayer {
+    height: 100px;
+    width: 200px;
+  }
+  .desc {
+    width: 100px;
+    margin: auto;
+  }
+}
+/* Small Mobile */
+@media (max-width: 375px) {
+  .vidPlayer {
+    height: 75px;
+    width: 120px;
+  }
+  .desc {
+    width: 100px;
+    margin: auto;
+  }
 }

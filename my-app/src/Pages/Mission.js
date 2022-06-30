@@ -12,6 +12,7 @@ function Mission() {
       <HeadingGroup title={"Mission"} />
       {missionContent.map((data, index) => (
         <SmallCard
+          key={index}
           title={data.title}
           subTitle={data.text}
           btn={false}

@@ -12,6 +12,9 @@ import spacexPic from "../../Images/spacexPic.jpg";
 import elonPic from "../../Images/elon.jpeg";
 import bocaGal from "../../Images/boca-chica-gal.jpg";
 
+//CSS
+import getProfile from "../../CSS/Proflies/getTwitterProfile.module.css";
+
 function Twitter() {
   const { state } = useLocation();
   const { title, text } = state; // Read values passed on state
@@ -19,21 +22,29 @@ function Twitter() {
   return (
     <div>
       <HeadingGroup title={title} />
-      <GetTwitterProfile
-        username="SpaceX"
-        url="https://twitter.com/spacex"
-        profilePic={spacexPic}
-      />
-      <GetTwitterProfile
-        username="BocaChicaGal"
-        url="https://twitter.com/BocaChicaGal"
-        profilePic={bocaGal}
-      />
-      <GetTwitterProfile
-        username="elonmusk"
-        url="https://twitter.com/elonmusk/status/1529869999803965446"
-        profilePic={elonPic}
-      />
+      <div className={getProfile.parentDiv}>
+        <GetTwitterProfile
+          username="SpaceX"
+          url="https://twitter.com/spacex"
+          profilePic={spacexPic}
+        />
+      </div>
+
+      <div className={getProfile.parentDiv}>
+        <GetTwitterProfile
+          username="BocaChicaGal"
+          url="https://twitter.com/BocaChicaGal"
+          profilePic={bocaGal}
+        />
+      </div>
+
+      <div className={getProfile.parentDiv}>
+        <GetTwitterProfile
+          username="elonmusk"
+          url="https://twitter.com/elonmusk/status/1529869999803965446"
+          profilePic={elonPic}
+        />
+      </div>
       <Footer />
     </div>
   );

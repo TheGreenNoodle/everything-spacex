@@ -14,11 +14,13 @@
   color: white;
 }
 .img {
-  width: 70%;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
 
-  border-radius: 2px;
+  object-fit: cover;
 
-  margin-bottom: 16px;
+  margin: 30px auto;
 }
 .title {
   margin: 0 0 10px;

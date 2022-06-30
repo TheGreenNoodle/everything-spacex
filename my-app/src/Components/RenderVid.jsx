@@ -27,7 +27,7 @@ function RenderVid(props) {
         width={renderVid.vidPlayer}
       />
 
-      <p>{props.desc}</p>
+      <p className={renderVid.desc}>{props.desc}</p>
     </div>
   );
 }

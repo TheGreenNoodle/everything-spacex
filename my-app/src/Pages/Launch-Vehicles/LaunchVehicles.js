@@ -29,7 +29,7 @@ function LaunchVehicles() {
       </div>
       {vehiclesContent.slice(2, 4).map((data, index) => (
         <SmallCard
-          key={index}
+          key={index + 2}
           title={data.title}
           subTitle={data.subTitle}
           text={data.text}

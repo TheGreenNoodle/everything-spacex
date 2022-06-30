@@ -1,0 +1,98 @@
+[
+  {
+    "year": "2002",
+    "text": "SpaceX founding.",
+    "imgSrc": "https://pbs.twimg.com/media/EQI_l5uUcAAUsPy.jpg",
+    "imgAlt": "img-spacex-mariachi"
+  },
+  {
+    "year": "2003-2004",
+    "text": "SpaceX begins the development of Falcon 1.",
+    "imgSrc": "https://spacenews.com/wp-content/uploads/2016/08/falcon1-flight5.jpg",
+    "imgAlt": "img-spacex-falcon-one"
+  },
+  {
+    "year": "2005",
+    "text": "SpaceX announces plans to start Dragon Spacecraft development.",
+    "imgSrc": "https://i2-prod.coventrytelegraph.net//article18316899.ece/ALTERNATES/s1200c/0_Spacex-rocketJPG.jpg",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2006-2008",
+    "text": "SpaceX fails to reach orbit with Falcon 1. This resulted in three crashes almost causing the company to go bankrupt.",
+    "imgSrc": "https://techobig.com/wp-content/uploads/2021/09/The-first-test-launch-of-the-FireFly-Alpha-rocket-ended.jpg",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2009",
+    "text": "Falcon 1 successfully reaches orbit making it the first-ever privately funded space craft to do so. Falcon 1 was retired after this in favor of the development of Falcon 9.",
+    "imgSrc": "https://image.cnbcfm.com/api/v1/image/106828643-1611335582583-Trans1-3687.jpg?v=1611335643&w=929&h=523&ffmt=webp",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2010",
+    "text": "The first launch of the Falcon 9 prototype and mock-up of the Dragon. ",
+    "imgSrc": "http://www.nasa.gov/sites/default/files/thumbnails/image/nhq202005210007_0.jpg",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2011",
+    "text": "SpaceX begins development on inflight abort for the Dragon.",
+    "imgSrc": "http://spaceflightnow.com/wp-content/uploads/2016/04/13096354_10157374125640131_4596613280549138563_n.jpg",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2012",
+    "text": "Dragon becomes first commercial spacecraft to resupply the ISS.",
+    "imgSrc": "https://www.nasaspaceflight.com/wp-content/uploads/2021/07/lead-1.jpg",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2013-2014",
+    "text": "Frist commercial flight.",
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/9/91/SpaceX_Crew_Dragon_%28tight_crop%29.jpg",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2015",
+    "text": "SpaceX sold 8.33% of the company to Google and Fidelity and began the development of Satellite internet.",
+    "imgSrc": "https://directory.eoportal.org/documents/163813/5762113/CrewDragon_Auto1F.jpeg",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2016",
+    "text": "The first successful landing of the Falcon 9 on a drone ship.",
+    "imgSrc": "https://spacexfleet.com/wp-content/uploads/2020/05/ocisly.jpg",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2017",
+    "text": "Falcon 9 was resued and successfully landed again.",
+    "imgSrc": "https://cdn.mos.cms.futurecdn.net/P6Qy9QgewcweJpsXjG2tzL.jpg",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2018",
+    "text": "100 successful launches.",
+    "imgSrc": "https://www.spacex.com/static/images/content/fh_performance.jpg",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2019",
+    "text": "Starship prototype construction begins.",
+    "imgSrc": "https://image.cnbcfm.com/api/v1/image/107034235-1647891873048-spacex_starship_prototypes_starbase.png?v=1647891943&w=1920&h=1080",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2020",
+    "text": "The first launch of American astronauts from American soil in 9 years.",
+    "imgSrc": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/in-this-spacex-handout-image-a-falcon-9-rocket-carrying-the-news-photo-1591219555.jpg",
+    "imgAlt": "img-spacex-dragon"
+  },
+  {
+    "year": "2021",
+    "text": "Starlink launches ramp up.",
+    "imgSrc": "https://image.cnbcfm.com/api/v1/image/106656787-1597073317356-D7THAABVUAATipL.jfif?v=1597073367",
+    "imgAlt": "img-spacex-dragon"
+  }
+]

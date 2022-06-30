@@ -1,17 +1,17 @@
-.box {
+.parentDiv {
+  display: block;
+}
+
+.componentBox {
   display: inline-block;
   color: white;
-  margin: 20px;
-
-  border-style: solid;
-  border-radius: 5px;
-  border-width: thick;
 }
 
 .img {
-  border-radius: 100%;
   width: 80px;
   margin-right: 10px;
+
+  border-radius: 5px;
 }
 
 .usernameAndImg {
@@ -20,7 +20,17 @@
 
 .timelineBox {
   height: 500px;
-  margin: 20px;
-
+  margin: 5px;
   overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.timelineBox::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.timelineBox {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

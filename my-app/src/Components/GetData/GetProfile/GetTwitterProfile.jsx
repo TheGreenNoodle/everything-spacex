@@ -9,7 +9,7 @@ import {
 import getProfile from "../../../CSS/Proflies/getTwitterProfile.module.css";
 function GetTwitterProfile(props) {
   return (
-    <div className={getProfile.box}>
+    <div className={getProfile.componentBox}>
       <h1 className={getProfile.usernameAndImg}>
         <img
           className={getProfile.img}
