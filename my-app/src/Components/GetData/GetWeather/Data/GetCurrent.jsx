@@ -1,14 +1,14 @@
+import { useState } from "react";
+
 //CSS
 import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
 
 function GetCurrent(props) {
   const current = props.data;
-  const unitsImperial = props.unit;
+  const unit = props.unit;
 
-  const units = {
-    temp: unitsImperial ? "°F" : "°C",
-    windSpeed: unitsImperial ? "mph" : "m/s",
-  };
+  const [tempUnit, setTempUnit] = useState("°C");
+  const [windUnit, setWindUnit] = useState("m/s");
 
   return (
     <div className={weatherCards.box}>
@@ -27,7 +27,7 @@ function GetCurrent(props) {
         />
 
         <p>
-          {current.temp} {units.temp}
+          {current.temp} {tempUnit}
         </p>
         <p>{current.weather[0].main}</p>
       </div>
@@ -41,9 +41,8 @@ function GetCurrent(props) {
 
       <h4>Wind</h4>
       <p>
-        {current.wind_speed} {units.windSpeed}
+        {current.wind_speed} {windUnit}
       </p>
-      <p>{current.wind_deg}°</p>
     </div>
   );
 }

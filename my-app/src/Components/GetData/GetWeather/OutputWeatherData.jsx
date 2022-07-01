@@ -17,8 +17,9 @@ function OutputWeatherData(props) {
   const [gotData, setGotData] = useState(false);
 
   useEffect(() => {
+    setGotData(false);
     GetData({ setData, setGotData, props });
-  }, []);
+  }, [props.getNewData]);
 
   return (
     <div>

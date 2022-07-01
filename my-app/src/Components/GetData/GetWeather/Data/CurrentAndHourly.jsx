@@ -10,12 +10,6 @@ import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
 
 function CurrentAndHourly(props) {
   const hourly = props.getHourly;
-  const unitsImperial = props.unit === "imperial" ? true : false;
-
-  const units = {
-    temp: unitsImperial ? "°F" : "°C",
-    windSpeed: unitsImperial ? "mph" : "m/s",
-  };
 
   //Put in css file later
   const responsive = {
@@ -66,9 +60,7 @@ function CurrentAndHourly(props) {
                 alt="weather-icon"
               />
 
-              <p>
-                {data.temp} {units.temp}
-              </p>
+              <p>{data.temp}</p>
               <p>{data.weather[0].main}</p>
             </div>
 
@@ -79,10 +71,7 @@ function CurrentAndHourly(props) {
             <hr className={weatherCards.line} />
 
             <h4>Wind</h4>
-            <p>
-              {data.wind_speed} {units.windSpeed}
-            </p>
-            <p>{data.wind_deg}°</p>
+            <p>{data.wind_speed}</p>
           </div>
         ))}
       </Carousel>

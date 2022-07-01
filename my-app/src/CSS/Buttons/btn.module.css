@@ -13,6 +13,11 @@
   background-color: white;
   color: black;
 }
+.btn:focus {
+  background-color: white;
+
+  color: black;
+}
 
 .text {
   width: 70%;

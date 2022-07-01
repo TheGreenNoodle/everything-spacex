@@ -10,11 +10,6 @@ import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
 
 function GetDaily(props) {
   const daily = props.data;
-  const unitsImperial = props.unit === "imperial" ? true : false;
-
-  const units = {
-    temp: unitsImperial ? "°F" : "°C",
-  };
 
   //Put in css file later
   const responsive = {
@@ -60,9 +55,7 @@ function GetDaily(props) {
                 }
                 alt="weather-icon"
               />
-              <p>
-                {data.temp.day} {units.temp}
-              </p>
+              <p>{data.temp.day}</p>
               <p>{data.weather[0].main}</p>
             </div>
           </div>
