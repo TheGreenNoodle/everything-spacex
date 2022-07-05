@@ -15,7 +15,7 @@ function Weather() {
   //So the data is in metric but the button says change to imperial
   //when isMetric is true.
   const [isMetric, setIsMetric] = useState(true);
-  const [unit, setUnit] = useState("");
+  const [unit, setUnit] = useState("Imperial");
 
   function handleClick() {
     isMetric ? setIsMetric(false) : setIsMetric(true);

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 //CSS
 import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
@@ -9,6 +9,11 @@ function GetCurrent(props) {
 
   const [tempUnit, setTempUnit] = useState("°C");
   const [windUnit, setWindUnit] = useState("m/s");
+
+  useEffect(() => {
+    unit === "Imperial" ? setTempUnit("°F") : setTempUnit("°C");
+    unit === "Imperial" ? setWindUnit("mph") : setWindUnit("m/s");
+  }, []);
 
   return (
     <div className={weatherCards.box}>
@@ -31,11 +36,6 @@ function GetCurrent(props) {
         </p>
         <p>{current.weather[0].main}</p>
       </div>
-
-      <hr className={weatherCards.line} />
-
-      <h4>Visibility</h4>
-      <p>{current.visibility} m</p>
 
       <hr className={weatherCards.line} />
 

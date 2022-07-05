@@ -14,9 +14,9 @@ Has a section that explains what SpaceX dose and what there goals are.
 
 # Road map
 
-1.  Add button that allows unit change weather app NOT DONE
-2.  Make weather app scroll better. NOT DONE.
-3.  Clean up code NOT DONE.
+1.  Make weather app scroll better. NOT DONE.
+2.  Clean up code NOT DONE.
+3.  Update read me
 4.  Add click animation to all buttons.
 5.  Make it so when you click on learn more button it puts user at top of screen.
 6.  Download all img files. Make sure they are high res. Optimize them NOT DONE.
