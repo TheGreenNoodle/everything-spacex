@@ -1,7 +1,8 @@
 .box {
   margin: 0 auto 20px;
+  width: 30%;
 }
 .headers {
   color: white;
-  margin: 15px 0 5px;
+  margin: 35px 0 5px;
 }

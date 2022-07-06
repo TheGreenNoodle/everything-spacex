@@ -27,6 +27,7 @@ function GetDaily(props) {
   return (
     <div>
       <Carousel
+        centerMode={true}
         minimumTouchDrag={1}
         arrows={false}
         className={weatherCards.carousel}

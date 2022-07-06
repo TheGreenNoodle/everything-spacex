@@ -7,29 +7,21 @@ function unixToDate(time) {
   const date = new Date(unix_timestamp * 1000);
   // Hours part from the timestamp
   const monthArray = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Jan,",
+    "Feb,",
+    "Mar,",
+    "Apr,",
+    "May,",
+    "Jun,",
+    "Jul,",
+    "Aug,",
+    "Sept,",
+    "Oct,",
+    "Nov,",
+    "Dec,",
   ];
 
-  const weekArray = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  const weekArray = ["Sun.", "Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat."];
 
   const month = monthArray[date.getMonth()];
   const dayNum = date.getDate();

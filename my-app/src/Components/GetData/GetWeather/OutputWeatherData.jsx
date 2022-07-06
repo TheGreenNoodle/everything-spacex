@@ -23,14 +23,13 @@ function OutputWeatherData(props) {
 
   return (
     <div>
+      <h1 className={outputWeather.headers}>{props.city}</h1>
       {!gotData ? (
         <div>
           <LoadingScreen />
         </div>
       ) : (
         <div className={outputWeather.box}>
-          <h1 className={outputWeather.headers}>{props.city}</h1>
-
           <CurrentAndHourly
             gotData={gotData}
             getCurrent={data.getCurrent}

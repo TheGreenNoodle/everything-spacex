@@ -14,18 +14,14 @@ Has a section that explains what SpaceX dose and what there goals are.
 
 # Road map
 
-1.  Make weather app scroll better. NOT DONE.
-2.  Clean up code NOT DONE.
-3.  Update read me
-4.  Add click animation to all buttons.
-5.  Make it so when you click on learn more button it puts user at top of screen.
-6.  Download all img files. Make sure they are high res. Optimize them NOT DONE.
-7.  Change favicon NOT DONE.
-8.  Work on responsiveness. NOT DONE
-9.  Remove all the logs. NOT DONE
-10. Optimize site and fix warnings NOT DONE
-11. Add Heroku URL to README. NOT DONE
-12. Restrict API key usage to only Heroku domain.
+1.  Clean up code NOT DONE.
+2.  Update read me
+3.  Download all img files. Make sure they are high res. Optimize them NOT DONE.
+4.  Work on responsiveness. NOT DONE
+5.  Remove all the logs. NOT DONE
+6.  Optimize site and fix warnings NOT DONE
+7.  Add Heroku URL to README. NOT DONE
+8.  Restrict API key usage to only Heroku domain.
 
 # Route page information
 

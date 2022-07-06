@@ -15,3 +15,24 @@
   color: white;
   border-style: none none solid;
 }
+
+/* Tablets */
+@media (max-width: 600px) {
+  .text {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  .text {
+    margin: 0 9px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 319px) {
+  .text {
+    margin: 0 5px;
+    font-size: 10px;
+  }
+}

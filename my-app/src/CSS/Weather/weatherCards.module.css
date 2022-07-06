@@ -1,9 +1,5 @@
 .box {
-  border-radius: 5px;
-  border-width: thick;
-  border-style: solid;
   color: white;
-
   display: inline-block;
 
   width: 200px;
@@ -23,8 +19,10 @@
   -ms-user-select: none;
 }
 
+.box:hover {
+}
+
 .carousel {
-  width: 50%;
   margin: auto;
 }
 
@@ -44,7 +42,7 @@
   border-width: medium;
   border-radius: 5px;
 
-  width: 50%;
+  width: 40%;
 }
 
 .iconGroup {
