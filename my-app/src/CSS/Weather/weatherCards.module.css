@@ -1,8 +1,12 @@
 .box {
+  border-style: solid;
+  border-color: #3f3f3f;
+  border-radius: 40px;
+
   color: white;
   display: inline-block;
 
-  width: 200px;
+  width: 150px;
 
   margin: 5px 0;
 
@@ -19,17 +23,11 @@
   -ms-user-select: none;
 }
 
-.box:hover {
-}
-
-.carousel {
-  margin: auto;
-}
-
-.forecastDiv {
+.forecastName {
   margin: 5px 0 0;
   padding: 0 10px;
 }
+
 .forecastText {
   margin: 0;
 }
@@ -47,8 +45,15 @@
 
 .iconGroup {
   margin: -20px 0 20px;
+  pointer-events: none;
 }
 
 .makeInline {
   display: inline-block;
+}
+
+@media (max-width: 330px) {
+  .box {
+    width: 125px;
+  }
 }

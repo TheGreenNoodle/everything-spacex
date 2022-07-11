@@ -6,12 +6,16 @@ import Footer from "../../Components/Footer/Footer";
 //Content
 import newsRoutes from "../../Content/NewsRoutes";
 
+//CSS
+import boxClasses from "../../CSS/Cards/SmallCard/boxClasses.module.css";
+
 function News() {
   return (
     <div>
       <HeadingGroup title={"News"} />
       {newsRoutes.map((data, index) => (
         <SmallCard
+          class={boxClasses.newsBox}
           key={index}
           title={data.title}
           subTitle={data.subTitle}

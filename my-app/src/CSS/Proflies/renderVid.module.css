@@ -1,76 +1,96 @@
 .desc {
-  width: 600px;
+  width: 73%;
   margin: auto;
 }
 
 .header {
-  font-size: 20px;
-  width: 370px;
+  font-size: 90%;
+  width: 70%;
   margin: auto;
 }
 
 .line {
   border-color: white;
 
-  margin: 20px auto 0;
+  margin: 20px auto;
   border-style: solid;
   border-width: medium;
   border-radius: 5px;
 
-  width: 50%;
+  width: 35%;
 }
 
 .vidPlayer {
-  color: white;
-
-  border-color: white;
-  border-style: solid;
-  border-width: thick;
-  border-radius: 5px;
-
-  height: 400px;
-  width: 600px;
-  margin: 20px auto;
+  height: 370px;
+  width: 700px;
+  margin: 0 auto 20px;
 }
 
 .vidBox {
-  width: 50%;
+  width: 75%;
+
   margin: 0 auto;
   padding: 10px;
 
   color: white;
 }
 
-/* Laptop/Tablet */
-@media (max-width: 1270px) and (min-width: 768px) {
+/* Extra Large Screens */
+@media (min-width: 1441px) {
+  .desc {
+    width: 40%;
+  }
+  .header {
+    font-size: 120%;
+    width: 50%;
+  }
+}
+/* larger Laptop */
+@media (max-width: 1440px) and (min-width: 1271px) {
   .vidPlayer {
     height: 300px;
+    width: 600px;
+  }
+  .desc {
+    width: 50%;
+  }
+  .header {
+    font-size: 120%;
+    width: 50%;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1270px) and (min-width: 769px) {
+  .vidPlayer {
+    height: 250px;
+    width: 500px;
+  }
+  .desc {
+    width: 60%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) and (min-width: 640px) {
+  .vidPlayer {
+    height: 200px;
     width: 400px;
   }
-  .desc {
-    width: 100px;
-    margin: auto;
-  }
 }
-/* Large/Medium Mobile */
-@media (max-width: 767px) and (min-width: 380px) {
+
+/* Large Mobile */
+@media (max-width: 639px) and (min-width: 375px) {
   .vidPlayer {
-    height: 100px;
-    width: 200px;
-  }
-  .desc {
-    width: 100px;
-    margin: auto;
+    height: 150px;
+    width: 300px;
   }
 }
+
 /* Small Mobile */
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .vidPlayer {
-    height: 75px;
-    width: 120px;
-  }
-  .desc {
-    width: 100px;
-    margin: auto;
+    height: 110px;
+    width: 200px;
   }
 }

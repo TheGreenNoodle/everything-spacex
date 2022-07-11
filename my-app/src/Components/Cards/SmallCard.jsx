@@ -1,11 +1,11 @@
 // Custom Components
 import MoreInfo from "../Buttons/RoutingBtn";
 // CSS
-import smallCard from "../../CSS/Cards/smallCard.module.css";
+import smallCard from "../../CSS/Cards/SmallCard/smallCard.module.css";
 
 function SmallCard(props) {
   return (
-    <div className={smallCard.box}>
+    <div className={props.class}>
       <h3 className={smallCard.title}>{props.title}</h3>
       <p className={smallCard.text}>{props.subTitle}</p>
       {props.hasImg ? (

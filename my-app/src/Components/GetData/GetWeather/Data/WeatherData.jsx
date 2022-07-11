@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 function WeatherData({ setData, setGotData, props }) {
-  console.log(props.unit);
   const options = {
     method: "GET",
     url: "/api/weather",

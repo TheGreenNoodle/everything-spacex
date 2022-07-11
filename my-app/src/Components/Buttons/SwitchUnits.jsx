@@ -5,9 +5,9 @@ function SwitchUnits(props) {
   return (
     <div>
       <button
+        className={routing.bigBtn}
         onClick={props.handleClick}
         type="button"
-        className={routing.bigBtn}
       >
         {props.unit}
       </button>

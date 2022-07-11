@@ -1,11 +1,15 @@
 //Components
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router";
+
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
 import OutputData from "../../Components/GetData/GetWeather/OutputWeatherData";
 import Footer from "../../Components/Footer/Footer";
 import SwitchUnitsBtn from "../../Components/Buttons/SwitchUnits";
+
+//Content
+import weatherContent from "../../Content/Weather";
 
 function Weather() {
   const { state } = useLocation();
@@ -26,14 +30,17 @@ function Weather() {
     <div>
       <HeadingGroup title={title} />
       <SwitchUnitsBtn handleClick={handleClick} unit={unit} />
-      <OutputData
-        city="St Louis"
-        lat="38.6270"
-        lon="-90.1994"
-        unit={unit}
-        getNewData={isMetric}
-      />
-      //add launch sites
+
+      {weatherContent.map((data, index) => (
+        <OutputData
+          key={index}
+          site={data.site}
+          lat={data.lat}
+          lon={data.lon}
+          unit={unit}
+          getNewData={isMetric}
+        />
+      ))}
       <Footer />
     </div>
   );

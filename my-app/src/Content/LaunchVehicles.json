@@ -1,7 +1,7 @@
 [
   {
     "title": "Dragon",
-    "subTitle": "Cargo/Crew spacecraft.",
+    "subTitle": "Cargo and crew spacecraft for the ISS.",
     "text": "Dose resupply missions to the ISS. Currently, only American-made crew capsules that can shuttle astronauts to and from the ISS. Was used in the first all-civilian space flight around the world.",
     "imgSrc": "https://www.presse-citron.net/app/uploads/2021/04/SpaceX-Crew-Dragon-coupole.jpg",
     "imgAlt": "img-dragonRocket",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Falcon 9",
-    "subTitle": "Partially reusable launch vehicle.",
+    "subTitle": "A partially reusable launch vehicle.",
     "text": "Low-cost launch vehicle. The first stage is recoverable. Generates 1.7 million pounds (771,107.029 kg) of thrust.  Dramatically reduced the cost of flight to space. The cost per launch is $67 million USD. This is far lower than nonreusable rockets which can cost billions of dollars to launch.",
     "imgSrc": "https://rocketrundown.com/wp-content/uploads/2018/09/Falcon-9.jpg",
     "imgAlt": "img-falconNine",

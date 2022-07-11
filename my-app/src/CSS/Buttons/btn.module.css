@@ -28,3 +28,9 @@
   background-color: white;
   color: black;
 }
+
+@media (max-width: 829px) {
+  .bigBtn {
+    width: 55%;
+  }
+}

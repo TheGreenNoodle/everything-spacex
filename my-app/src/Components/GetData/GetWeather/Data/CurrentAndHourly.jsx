@@ -11,6 +11,7 @@ import responsive from "../../../../CSS/Weather/responsiveness";
 //CSS
 import "react-multi-carousel/lib/styles.css";
 import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
+import "../../../../CSS/Weather/carousel.css";
 
 function CurrentAndHourly(props) {
   const hourly = props.getHourly;
@@ -27,10 +28,10 @@ function CurrentAndHourly(props) {
   return (
     <div>
       <Carousel
+        itemClass="item"
         centerMode={true}
         minimumTouchDrag={1}
         arrows={false}
-        className={weatherCards.carousel}
         responsive={responsive}
       >
         <div>
@@ -39,7 +40,7 @@ function CurrentAndHourly(props) {
 
         {hourly.slice(1, props.numToGet + 1).map((data, index) => (
           <div key={index} className={weatherCards.box}>
-            <h2 className={weatherCards.forecastDiv}>{unixToTime(data.dt)}</h2>
+            <h2 className={weatherCards.forecastName}>{unixToTime(data.dt)}</h2>
 
             <hr className={weatherCards.line} />
 

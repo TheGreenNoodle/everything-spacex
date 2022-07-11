@@ -1,8 +1,52 @@
 .box {
   margin: 0 auto 20px;
-  width: 30%;
+  width: 50%;
 }
 .headers {
   color: white;
   margin: 35px 0 5px;
+}
+
+@media (max-width: 1875px) {
+  .box {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1557px) {
+  .box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1360px) {
+  .box {
+    width: 80%;
+  }
+}
+@media (max-width: 1194px) {
+  .box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .box {
+    width: 60%;
+  }
+}
+@media (max-width: 780px) {
+  .box {
+    width: 70%;
+  }
+}
+@media (max-width: 692px) {
+  .box {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .box {
+    width: 100%;
+  }
 }

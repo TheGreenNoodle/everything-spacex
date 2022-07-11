@@ -1,12 +1,12 @@
 .linkDiv {
   display: inline-block;
-  margin: 0 30px;
+  margin: 10px 90px;
 }
 
 .link {
   text-decoration: none;
   display: inline-block;
-  color: gray;
+  color: #3f3f3f;
 }
 
 .link:hover {
@@ -16,4 +16,22 @@
 .iconText {
   margin: 0;
   font-weight: bold;
+}
+
+@media (max-width: 977px) {
+  .linkDiv {
+    margin: 10px 60px;
+  }
+}
+
+@media (max-width: 869px) {
+  .linkDiv {
+    margin: 10px 50px;
+  }
+}
+
+@media (max-width: 405px) {
+  .linkDiv {
+    margin: 10px 15px;
+  }
 }

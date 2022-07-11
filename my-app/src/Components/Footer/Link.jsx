@@ -5,9 +5,7 @@ function Link(props) {
   return (
     <div className={linkCSS.linkDiv}>
       <a className={linkCSS.link} href={props.src}>
-        <p className={linkCSS.iconText}>
-          {props.icon} {props.name}
-        </p>
+        <p className={linkCSS.iconText}>{props.icon}</p>
       </a>
     </div>
   );

@@ -23,7 +23,7 @@ function OutputWeatherData(props) {
 
   return (
     <div>
-      <h1 className={outputWeather.headers}>{props.city}</h1>
+      <h1 className={outputWeather.headers}>{props.site}</h1>
       {!gotData ? (
         <div>
           <LoadingScreen />
@@ -37,8 +37,6 @@ function OutputWeatherData(props) {
             unit={props.unit}
             numToGet={14}
           />
-
-          <h1 className={outputWeather.headers}>7 Days</h1>
 
           <div>
             <GetDaily

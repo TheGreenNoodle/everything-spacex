@@ -11,6 +11,7 @@ import responsive from "../../../../CSS/Weather/responsiveness";
 //CSS
 import "react-multi-carousel/lib/styles.css";
 import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
+import "../../../../CSS/Weather/carousel.css";
 
 function GetDaily(props) {
   const daily = props.data;
@@ -27,15 +28,15 @@ function GetDaily(props) {
   return (
     <div>
       <Carousel
+        itemClass="item"
         centerMode={true}
         minimumTouchDrag={1}
         arrows={false}
-        className={weatherCards.carousel}
         responsive={responsive}
       >
         {daily.slice(1, 8).map((data, index) => (
           <div key={index} className={weatherCards.box}>
-            <h2 className={weatherCards.forecastDiv}>{unixToDate(data.dt)}</h2>
+            <h2 className={weatherCards.forecastName}>{unixToDate(data.dt)}</h2>
 
             <hr className={weatherCards.line} />
 

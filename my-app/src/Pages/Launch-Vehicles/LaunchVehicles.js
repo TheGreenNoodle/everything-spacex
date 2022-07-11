@@ -6,6 +6,9 @@ import Footer from "../../Components/Footer/Footer";
 //Content
 import vehiclesContent from "../../Content/LaunchVehicles";
 
+//CSS
+import boxClasses from "../../CSS/Cards/SmallCard/boxClasses.module.css";
+
 function LaunchVehicles() {
   return (
     <div>
@@ -14,6 +17,7 @@ function LaunchVehicles() {
       <div>
         {vehiclesContent.slice(0, 2).map((data, index) => (
           <SmallCard
+            class={boxClasses.vehiclesBox}
             key={index}
             title={data.title}
             subTitle={data.subTitle}
@@ -29,6 +33,7 @@ function LaunchVehicles() {
       </div>
       {vehiclesContent.slice(2, 4).map((data, index) => (
         <SmallCard
+          class={boxClasses.vehiclesBox}
           key={index + 2}
           title={data.title}
           subTitle={data.subTitle}

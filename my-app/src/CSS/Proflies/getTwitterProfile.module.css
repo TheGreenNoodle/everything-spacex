@@ -34,3 +34,9 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+@media (max-width: 1230px) {
+  .parentDiv {
+    display: block;
+  }
+}

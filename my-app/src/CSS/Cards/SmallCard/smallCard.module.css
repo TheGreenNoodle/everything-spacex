@@ -1,0 +1,24 @@
+.img {
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+
+  object-fit: cover;
+
+  margin: 30px auto;
+}
+
+.title {
+  margin: 0 0 10px;
+}
+
+.text {
+  margin: 0;
+}
+
+@media (max-width: 400px) {
+  .img {
+    height: 150px;
+    width: 150px;
+  }
+}
