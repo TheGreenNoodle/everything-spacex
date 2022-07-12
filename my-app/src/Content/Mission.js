@@ -1,4 +1,4 @@
-[
+const data = [
   {
     "title": "Reusability",
     "text": "Reusing rockets has been a big part of SpaceX's success. Current generation rockets are only partially reusable and require a long refurbishment process before they can launch again. While this has significantly reduced space travel costs, there are better options in the works at SpaceX. Starship is a fully reusable rocket that is in development at SpaceX. Estimated launch costs are around 2 million USD and it could possibly have a turnaround time of an hour or less."
@@ -12,3 +12,5 @@
     "text": "Once Starship is proven to be safe and reliable, SpaceX plans on sending people back to the Moon and for the first time ever to Mars. The rocket is designed to hold 100 people for the 9-month journey. It can act as a temporary housing space on the Moon and Mars while crews work on more permanent housing. It can also be refilled on Mars since it is fueled by methane."
   }
 ]
+
+export default data;

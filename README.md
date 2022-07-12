@@ -18,9 +18,10 @@ Has a section that explains what SpaceX dose and what there goals are.
 2.  Update read me
 3.  Download all img files. Make sure they are high res. Optimize them NOT DONE.
 4.  Limit api calls NOT DONE.
-5.  Optimize site and fix warnings NOT DONE
-6.  Add Heroku URL to README. NOT DONE
-7.  Restrict API key usage to only Heroku domain.
+5.  Make images not pixelated. NOT DONE.
+6.  Optimize site and fix warnings NOT DONE
+7.  Add Heroku URL to README. NOT DONE
+8.  Restrict API key usage to only Heroku domain.
 
 # Route page information
 

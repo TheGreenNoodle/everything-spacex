@@ -8,9 +8,9 @@ import Footer from "../../Components/Footer/Footer";
 import GetTwitterProfile from "../../Components/GetData/GetProfile/GetTwitterProfile";
 
 //Images
-import spacexPic from "../../Images/spacexPic.jpg";
-import elonPic from "../../Images/elon.jpeg";
-import bocaGal from "../../Images/boca-chica-gal.jpg";
+import spacexPic from "../../Images/Twitter/spacexPic.jpg";
+import elonPic from "../../Images/Twitter/elon.jpeg";
+import bocaGal from "../../Images/Twitter/boca-chica-gal.jpg";
 
 //CSS
 import getProfile from "../../CSS/Proflies/getTwitterProfile.module.css";
