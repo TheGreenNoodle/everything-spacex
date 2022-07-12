@@ -1,41 +1,40 @@
 .box {
   color: white;
+
   padding: 30px;
   margin: 0 auto 20px;
 }
 
-.title {
-  /* font */
-}
-.text {
-  /* font */
-  width: 400px;
-  margin: 0 auto 30px;
-}
-
 .img {
   border-radius: 10px;
+
   height: 300px;
   width: 300px;
 
-  object-fit: cover;
-
   margin: 30px auto;
+
+  object-fit: cover;
+}
+
+.text {
+  width: 400px;
+
+  margin: 0 auto 30px;
 }
 
 @media (min-width: 1300px) {
   .text {
-    /* font */
     padding: 0 50px;
   }
 }
 
 @media (max-width: 470px) {
-  .text {
-    width: 200px;
-  }
   .img {
     width: 200px;
     height: 200px;
+  }
+
+  .text {
+    width: 200px;
   }
 }

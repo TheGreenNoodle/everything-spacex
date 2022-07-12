@@ -32,20 +32,20 @@
   margin: 0;
 }
 
+.iconGroup {
+  margin: -20px 0 20px;
+  pointer-events: none;
+}
+
 .line {
   border-color: white;
-
-  margin: 20px auto;
   border-style: solid;
   border-width: medium;
   border-radius: 5px;
 
-  width: 40%;
-}
+  margin: 20px auto;
 
-.iconGroup {
-  margin: -20px 0 20px;
-  pointer-events: none;
+  width: 40%;
 }
 
 .makeInline {

@@ -3,11 +3,17 @@
 }
 .line {
   border-color: white;
-
-  margin: 20px auto;
   border-style: solid;
   border-width: medium;
   border-radius: 5px;
 
+  margin: 20px auto;
+
   width: 30%;
+}
+
+@media (min-width: 1440px) {
+  .line {
+    width: 20%;
+  }
 }

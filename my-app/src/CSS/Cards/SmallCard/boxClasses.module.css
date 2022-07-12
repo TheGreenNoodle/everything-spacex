@@ -1,6 +1,6 @@
+.missionBox,
 .newsBox,
-.vehiclesBox,
-.missionBox {
+.vehiclesBox {
   min-height: 375px;
   width: 35%;
 
@@ -38,35 +38,36 @@
 }
 
 @media (min-width: 1300px) {
+  .missionBox,
   .newsBox,
-  .vehiclesBox,
-  .missionBox {
+  .vehiclesBox {
     width: 20%;
     margin: 10px;
+
     display: inline-block;
   }
 }
 
 @media (max-width: 790px) {
+  .missionBox,
   .newsBox,
-  .vehiclesBox,
-  .missionBox {
+  .vehiclesBox {
     width: 50%;
   }
 }
 
 @media (max-width: 500px) {
+  .missionBox,
   .newsBox,
-  .vehiclesBox,
-  .missionBox {
+  .vehiclesBox {
     width: 70%;
   }
 }
 
 @media (max-width: 320px) {
+  .missionBox,
   .newsBox,
-  .vehiclesBox,
-  .missionBox {
+  .vehiclesBox {
     width: 80%;
   }
 }

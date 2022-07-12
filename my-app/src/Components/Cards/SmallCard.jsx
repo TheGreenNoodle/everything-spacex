@@ -1,5 +1,6 @@
 // Custom Components
 import MoreInfo from "../Buttons/RoutingBtn";
+
 // CSS
 import smallCard from "../../CSS/Cards/SmallCard/smallCard.module.css";
 

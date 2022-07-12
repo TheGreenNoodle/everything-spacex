@@ -2,15 +2,22 @@
   text-align: center;
 
   color: white;
+
   padding: 20px;
   margin: 0 auto 40px;
 }
 
-.text {
-  margin: 0 25px;
-  color: gray;
-  text-decoration: none;
+.title {
+  font-family: "Varela Round", sans-serif;
 }
+.text {
+  font-family: "Varela Round", sans-serif;
+  text-decoration: none;
+
+  margin: 0 22px;
+  color: gray;
+}
+
 .text:hover {
   color: white;
   border-style: none none solid;
@@ -30,9 +37,9 @@
   }
 }
 
-@media (max-width: 319px) {
+@media (max-width: 330px) {
   .text {
-    margin: 0 5px;
+    margin: 0 3px;
     font-size: 10px;
   }
 }

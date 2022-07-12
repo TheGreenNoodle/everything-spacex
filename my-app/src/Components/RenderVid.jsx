@@ -6,7 +6,6 @@ import renderVid from "../CSS/Proflies/renderVid.module.css";
 
 function RenderVid(props) {
   return (
-    //add loading for when video dose not come in.
     <div className={renderVid.vidBox}>
       {props.hasHeader ? (
         <div>

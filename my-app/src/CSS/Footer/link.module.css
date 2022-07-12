@@ -1,6 +1,11 @@
+.iconText {
+  margin: 0;
+  font-weight: bold;
+}
+
 .linkDiv {
   display: inline-block;
-  margin: 10px 90px;
+  margin: 10px;
 }
 
 .link {
@@ -11,27 +16,4 @@
 
 .link:hover {
   color: white;
-}
-
-.iconText {
-  margin: 0;
-  font-weight: bold;
-}
-
-@media (max-width: 977px) {
-  .linkDiv {
-    margin: 10px 60px;
-  }
-}
-
-@media (max-width: 869px) {
-  .linkDiv {
-    margin: 10px 50px;
-  }
-}
-
-@media (max-width: 405px) {
-  .linkDiv {
-    margin: 10px 15px;
-  }
 }

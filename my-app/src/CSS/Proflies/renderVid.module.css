@@ -1,28 +1,31 @@
 .desc {
+  font-family: "Varela Round", sans-serif;
+
   width: 73%;
   margin: auto;
 }
 
 .header {
   font-size: 90%;
+
   width: 70%;
   margin: auto;
 }
 
 .line {
   border-color: white;
-
-  margin: 20px auto;
   border-style: solid;
   border-width: medium;
   border-radius: 5px;
 
   width: 35%;
+  margin: 20px auto;
 }
 
 .vidPlayer {
   height: 370px;
   width: 700px;
+
   margin: 0 auto 20px;
 }
 
@@ -47,27 +50,30 @@
 }
 /* larger Laptop */
 @media (max-width: 1440px) and (min-width: 1271px) {
-  .vidPlayer {
-    height: 300px;
-    width: 600px;
-  }
   .desc {
     width: 50%;
   }
+
   .header {
     font-size: 120%;
     width: 50%;
+  }
+
+  .vidPlayer {
+    height: 300px;
+    width: 600px;
   }
 }
 
 /* Laptop */
 @media (max-width: 1270px) and (min-width: 769px) {
+  .desc {
+    width: 60%;
+  }
+
   .vidPlayer {
     height: 250px;
     width: 500px;
-  }
-  .desc {
-    width: 60%;
   }
 }
 
