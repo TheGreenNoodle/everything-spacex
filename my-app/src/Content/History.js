@@ -60,7 +60,7 @@ const data = [
     year: "2015",
     text:
       "SpaceX sold 8.33% of the company to Google and Fidelity and began the development of Satellite internet.",
-    imgSrc: require("../Images/History/2015.jpeg"),
+    imgSrc: require("../Images/History/2015.webp"),
     imgAlt: "img-spacex-dragon",
   },
   {

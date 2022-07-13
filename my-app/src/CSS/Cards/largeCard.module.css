@@ -8,8 +8,7 @@
 .img {
   border-radius: 10px;
 
-  height: 300px;
-  width: 300px;
+  width: 350px;
 
   margin: 30px auto;
 
@@ -28,7 +27,7 @@
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 580px) {
   .img {
     width: 200px;
     height: 200px;
