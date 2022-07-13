@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
@@ -12,6 +13,8 @@ const app = express();
 const fs = require("fs");
 
 app.use(cors());
+
+app.use(express.static(path.resolve(__dirname, "../my-app/build")));
 
 app.route("/api/weather").get((req, res) => {
   const lat = req.query.lat;
@@ -63,6 +66,10 @@ app.route("/api/youtube").get((req, res) => {
       res.json(response.data);
     })
     .catch((error) => console.error(error));
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../my-app/build", "index.html"));
 });
 
 app.listen(PORT, () => {
