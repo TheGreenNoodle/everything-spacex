@@ -5,10 +5,11 @@
   "main": "server/app.js",
   "scripts": {
     "start": "node server/app.js",
-    "build": "cd my-app && npm install && npm run build"
+    "build": "cd my-app && npm install && npm run build && cd server && npm install"
   },
   "engines": {
-    "node": "16.14.0"
+    "node": "16.14.0",
+    "npm": "8.12.1"
   },
   "author": "Anton Fleming",
   "license": "ISC"
