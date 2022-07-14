@@ -1,22 +1,18 @@
 # Description
 
-A full stack MERN site that provides information on SpaceX.
+A React/Node site that provides information on SpaceX.
 
 # Features
 
-Pulls post from SpaceX twitter.
-Pulls post from Elon Musk.
-Pulls post from the guy who dose flights around SpaceX Boca Chica site
-Pulls post from Boca Chica gal.
-Has a few of there test videos from YouTube.
+Has a brief overviews of SpaceX.
+Pulls news form Twitter.
+Grabs YouTube videos about news at SpaceX.
 Provides weather updates on SpaceX's test sites.
-Has a section that explains what SpaceX dose and what there goals are.
 
 # Road map
 
-1.  Update read me
-2.  Optimize site
-3.  Restrict API key usage to only Heroku domain.
+1.  Optimize site
+2.  Restrict API key usage to only Heroku domain.
 
 # Route page information
 
@@ -34,11 +30,8 @@ Goes over each Vehicle and what it is used for.
 
 ### News
 
-Has weather at each launch site. Has tweets from all of the different twitter accounts. Has all of the updates so far.
-Has videos from WhatAboutIt. Links to all of these. Live stream from some youtuber.
+Updates from YouTube, Twitter, and Weather API.
 
 ### History
 
 Brief history of SpaceX.
-
-# Bugs
