@@ -4,15 +4,10 @@ A React/Node site that provides information on SpaceX.
 
 # Features
 
-Has a brief overviews of SpaceX.
-Pulls news form Twitter.
+Has brief overviews of SpaceX.
+Pulls news from Twitter.
 Grabs YouTube videos about news at SpaceX.
 Provides weather updates on SpaceX's test sites.
-
-# Road map
-
-1.  Optimize site
-2.  Restrict API key usage to only Heroku domain.
 
 # Route page information
 
@@ -34,4 +29,4 @@ Updates from YouTube, Twitter, and Weather API.
 
 ### History
 
-Brief history of SpaceX.
+A brief history of SpaceX.
