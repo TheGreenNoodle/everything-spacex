@@ -1,5 +1,4 @@
 //Components
-import axios from "axios";
 import { useEffect, useState } from "react";
 
 //Loading Animation
@@ -15,7 +14,7 @@ function GetYoutubeProfile(props) {
 
   useEffect(() => {
     GetData({ setProfileData, setGotData, props });
-  }, []);
+  });
 
   return (
     <div>

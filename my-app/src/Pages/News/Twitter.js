@@ -17,7 +17,7 @@ import getProfile from "../../CSS/Proflies/getTwitterProfile.module.css";
 
 function Twitter() {
   const { state } = useLocation();
-  const { title, text } = state; // Read values passed on state
+  const { title } = state; // Read values passed on state
 
   return (
     <div>

@@ -1,5 +1,4 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
 
 function YoutubeData({ setProfileData, setGotData, props }) {
   const options = {
@@ -13,6 +12,7 @@ function YoutubeData({ setProfileData, setGotData, props }) {
   axios
     .request(options)
     .then((response) => {
+      //Has at least a 1 second loading screen
       setTimeout(() => {
         setProfileData(response.data.items);
         setGotData(true);

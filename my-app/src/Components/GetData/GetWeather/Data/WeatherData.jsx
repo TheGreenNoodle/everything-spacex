@@ -1,5 +1,4 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
 
 function WeatherData({ setData, setGotData, props }) {
   const options = {

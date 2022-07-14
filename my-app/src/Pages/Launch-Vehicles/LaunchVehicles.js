@@ -25,7 +25,7 @@ function LaunchVehicles() {
             hasImg={true}
             src={data.imgSrc}
             alt={data.imgAlt}
-            route="/launch-vehicles/vehicle-demo"
+            route={data.route}
             btn={true}
             vidUrl={data.vidId}
           />
@@ -41,7 +41,7 @@ function LaunchVehicles() {
           hasImg={true}
           src={data.imgSrc}
           alt={data.imgAlt}
-          route="/launch-vehicles/vehicle-demo"
+          route={data.route}
           btn={true}
           vidUrl={data.vidId}
         />

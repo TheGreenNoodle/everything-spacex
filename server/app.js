@@ -16,6 +16,7 @@ app.use(cors());
 
 app.use(express.static(path.resolve(__dirname, "../my-app/build")));
 
+//Data from openweathermap
 app.route("/api/weather").get((req, res) => {
   const lat = req.query.lat;
   const lon = req.query.lon;
@@ -39,6 +40,7 @@ app.route("/api/weather").get((req, res) => {
     .catch((error) => console.log(error));
 });
 
+//data from Youtube Data Api V3
 app.route("/api/youtube").get((req, res) => {
   const channelId = req.query.channelId;
   let uploads = null;
@@ -68,6 +70,7 @@ app.route("/api/youtube").get((req, res) => {
     .catch((error) => console.error(error));
 });
 
+//sends back the react frontend
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../my-app/build", "index.html"));
 });

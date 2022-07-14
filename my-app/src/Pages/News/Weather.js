@@ -1,5 +1,5 @@
 //Components
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useLocation } from "react-router";
 
 // Custom Components
@@ -13,7 +13,7 @@ import weatherContent from "../../Content/Weather";
 
 function Weather() {
   const { state } = useLocation();
-  const { title, text, vidUrl } = state; // Read values passed on state
+  const { title } = state; // Read values passed on state
 
   //button is oppioste of what it is.
   //So the data is in metric but the button says change to imperial

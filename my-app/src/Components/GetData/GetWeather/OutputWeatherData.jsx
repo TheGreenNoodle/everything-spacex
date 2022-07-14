@@ -16,9 +16,11 @@ function OutputWeatherData(props) {
   const [data, setData] = useState({});
   const [gotData, setGotData] = useState(false);
 
+  //When unit is changed it reloads the data.
+  //This is done by props.getNewData
   useEffect(() => {
     setGotData(false);
-    GetData({ setData, setGotData, props });
+    GetData({ setData, setGotData });
   }, [props.getNewData]);
 
   return (

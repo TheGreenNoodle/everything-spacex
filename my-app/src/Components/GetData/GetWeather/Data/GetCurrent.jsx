@@ -13,7 +13,7 @@ function GetCurrent(props) {
   useEffect(() => {
     unit === "Imperial" ? setTempUnit("°F") : setTempUnit("°C");
     unit === "Imperial" ? setWindUnit("mph") : setWindUnit("m/s");
-  }, []);
+  });
 
   return (
     <div className={weatherCards.box}>

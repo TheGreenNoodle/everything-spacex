@@ -15,9 +15,8 @@ Has a section that explains what SpaceX dose and what there goals are.
 # Road map
 
 1.  Update read me
-2.  Optimize site NOT DONE
-3.  Add Heroku URL to README. NOT DONE
-4.  Restrict API key usage to only Heroku domain.
+2.  Optimize site
+3.  Restrict API key usage to only Heroku domain.
 
 # Route page information
 

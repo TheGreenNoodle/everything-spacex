@@ -14,8 +14,6 @@ import Youtube from "./Pages/News/Youtube";
 import Twitter from "./Pages/News/Twitter";
 import Weather from "./Pages/News/Weather";
 import History from "./Pages/History";
-//Testing
-import reportWebVitals from "./reportWebVitals";
 
 //Bootstrap
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -31,10 +29,13 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mission" element={<Mission />} />
-        //Launch vehicles and launch vehicle subpaths
+
         <Route path="/launch-vehicles" element={<LaunchVehicles />} />
-        <Route path="/launch-vehicles/vehicle-demo" element={<VehicleDemo />} />
-        //News and news subpaths.
+        <Route path="/launch-vehicles/starship" element={<VehicleDemo />} />
+        <Route path="/launch-vehicles/falcon-nine" element={<VehicleDemo />} />
+        <Route path="/launch-vehicles/falcon-heavy" element={<VehicleDemo />} />
+        <Route path="/launch-vehicles/dragon" element={<VehicleDemo />} />
+
         <Route path="/news" element={<News />} />
         <Route path="/news/twitter" element={<Twitter />} />
         <Route path="/news/youtube" element={<Youtube />} />

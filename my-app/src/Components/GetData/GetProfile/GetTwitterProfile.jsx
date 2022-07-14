@@ -1,12 +1,9 @@
 //Components
-import {
-  TwitterTimelineEmbed,
-  TwitterShareButton,
-  TwitterFollowButton,
-} from "react-twitter-embed";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 //CSS
 import getProfile from "../../../CSS/Proflies/getTwitterProfile.module.css";
+
 function GetTwitterProfile(props) {
   return (
     <div className={getProfile.componentBox}>
