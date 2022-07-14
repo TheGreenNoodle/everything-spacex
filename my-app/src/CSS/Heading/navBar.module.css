@@ -18,7 +18,8 @@
   color: gray;
 }
 
-.text:hover {
+.text:hover,
+.text:active {
   color: white;
   border-style: none none solid;
 }
