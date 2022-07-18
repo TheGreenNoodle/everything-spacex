@@ -10,6 +10,8 @@
 .title {
   font-family: "Varela Round", sans-serif;
 }
+
+.selected,
 .text {
   font-family: "Varela Round", sans-serif;
   text-decoration: none;
@@ -18,10 +20,15 @@
   color: gray;
 }
 
-.text:hover,
-.text:active {
+.selected:hover,
+.text:hover {
   color: white;
   border-style: none none solid;
+  text-decoration: none;
+}
+
+.selected {
+  color: white;
 }
 
 /* Tablets */

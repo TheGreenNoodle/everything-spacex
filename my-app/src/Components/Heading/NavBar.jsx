@@ -1,26 +1,42 @@
-import { Link } from "react-router-dom";
+//Components
+import { NavLink } from "react-router-dom";
 // CSS
-import navBar from "../../CSS/Heading/navBar.module.css";
+import "../../CSS/Heading/navBar.css";
 
 function NavBar() {
   return (
-    <div className={navBar.navBox}>
-      <h1 className={navBar.title}>Everything SpaceX</h1>
-      <Link className={navBar.text} to="/">
+    <div className="navBox">
+      <h1 className="title">Everything SpaceX</h1>
+      <NavLink
+        className={({ isActive }) => (isActive ? "selected" : "text")}
+        to="/"
+      >
         Home
-      </Link>
-      <Link className={navBar.text} to="/mission">
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? "selected" : "text")}
+        to="/mission"
+      >
         Mission
-      </Link>
-      <Link className={navBar.text} to="/launch-vehicles">
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? "selected" : "text")}
+        to="/launch-vehicles"
+      >
         Launch Vehicles
-      </Link>
-      <Link className={navBar.text} to="/news">
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? "selected" : "text")}
+        to="/news"
+      >
         News
-      </Link>
-      <Link className={navBar.text} to="/history">
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? "selected" : "text")}
+        to="/history"
+      >
         History
-      </Link>
+      </NavLink>
     </div>
   );
 }

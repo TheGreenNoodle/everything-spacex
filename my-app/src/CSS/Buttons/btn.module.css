@@ -19,9 +19,7 @@
 }
 
 .btn:hover,
-.bigBtn:hover,
-.btn:active,
-.bigBtn:active {
+.bigBtn:hover {
   background-color: white;
   color: black;
 }
