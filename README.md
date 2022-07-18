@@ -21,7 +21,7 @@ Goes over the goals of SpaceX and why it was made.
 
 ### Launch Vehicles
 
-Goes over each Vehicle and what it is used for.
+Goes over each vehicle and what it is used for.
 
 ### News
 
