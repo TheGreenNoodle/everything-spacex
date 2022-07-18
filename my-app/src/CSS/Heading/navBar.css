@@ -33,20 +33,23 @@
 
 /* Tablets */
 @media (max-width: 600px) {
-  .text {
+  .text,
+  .selected {
     margin: 0 10px;
   }
 }
 
 @media (max-width: 460px) {
-  .text {
+  .text,
+  .selected {
     margin: 0 9px;
     font-size: 10px;
   }
 }
 
 @media (max-width: 330px) {
-  .text {
+  .text,
+  .selected {
     margin: 0 3px;
     font-size: 10px;
   }
