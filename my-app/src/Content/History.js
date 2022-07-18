@@ -52,7 +52,7 @@ const data = [
   },
   {
     year: "2013-2014",
-    text: "Frist commercial flight.",
+    text: "First commercial flight.",
     imgSrc: require("../Images/History/2013-2014.jpg"),
     imgAlt: "img-spacex-dragon",
   },
@@ -71,7 +71,7 @@ const data = [
   },
   {
     year: "2017",
-    text: "Falcon 9 was resued and successfully landed again.",
+    text: "Falcon 9 was re-used and successfully landed again.",
     imgSrc: require("../Images/History/2017.jpg"),
     imgAlt: "img-spacex-dragon",
   },

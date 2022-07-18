@@ -4,7 +4,7 @@ const data = [
     subTitle: "Cargo and crew spacecraft for the ISS.",
     route: "/launch-vehicles/dragon",
     text:
-      "Dose resupply missions to the ISS. Currently, only American-made crew capsules that can shuttle astronauts to and from the ISS. Was used in the first all-civilian space flight around the world.",
+      "Used to resupply missions to the ISS. Currently, only American-made crew capsules that can shuttle astronauts to and from the ISS. Was used in the first all-civilian space flight around the world.",
     imgSrc: require("../Images/Launch-Vehicles/crew-dragon.jpg"),
     imgAlt: "img-dragonRocket",
     vidId: "sZlzYzyREAI",
@@ -14,7 +14,7 @@ const data = [
     subTitle: "A partially reusable launch vehicle.",
     route: "/launch-vehicles/falcon-nine",
     text:
-      "Low-cost launch vehicle. The first stage is recoverable. Generates 1.7 million pounds (771,107.029 kg) of thrust.  Dramatically reduced the cost of flight to space. The cost per launch is $67 million USD. This is far lower than nonreusable rockets which can cost billions of dollars to launch.",
+      "Low-cost launch vehicle. The first stage is recoverable. Generates 1.7 million pounds (771,107.029 kg) of thrust.  Dramatically reduced the cost of flight to space. The cost per launch is $67 million USD. This is far lower than non reusable rockets which can cost billions of dollars to launch.",
     imgSrc: require("../Images/Launch-Vehicles/falcon-9.jpg"),
     imgAlt: "img-falconNine",
     vidId: "Z4TXCZG_NEY",
