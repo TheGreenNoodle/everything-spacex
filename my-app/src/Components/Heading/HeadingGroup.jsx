@@ -14,9 +14,6 @@ function HeadingGroup(props) {
     <div>
       <NavBar />
       <h1 className={headingGroup.heading}>{props.title}</h1>
-      <div>
-        <hr className={headingGroup.line} />
-      </div>
     </div>
   );
 }

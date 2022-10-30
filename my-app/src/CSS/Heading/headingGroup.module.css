@@ -1,7 +1,7 @@
 .heading {
   color: white;
 }
-.line {
+/* .line {
   border-color: white;
   border-style: solid;
   border-width: medium;
@@ -10,10 +10,10 @@
   margin: 20px auto;
 
   width: 30%;
-}
+} */
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
   .line {
     width: 20%;
   }
-}
+} */

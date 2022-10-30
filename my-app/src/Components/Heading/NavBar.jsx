@@ -1,42 +1,72 @@
 //Components
 import { NavLink } from "react-router-dom";
+import { useRef } from "react";
+
+//Data
+import navLinks from "../../Content/NavBar.js";
+
+//Animation
+import Animation from "./Animation.js";
+
 // CSS
 import "../../CSS/Heading/navBar.css";
 
 function NavBar() {
+  //Refs
+  const dropDown = useRef(null);
+  const dropDownMenu = useRef(null);
+
+  //Toggle Menu
+  let toggle = true;
+
+  function runAnimation() {
+    Animation(dropDown);
+
+    toggle
+      ? dropDownMenu.current.classList.add("displayBlock")
+      : dropDownMenu.current.classList.remove("displayBlock");
+
+    toggle ? (toggle = false) : (toggle = true);
+  }
+
   return (
-    <div className="navBox">
-      <h1 className="title">Everything SpaceX</h1>
-      <NavLink
-        className={({ isActive }) => (isActive ? "selected" : "text")}
-        to="/"
-      >
-        Home
-      </NavLink>
-      <NavLink
-        className={({ isActive }) => (isActive ? "selected" : "text")}
-        to="/mission"
-      >
-        Mission
-      </NavLink>
-      <NavLink
-        className={({ isActive }) => (isActive ? "selected" : "text")}
-        to="/launch-vehicles"
-      >
-        Launch Vehicles
-      </NavLink>
-      <NavLink
-        className={({ isActive }) => (isActive ? "selected" : "text")}
-        to="/news"
-      >
-        News
-      </NavLink>
-      <NavLink
-        className={({ isActive }) => (isActive ? "selected" : "text")}
-        to="/history"
-      >
-        History
-      </NavLink>
+    <div className="posFixed">
+      <div className="navBox">
+        <div className="title">Everything SpaceX</div>
+
+        <div className="vLine" />
+
+        <div className="noDropDown">
+          {navLinks.map((data, index) => (
+            <NavLink
+              key={index}
+              className={({ isActive }) => (isActive ? "selected" : "text")}
+              to={data.route}
+            >
+              {data.linkName}
+            </NavLink>
+          ))}
+        </div>
+
+        <button ref={dropDown} onClick={runAnimation} className="dropDownBtn">
+          <div className="dropDownIcon" />
+          <div className="dropDownIcon" />
+          <div className="dropDownIcon" />
+        </button>
+      </div>
+      <div ref={dropDownMenu} className="dropDownMenu">
+        {navLinks.map((data, index) => (
+          <NavLink
+            key={index}
+            className={({ isActive }) =>
+              isActive ? "dropDownTxtSelec" : "dropDownTxt"
+            }
+            to={data.route}
+          >
+            {data.linkName}
+          </NavLink>
+        ))}
+      </div>
     </div>
   );
 }

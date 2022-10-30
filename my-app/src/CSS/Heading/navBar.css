@@ -1,29 +1,127 @@
+:root {
+  --navLinksMargin: 1vw;
+  --vLLeftMargin: 2vw;
+
+  --navPadding: 20px;
+
+  --navTextSize: 1.4vw;
+  --titleSize: 3vw;
+
+  --vLHeight: 4vw;
+  --vLWidth: 5px;
+}
+
+/* Drop Down */
+
+.dropDownBtn {
+  background-color: black;
+  color: white;
+
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 3px;
+  border-color: white;
+
+  padding: 6px 5px;
+
+  position: absolute;
+  right: 20px;
+
+  overflow: hidden;
+
+  height: 50px;
+  width: 60px;
+}
+.dropDownIcon {
+  display: block;
+  background-color: white;
+  border-radius: 5px;
+
+  height: 3px;
+  width: 90%;
+}
+.dropDownMenu {
+  display: none;
+  background-color: black;
+
+  padding: 0 var(--navPadding) 10px;
+
+  text-align: left;
+
+  width: 100%;
+}
+.dropDownTxt,
+.dropDownTxtSelec {
+  display: block;
+  color: gray;
+
+  font-size: 20px;
+  font-family: "Varela Round", sans-serif;
+  text-decoration: none;
+
+  margin: 0 0 10px;
+}
+.dropDownTxtSelec {
+  color: white;
+}
+
+.dropDownTxt:hover,
+.dropDownTxtSelec:hover {
+  color: white;
+}
+
+.displayBlock {
+  display: block;
+}
+
 .navBox {
-  text-align: center;
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  vertical-align: middle;
 
   color: white;
 
-  padding: 20px;
-  margin: 0 auto 40px;
+  text-align: left;
+
+  padding: var(--navPadding);
+
+  width: 100%;
+}
+.posFixed {
+  position: fixed;
+  width: 100%;
 }
 
 .title {
+  font-size: var(--titleSize);
+
   font-family: "Varela Round", sans-serif;
 }
 
 .selected,
 .text {
+  color: gray;
+
+  font-size: var(--navTextSize);
   font-family: "Varela Round", sans-serif;
+
   text-decoration: none;
 
-  margin: 0 22px;
-  color: gray;
+  margin: 0 var(--navLinksMargin);
 }
 
 .selected:hover,
 .text:hover {
   color: white;
-  border-style: none none solid;
   text-decoration: none;
 }
 
@@ -31,26 +129,121 @@
   color: white;
 }
 
-/* Tablets */
-@media (max-width: 600px) {
-  .text,
-  .selected {
-    margin: 0 10px;
+.vLine {
+  background-color: gray;
+
+  margin: 0 var(--navLinksMargin) 0 var(--vLLeftMargin);
+
+  border-radius: 5px;
+
+  height: var(--vLHeight);
+  width: var(--vLWidth);
+}
+
+/* Animations */
+.circle {
+  background: white;
+  opacity: 0.5;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  height: 0;
+  width: 0;
+}
+
+.anim {
+  animation: touch 3s ease-out;
+}
+
+@keyframes touch {
+  100% {
+    width: 2000px;
+    height: 2000px;
+    border-radius: 2000px;
+    opacity: 0;
+    margin: -1000px;
   }
 }
 
-@media (max-width: 460px) {
-  .text,
-  .selected {
-    margin: 0 9px;
-    font-size: 10px;
+@media (max-width: 1900px) {
+  :root {
+    --vLWidth: 4px;
   }
 }
 
-@media (max-width: 330px) {
-  .text,
-  .selected {
-    margin: 0 3px;
-    font-size: 10px;
+@media (max-width: 1600px) {
+  :root {
+    --navTextSize: 2vw;
+    --titleSize: 3.5vw;
+
+    --vLHeight: 5vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --vLWidth: 3px;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --navLinksMargin: 1.1vw;
+    --vLLeftMargin: 1.6vw;
+
+    --navTextSize: 2.1vw;
+    --titleSize: 3.6vw;
+
+    --vLHeight: 6vw;
+    --vLWidth: 2.5px;
+  }
+}
+@media (min-width: 800px) {
+  .dropDownMenu {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --titleSize: 30px;
+  }
+  .navBox {
+    padding-bottom: 15px;
+  }
+
+  .noDropDown,
+  .vLine {
+    display: none;
+  }
+  .dropDownBtn {
+    display: flex;
+  }
+}
+
+@media (max-width: 410px) {
+  :root {
+    --titleSize: 21.5px;
+    --navPadding: 10px;
+  }
+  .dropDownBtn {
+    border-width: 2px;
+
+    right: 10px;
+
+    padding: 4px 3px;
+
+    height: 33px;
+    width: 40px;
+  }
+  .dropDownIcon {
+    height: 2px;
+    width: 80%;
+  }
+
+  .dropDownTxt,
+  .dropDownTxtSelec {
+    font-size: 15px;
   }
 }
