@@ -1,0 +1,24 @@
+.box {
+  border-style: solid;
+  border-color: #3f3f3f;
+  border-radius: 40px;
+
+  color: white;
+  display: inline-block;
+
+  width: 150px;
+
+  margin: 5px 0;
+
+  /* No text highlighting */
+  /* Chrome */
+  user-select: none;
+  /* Firefox */
+  -moz-user-select: none;
+  /* Safari */
+  -webkit-user-select: none;
+  /* IOS */
+  -webkit-touch-callout: none;
+  /* IE Edge */
+  -ms-user-select: none;
+}

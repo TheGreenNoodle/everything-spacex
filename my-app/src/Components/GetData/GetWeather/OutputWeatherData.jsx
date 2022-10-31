@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 
 // Custom Components
-import GetData from "./Data/WeatherData";
-import CurrentAndHourly from "./Data/CurrentAndHourly";
-import GetDaily from "./Data/GetDaily";
+import GetData from "./Data/GetData";
+import CurrentAndHourly from "./Data/OutputCurrentAndHourly";
+import Daily from "./Data/OutputDaily";
 
 //Loading Animation
 import LoadingScreen from "../LoadingScreen";
@@ -14,26 +14,25 @@ import outputWeather from "../../../CSS/Weather/outputWeather.module.css";
 
 function OutputWeatherData(props) {
   const [data, setData] = useState({});
-  const [gotData, setGotData] = useState(false);
+  const [dataRecived, setDataRecived] = useState(false);
 
   //When unit is changed it reloads the data.
   //This is done by props.getNewData
   useEffect(() => {
-    setGotData(false);
-    GetData({ setData, setGotData, props });
+    setDataRecived(false);
+    GetData({ setData, setDataRecived, props });
   }, [props.getNewData]);
 
   return (
     <div>
       <h1 className={outputWeather.headers}>{props.site}</h1>
-      {!gotData ? (
+      {!dataRecived ? (
         <div>
           <LoadingScreen />
         </div>
       ) : (
         <div className={outputWeather.box}>
           <CurrentAndHourly
-            gotData={gotData}
             getCurrent={data.getCurrent}
             getHourly={data.getHourly}
             unit={props.unit}
@@ -41,11 +40,7 @@ function OutputWeatherData(props) {
           />
 
           <div>
-            <GetDaily
-              gotData={gotData}
-              data={data.getDaily}
-              unit={props.unit}
-            />
+            <Daily data={data.getDaily} unit={props.unit} />
           </div>
         </div>
       )}

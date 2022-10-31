@@ -2,7 +2,6 @@ import { useLocation } from "react-router";
 
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
-import Footer from "../../Components/Footer/Footer";
 
 //Get Profile
 import GetTwitterProfile from "../../Components/GetData/GetProfile/GetTwitterProfile";
@@ -45,7 +44,6 @@ function Twitter() {
           profilePic={elonPic}
         />
       </div>
-      <Footer />
     </div>
   );
 }

@@ -1,12 +1,12 @@
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup";
 import SmallCard from "../../Components/Cards/SmallCard";
-import Footer from "../../Components/Footer/Footer";
 
 //Content
 import vehiclesContent from "../../Content/LaunchVehicles";
 
 //CSS
+import posContent from "../../CSS/posContent.module.css";
 import boxClasses from "../../CSS/Cards/SmallCard/boxClasses.module.css";
 
 function LaunchVehicles() {
@@ -14,11 +14,28 @@ function LaunchVehicles() {
     <div>
       <HeadingGroup title={"Launch Vehicles"} />
 
-      <div>
-        {vehiclesContent.slice(0, 2).map((data, index) => (
+      <div className={posContent.pos}>
+        <div>
+          {vehiclesContent.slice(0, 2).map((data, index) => (
+            <SmallCard
+              class={boxClasses.vehiclesBox}
+              key={index}
+              title={data.title}
+              subTitle={data.subTitle}
+              text={data.text}
+              hasImg={true}
+              src={data.imgSrc}
+              alt={data.imgAlt}
+              route={data.route}
+              btn={true}
+              vidUrl={data.vidId}
+            />
+          ))}
+        </div>
+        {vehiclesContent.slice(2, 4).map((data, index) => (
           <SmallCard
             class={boxClasses.vehiclesBox}
-            key={index}
+            key={index + 2}
             title={data.title}
             subTitle={data.subTitle}
             text={data.text}
@@ -31,23 +48,6 @@ function LaunchVehicles() {
           />
         ))}
       </div>
-      {vehiclesContent.slice(2, 4).map((data, index) => (
-        <SmallCard
-          class={boxClasses.vehiclesBox}
-          key={index + 2}
-          title={data.title}
-          subTitle={data.subTitle}
-          text={data.text}
-          hasImg={true}
-          src={data.imgSrc}
-          alt={data.imgAlt}
-          route={data.route}
-          btn={true}
-          vidUrl={data.vidId}
-        />
-      ))}
-
-      <Footer />
     </div>
   );
 }

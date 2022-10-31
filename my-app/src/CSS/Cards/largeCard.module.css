@@ -1,10 +1,23 @@
 .box {
-  color: white;
+  border-style: solid;
+  border-radius: 5px;
+
+  display: inline-block;
+  color: black;
 
   padding: 30px;
-  margin: 0 auto 20px;
 }
+.line {
+  border-color: black;
 
+  margin: 0 auto;
+
+  border-style: solid;
+  border-width: medium;
+  border-radius: 5px;
+
+  width: 30%;
+}
 .img {
   border-radius: 10px;
 

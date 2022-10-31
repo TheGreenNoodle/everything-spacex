@@ -1,6 +1,6 @@
 import axios from "axios";
 
-function WeatherData({ setData, setGotData, props }) {
+function WeatherData({ setData, setDataRecived, props }) {
   const options = {
     method: "GET",
     url: "/api/weather",
@@ -20,7 +20,7 @@ function WeatherData({ setData, setGotData, props }) {
           getHourly: response.data.hourly,
           getDaily: response.data.daily,
         });
-        setGotData(true);
+        setDataRecived(true);
       }, 1000);
     })
 

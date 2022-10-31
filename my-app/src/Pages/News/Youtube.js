@@ -2,10 +2,12 @@ import { useLocation } from "react-router";
 
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
-import Footer from "../../Components/Footer/Footer";
 
 //Get Profile
 import GetYoutubeProfile from "../../Components/GetData/GetProfile/GetYoutubeProfile";
+
+//CSS
+import posContent from "../../CSS/posContent.module.css";
 
 function Youtube() {
   const { state } = useLocation();
@@ -15,11 +17,11 @@ function Youtube() {
     <div>
       <HeadingGroup title={title} />
 
-      <div>
-        <GetYoutubeProfile channelId="UC1XvxnHFtWruS9egyFasP1Q" />
+      <div className={posContent.pos}>
+        <div>
+          <GetYoutubeProfile channelId="UC1XvxnHFtWruS9egyFasP1Q" />
+        </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import unixToTime from "../Functions/unixToTime";
 
 //Components
-import GetCurrent from "./GetCurrent";
+import GetCurrent from "./OutputCurrent";
 import Carousel from "react-multi-carousel";
 import { useEffect, useState } from "react";
 

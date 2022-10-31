@@ -5,7 +5,6 @@ import { useLocation } from "react-router";
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
 import OutputData from "../../Components/GetData/GetWeather/OutputWeatherData";
-import Footer from "../../Components/Footer/Footer";
 import SwitchUnitsBtn from "../../Components/Buttons/SwitchUnits";
 
 //Content
@@ -41,7 +40,6 @@ function Weather() {
           getNewData={isMetric}
         />
       ))}
-      <Footer />
     </div>
   );
 }

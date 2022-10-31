@@ -5,15 +5,16 @@
 
 .linkDiv {
   display: inline-block;
-  margin: 10px;
+  margin: 61px;
+  transform: scale(3);
 }
 
 .link {
   text-decoration: none;
   display: inline-block;
-  color: #3f3f3f;
+  color: black;
 }
 
 .link:hover {
-  color: white;
+  color: #3f3f3f;
 }

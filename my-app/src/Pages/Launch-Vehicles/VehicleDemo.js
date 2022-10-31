@@ -3,7 +3,9 @@ import { useLocation } from "react-router";
 // Custom Components
 import HeadingGroup from "../../Components/Heading/HeadingGroup";
 import RenderVid from "../../Components/RenderVid";
-import Footer from "../../Components/Footer/Footer";
+
+//CSS
+import posContent from "../../CSS/posContent.module.css";
 
 function VehicleDemo() {
   // Data from InfoBtn.jsx
@@ -13,16 +15,17 @@ function VehicleDemo() {
   return (
     <div>
       <HeadingGroup title={title} />
-      <RenderVid
-        controls={false}
-        playing={true}
-        loop={true}
-        muted={true}
-        onlyThumbNail={false}
-        vidId={vidUrl}
-        desc={text}
-      />
-      <Footer />
+      <div className={posContent.pos}>
+        <RenderVid
+          controls={false}
+          playing={true}
+          loop={true}
+          muted={true}
+          onlyThumbNail={false}
+          vidId={vidUrl}
+          desc={text}
+        />
+      </div>
     </div>
   );
 }
