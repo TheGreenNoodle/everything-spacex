@@ -9,20 +9,20 @@ import GetData from "./Data/YoutubeData";
 import RenderVid from "../../RenderVid";
 
 function GetYoutubeProfile(props) {
-  const [profileData, setProfileData] = useState([]);
-  const [gotData, setGotData] = useState(false);
+  const [data, setData] = useState([]);
+  const [dataRecived, setDataRecived] = useState(false);
 
   useEffect(() => {
-    GetData({ setProfileData, setGotData, props });
+    GetData({ setData, setDataRecived, props });
   });
 
   return (
     <div>
-      {!gotData ? (
+      {!dataRecived ? (
         <LoadingScreen />
       ) : (
         <div>
-          {profileData.map((data, index) => (
+          {data.map((data, index) => (
             <div key={index}>
               <RenderVid
                 controls={true}

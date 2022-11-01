@@ -1,14 +1,19 @@
-.box {
+.card {
   border-style: solid;
-  border-color: #3f3f3f;
-  border-radius: 40px;
+  border-color: white;
+  border-radius: 5px;
 
   color: white;
-  display: inline-block;
 
-  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-  margin: 5px 0;
+  padding: 5px;
+
+  height: 195px;
+  width: 100%;
 
   /* No text highlighting */
   /* Chrome */
@@ -21,4 +26,9 @@
   -webkit-touch-callout: none;
   /* IE Edge */
   -ms-user-select: none;
+}
+
+.forecastName {
+  font-size: 15px;
+  margin: 0;
 }

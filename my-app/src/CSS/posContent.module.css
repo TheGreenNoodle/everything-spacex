@@ -2,6 +2,7 @@
 .home {
   position: relative;
   top: 5.5vw;
+  margin-bottom: 100px;
 }
 
 .home {
@@ -31,5 +32,43 @@
 @media (max-width: 410px) {
   .pos {
     top: 2vw;
+  }
+}
+
+@media (min-width: 2000px) {
+  .home {
+    grid-template-columns: 20% 20%;
+  }
+}
+
+@media (max-width: 2000px) {
+  .home {
+    grid-template-columns: 25% 25%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .home {
+    grid-template-columns: 30% 30%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .home {
+    grid-template-columns: 35% 35%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home {
+    grid-template-columns: 40% 40%;
+    gap: 5%;
+  }
+}
+
+@media (max-width: 950px) {
+  .home {
+    grid-template-columns: 45% 45%;
+    gap: 5%;
   }
 }

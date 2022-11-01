@@ -11,7 +11,7 @@ import VehicleDemo from "./Pages/Launch-Vehicles/VehicleDemo";
 //News and news subpaths.
 import News from "./Pages/News/NewsRoutes";
 import Youtube from "./Pages/News/Youtube";
-import Twitter from "./Pages/News/Twitter";
+
 import Weather from "./Pages/News/Weather";
 import History from "./Pages/History";
 
@@ -37,7 +37,6 @@ root.render(
         <Route path="/launch-vehicles/dragon" element={<VehicleDemo />} />
 
         <Route path="/news" element={<News />} />
-        <Route path="/news/twitter" element={<Twitter />} />
         <Route path="/news/youtube" element={<Youtube />} />
         <Route path="/news/weather" element={<Weather />} />
         <Route path="/history" element={<History />} />

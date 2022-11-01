@@ -19,7 +19,10 @@ function Youtube() {
 
       <div className={posContent.pos}>
         <div>
-          <GetYoutubeProfile channelId="UC1XvxnHFtWruS9egyFasP1Q" />
+          <GetYoutubeProfile
+            channelId="UC1XvxnHFtWruS9egyFasP1Q"
+            videosToGet={10}
+          />
         </div>
       </div>
     </div>

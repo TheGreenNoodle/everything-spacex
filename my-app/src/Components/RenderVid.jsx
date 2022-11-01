@@ -1,8 +1,8 @@
 //Components
-import ReactPlayer from "react-player/lazy";
+import ReactPlayer from "react-player/youtube";
 
 // CSS
-import renderVid from "../CSS/Proflies/renderVid.module.css";
+import renderVid from "../CSS/VideoNews/renderVid.module.css";
 
 function RenderVid(props) {
   return (

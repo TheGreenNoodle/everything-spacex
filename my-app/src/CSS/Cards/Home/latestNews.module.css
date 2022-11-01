@@ -1,0 +1,9 @@
+.videoPlayerDiv {
+  margin: auto;
+  width: 90%;
+}
+
+.videoPlayer {
+  height: 50px;
+  width: 100%;
+}

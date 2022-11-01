@@ -13,8 +13,6 @@ function LargeCard(props) {
       <img className={cardCss.img} src={props.src} alt={props.alt} />
       <p className={cardCss.text}>{props.text}</p>
 
-      <div>{props.weather}</div>
-
       {props.hasRoute ? <MoreInfo route={props.route} /> : null}
     </div>
   );

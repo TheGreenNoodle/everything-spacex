@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 
 // Custom Components
 import GetData from "./Data/GetData";
+import CurrentAndHourly from "./Data/OutputCurrentAndHourly";
+
 import Current from "./Data/OutputCurrentSm";
 
 //Loading Animation
@@ -19,15 +21,10 @@ function OutputDataSm(props) {
     GetData({ setData, setDataRecived, props });
   }, [props.getNewData]);
 
-  console.log(data);
   return (
     <div>
-      {!dataRecived ? (
-        <div>
-          <LoadingScreen />
-        </div>
-      ) : (
-        <Current />
+      {!dataRecived ? null : (
+        <Current site={props.site} data={data.getCurrent} unit={props.unit} />
       )}
     </div>
   );

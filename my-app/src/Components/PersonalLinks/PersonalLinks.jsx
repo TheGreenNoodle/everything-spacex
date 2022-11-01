@@ -6,7 +6,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "./Link";
 
 //CSS
-import links from "../../CSS/Footer/personalLinks.module.css";
+import links from "../../CSS/PersonalLinks/personalLinks.module.css";
 
 function Links() {
   return (

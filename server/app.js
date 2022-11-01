@@ -43,7 +43,8 @@ app.route("/api/weather").get((req, res) => {
 //data from Youtube Data Api V3
 app.route("/api/youtube").get((req, res) => {
   const channelId = req.query.channelId;
-  let uploads = null;
+  const videosToGet = req.query.videosToGet;
+  let playlistId = null;
 
   axios
     .get(
@@ -54,12 +55,15 @@ app.route("/api/youtube").get((req, res) => {
         youtube
     )
     .then((response) => {
-      uploads = response.data.items[0].contentDetails.relatedPlaylists.uploads;
+      playlistId =
+        response.data.items[0].contentDetails.relatedPlaylists.uploads;
 
       return axios.get(
         //Grabs the playlist id data using the uploads id
-        "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=10&playlistId=" +
-          uploads +
+        "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=" +
+          videosToGet +
+          "&playlistId=" +
+          playlistId +
           "&key=" +
           youtube
       );

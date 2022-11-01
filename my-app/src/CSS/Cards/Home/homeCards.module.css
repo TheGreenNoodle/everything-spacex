@@ -1,0 +1,58 @@
+.card,
+.weatherBox {
+  border-style: solid;
+  border-color: #3f3f3f;
+  border-radius: 5px;
+
+  background-color: #3f3f3f;
+  color: white;
+
+  display: inline-block;
+
+  padding: 10px;
+  margin: 5px 0;
+
+  width: 100%;
+
+  /* No text highlighting */
+  /* Chrome */
+  user-select: none;
+  /* Firefox */
+  -moz-user-select: none;
+  /* Safari */
+  -webkit-user-select: none;
+  /* IOS */
+  -webkit-touch-callout: none;
+  /* IE Edge */
+  -ms-user-select: none;
+}
+.weatherBox {
+  grid-row: 1 / span 2;
+}
+
+.title {
+  margin: 10px 0 0;
+}
+.line {
+  border-color: white;
+
+  margin: 20px auto;
+
+  border-style: solid;
+  border-width: medium;
+  border-radius: 5px;
+
+  width: 90%;
+}
+
+.weatherCardsGrid {
+  display: grid;
+
+  grid-template-rows: auto;
+  grid-template-columns: 40% 40%;
+  gap: 10%;
+
+  grid-auto-flow: dense;
+
+  justify-content: center;
+}
