@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 
 // Custom Components
 import GetData from "./Data/GetData";
-import CurrentAndHourly from "./Data/OutputCurrentAndHourly";
 
 import Current from "./Data/OutputCurrentSm";
 
@@ -23,7 +22,9 @@ function OutputDataSm(props) {
 
   return (
     <div>
-      {!dataRecived ? null : (
+      {!dataRecived ? (
+        <LoadingScreen />
+      ) : (
         <Current site={props.site} data={data.getCurrent} unit={props.unit} />
       )}
     </div>

@@ -5,7 +5,7 @@ import HeadingGroup from "../../Components/Heading/HeadingGroup";
 import RenderVid from "../../Components/RenderVid";
 
 //CSS
-import posContent from "../../CSS/posContent.module.css";
+import posContent from "../../CSS/PostionContent/posContent.module.css";
 
 function VehicleDemo() {
   // Data from InfoBtn.jsx

@@ -17,24 +17,6 @@
   justify-content: center;
 }
 
-@media (max-width: 800px) {
-  .pos {
-    top: 4vw;
-  }
-}
-
-@media (max-width: 470px) {
-  .pos {
-    top: 5.5vw;
-  }
-}
-
-@media (max-width: 410px) {
-  .pos {
-    top: 2vw;
-  }
-}
-
 @media (min-width: 2000px) {
   .home {
     grid-template-columns: 20% 20%;

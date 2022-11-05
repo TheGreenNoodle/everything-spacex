@@ -21,6 +21,7 @@
 .img {
   border-radius: 10px;
 
+  height: 350px;
   width: 350px;
 
   margin: 30px auto;
@@ -41,6 +42,28 @@
 }
 
 @media (max-width: 580px) {
+  .img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .text {
+    width: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .text {
+    width: 200px;
+  }
+}
+
+@media (max-width: 350px) {
   .img {
     width: 200px;
     height: 200px;

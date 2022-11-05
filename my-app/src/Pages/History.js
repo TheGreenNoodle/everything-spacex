@@ -6,14 +6,14 @@ import LargeCard from "../Components/Cards/LargeCard";
 import history from "../Content/History";
 
 //CSS
-import posContent from "../CSS/posContent.module.css";
+import posContent from "../CSS/PostionContent/History.module.css";
 
 function History() {
   return (
     <div>
       <HeadingGroup title={"History"} />
 
-      <div className={posContent.pos}>
+      <div className={posContent.history}>
         {history.map((data, index) => (
           <LargeCard
             key={index}

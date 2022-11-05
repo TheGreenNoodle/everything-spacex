@@ -5,7 +5,7 @@ import Weather from "../Components/Cards/Home/Weather";
 import PersonalLinks from "../Components/PersonalLinks/PersonalLinks.jsx";
 
 //CSS
-import posContent from "../CSS/posContent.module.css";
+import posContent from "../CSS/PostionContent/Home.module.css";
 
 function Home() {
   // key={index} https://www.youtube.com/watch?v=ysz5S6PUM-U

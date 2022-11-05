@@ -1,9 +1,12 @@
 .videoPlayerDiv {
   margin: auto;
+  overflow: hidden;
+
+  height: 195px;
   width: 90%;
 }
 
 .videoPlayer {
-  height: 50px;
+  height: 195px;
   width: 100%;
 }

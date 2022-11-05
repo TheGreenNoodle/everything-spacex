@@ -1,0 +1,49 @@
+.history {
+  position: relative;
+  top: 5vw;
+
+  display: grid;
+
+  grid-template-rows: auto;
+  grid-template-columns: 20% 20% 20% 20%;
+
+  grid-auto-flow: dense;
+  gap: 30px;
+
+  margin-bottom: 7%;
+
+  justify-content: center;
+}
+
+@media (max-width: 2200px) {
+  .history {
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .history {
+    grid-template-columns: 45% 45%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .history {
+    top: 6vw;
+    grid-template-columns: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .history {
+    top: 7.5vw;
+    grid-template-columns: 90%;
+    margin-bottom: 12%;
+  }
+}
+
+@media (max-width: 550px) {
+  .history {
+    top: 10.5vw;
+  }
+}

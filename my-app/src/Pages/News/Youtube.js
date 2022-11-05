@@ -7,7 +7,7 @@ import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
 import GetYoutubeProfile from "../../Components/GetData/GetProfile/GetYoutubeProfile";
 
 //CSS
-import posContent from "../../CSS/posContent.module.css";
+import posContent from "../../CSS/PostionContent/posContent.module.css";
 
 function Youtube() {
   const { state } = useLocation();

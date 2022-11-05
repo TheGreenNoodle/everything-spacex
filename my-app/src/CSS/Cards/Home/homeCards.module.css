@@ -1,5 +1,6 @@
 .card,
 .weatherBox {
+  position: relative;
   border-style: solid;
   border-color: #3f3f3f;
   border-radius: 5px;
@@ -45,6 +46,15 @@
   width: 90%;
 }
 
+.centerLoading {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .weatherCardsGrid {
   display: grid;
 
@@ -55,4 +65,13 @@
   grid-auto-flow: dense;
 
   justify-content: center;
+}
+
+.posBtn {
+  position: absolute;
+
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }

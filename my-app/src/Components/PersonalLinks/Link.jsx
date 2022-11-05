@@ -1,5 +1,5 @@
 //CSS
-import linkCSS from "../../CSS/Footer/link.module.css";
+import linkCSS from "../../CSS/PersonalLinks/link.module.css";
 
 function Link(props) {
   return (

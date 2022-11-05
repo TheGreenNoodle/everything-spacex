@@ -6,7 +6,7 @@ import SmallCard from "../../Components/Cards/SmallCard";
 import newsRoutes from "../../Content/NewsRoutes";
 
 //CSS
-import posContent from "../../CSS/posContent.module.css";
+import posContent from "../../CSS/PostionContent/posContent.module.css";
 import boxClasses from "../../CSS/Cards/SmallCard/boxClasses.module.css";
 
 function News() {

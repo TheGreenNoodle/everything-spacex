@@ -6,14 +6,14 @@ import SmallCard from "../Components/Cards/SmallCard";
 import missionContent from "../Content/Mission";
 
 //CSS
-import posContent from "../CSS/posContent.module.css";
+import posContent from "../CSS/PostionContent/posContent.module.css";
 import boxClasses from "../CSS/Cards/SmallCard/boxClasses.module.css";
 
 function Mission() {
   return (
     <div>
       <HeadingGroup title={"Mission"} />
-      <div className={posContent.pos}>
+      <div className={posContent.mission}>
         {missionContent.map((data, index) => (
           <SmallCard
             class={boxClasses.missionBox}

@@ -6,7 +6,7 @@ import smallCard from "../../CSS/Cards/SmallCard/smallCard.module.css";
 
 function SmallCard(props) {
   return (
-    <div className={props.class}>
+    <div className={smallCard.card}>
       <h3 className={smallCard.title}>{props.title}</h3>
       <p className={smallCard.text}>{props.subTitle}</p>
 

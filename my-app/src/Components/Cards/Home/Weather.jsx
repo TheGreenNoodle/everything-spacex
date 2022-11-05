@@ -1,3 +1,6 @@
+//Components
+import { useState } from "react";
+
 // Custom Components
 import MoreInfo from "../../Buttons/RoutingBtn";
 
@@ -7,6 +10,8 @@ import weatherContent from "../../../Content/Weather";
 //Get Data
 import OutputData from "../../GetData/GetWeather/OutputDataSm";
 
+//Loading Animation
+import LoadingScreen from "../../GetData/LoadingScreen";
 // CSS
 import homeCard from "../../../CSS/Cards/Home/homeCards.module.css";
 
@@ -27,7 +32,9 @@ function Weather(props) {
         ))}
       </div>
 
-      <MoreInfo route={props.route} />
+      <div className={homeCard.posBtn}>
+        <MoreInfo route={props.route} />
+      </div>
     </div>
   );
 }
