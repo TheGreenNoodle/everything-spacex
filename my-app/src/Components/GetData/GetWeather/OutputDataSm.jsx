@@ -8,6 +8,8 @@ import Current from "./Data/OutputCurrentSm";
 
 //Loading Animation
 import LoadingScreen from "../LoadingScreen";
+//CSS
+import homeCard from "../../../CSS/Cards/Home/homeCards.module.css";
 
 function OutputDataSm(props) {
   const [data, setData] = useState({});
@@ -23,7 +25,11 @@ function OutputDataSm(props) {
   return (
     <div>
       {!dataRecived ? (
-        <LoadingScreen />
+        props.showLoader ? (
+          <div className={homeCard.centerLoading}>
+            <LoadingScreen />
+          </div>
+        ) : null
       ) : (
         <Current site={props.site} data={data.getCurrent} unit={props.unit} />
       )}

@@ -28,6 +28,7 @@ function Weather(props) {
             site={data.site}
             lat={data.lat}
             lon={data.lon}
+            showLoader={data.showLoader}
           />
         ))}
       </div>

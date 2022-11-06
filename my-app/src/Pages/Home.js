@@ -24,6 +24,7 @@ function Home() {
           channelId="UC1XvxnHFtWruS9egyFasP1Q"
           title="Latest News"
           videosToGet={1}
+          route="/news/youtube"
         />
         <Weather title="Current Weather" route="/news/weather" />
         <PersonalLinks />

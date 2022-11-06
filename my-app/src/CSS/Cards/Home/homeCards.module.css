@@ -59,10 +59,8 @@
   display: grid;
 
   grid-template-rows: auto;
-  grid-template-columns: 40% 40%;
-  gap: 10%;
-
-  grid-auto-flow: dense;
+  grid-template-columns: 42.5% 42.5%;
+  gap: 5%;
 
   justify-content: center;
 }
@@ -74,4 +72,11 @@
   left: 0;
   right: 0;
   margin: auto;
+}
+
+@media (max-width: 400px) {
+  .card,
+  .weatherBox {
+    padding: 5px;
+  }
 }

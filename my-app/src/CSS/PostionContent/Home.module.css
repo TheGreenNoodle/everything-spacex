@@ -1,10 +1,3 @@
-.pos,
-.home {
-  position: relative;
-  top: 5.5vw;
-  margin-bottom: 100px;
-}
-
 .home {
   display: grid;
 
@@ -13,6 +6,11 @@
 
   grid-auto-flow: dense;
   gap: 30px;
+
+  position: relative;
+  top: 5.5vw;
+
+  margin-bottom: 100px;
 
   justify-content: center;
 }
@@ -52,5 +50,27 @@
   .home {
     grid-template-columns: 45% 45%;
     gap: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .home {
+    grid-template-rows: 600px auto 390px;
+    grid-template-columns: 60%;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    grid-template-columns: 80%;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home {
+    grid-template-columns: 95%;
+    gap: 20px;
   }
 }
