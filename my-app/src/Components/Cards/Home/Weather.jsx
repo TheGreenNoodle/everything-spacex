@@ -1,9 +1,9 @@
 //Components
 import { useState } from "react";
 
-// Custom Components
+// Buttons
 import MoreInfo from "../../Buttons/RoutingBtn";
-
+import SwitchUnits from "../../Buttons/SwitchUnits";
 //Data to get
 import weatherContent from "../../../Content/Weather";
 
@@ -16,10 +16,22 @@ import LoadingScreen from "../../GetData/LoadingScreen";
 import homeCard from "../../../CSS/Cards/Home/homeCards.module.css";
 
 function Weather(props) {
+  //button is oppioste of what it is.
+  //So the data is in metric but the button says change to imperial
+  //when isMetric is true.
+  const [isMetric, setIsMetric] = useState(true);
+  const [unit, setUnit] = useState("Imperial");
+
+  function changeUnits() {
+    isMetric ? setIsMetric(false) : setIsMetric(true);
+    isMetric ? setUnit("Metric") : setUnit("Imperial");
+  }
+
   return (
     <div className={homeCard.weatherBox}>
       <h3 className={homeCard.title}>{props.title}</h3>
       <hr className={homeCard.line} />
+      <SwitchUnits handleClick={changeUnits} unit={unit} />
 
       <div className={homeCard.weatherCardsGrid}>
         {weatherContent.map((data, index) => (
@@ -29,6 +41,8 @@ function Weather(props) {
             lat={data.lat}
             lon={data.lon}
             showLoader={data.showLoader}
+            unit={unit}
+            getNewData={isMetric}
           />
         ))}
       </div>

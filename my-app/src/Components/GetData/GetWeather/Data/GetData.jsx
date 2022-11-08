@@ -14,12 +14,12 @@ function WeatherData({ setData, setDataRecived, props }) {
   axios
     .request(options)
     .then((response) => {
+      setData({
+        getCurrent: response.data.current,
+        getHourly: response.data.hourly,
+        getDaily: response.data.daily,
+      });
       setTimeout(() => {
-        setData({
-          getCurrent: response.data.current,
-          getHourly: response.data.hourly,
-          getDaily: response.data.daily,
-        });
         setDataRecived(true);
       }, 1000);
     })

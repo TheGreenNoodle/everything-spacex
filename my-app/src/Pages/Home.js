@@ -8,13 +8,6 @@ import PersonalLinks from "../Components/PersonalLinks/PersonalLinks.jsx";
 import posContent from "../CSS/PostionContent/Home.module.css";
 
 function Home() {
-  // key={index} https://www.youtube.com/watch?v=ysz5S6PUM-U
-  // title={data.title}
-  // text={data.content}
-  // hasRoute={true}
-  // route={data.route}
-  // src={data.imgSrc}
-  // alt={data.imgAWlt}
   return (
     <div>
       <HeadingGroup title={"Home"} />

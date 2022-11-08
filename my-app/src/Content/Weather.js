@@ -8,7 +8,7 @@ const data = [
   },
   { site: "Vandenberg", lat: "34.6330", lon: "-120.6153", showLoader: false },
   {
-    site: "Kennedy Space Center",
+    site: "KSC",
     lat: "28.573469",
     lon: "-80.651070",
     showLoader: false,
