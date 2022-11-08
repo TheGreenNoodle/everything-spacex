@@ -1,8 +1,12 @@
 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
   border-style: solid;
   border-radius: 5px;
 
-  display: inline-block;
   color: black;
 
   padding: 20px;

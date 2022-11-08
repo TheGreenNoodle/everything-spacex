@@ -10,59 +10,75 @@
   position: relative;
   top: 4vw;
 
-  margin: 0 auto 8%;
+  margin: 0 auto 28%;
 
   justify-content: center;
 }
 
 @media (min-width: 2000px) {
   .home {
-    top: 13.5vw;
+    top: 16vw;
 
     grid-template-columns: 40% 40%;
-    transform: scale(1.7);
-
-    margin: 0 auto 22%;
+    transform: scale(1.6);
 
     width: 50%;
   }
 }
 
-@media (max-width: 2360px) {
+@media (max-width: 2400px) {
   .home {
-    top: 15vw;
+    top: 17vw;
+  }
+}
+
+@media (max-width: 2250px) {
+  .home {
+    top: 18vw;
   }
 }
 
 @media (max-width: 2000px) and (min-width: 1601px) {
   .home {
     top: 16vw;
-
     grid-template-columns: 45% 45%;
-    transform: scale(1.7);
+    transform: scale(1.4);
 
-    margin: 0 auto 22%;
+    margin: 0 auto 28%;
 
     width: 55%;
   }
 }
 
-@media (max-width: 1833px) {
+@media (max-width: 1700px) {
   .home {
-    top: 17.5vw;
+    top: 17vw;
   }
 }
 
 @media (max-width: 1600px) {
   .home {
     grid-template-columns: 30% 30%;
-    top: 4.5vw;
+    margin: 0 auto 10%;
+    top: 9vw;
   }
 }
 
 @media (max-width: 1400px) {
   .home {
     grid-template-columns: 35% 35%;
+  }
+}
+
+@media (max-width: 1152px) {
+  .home {
+    top: 10.5vw;
+  }
+}
+
+@media (max-width: 1054px) {
+  .home {
+    margin: 0 auto 12%;
   }
 }
 
@@ -73,14 +89,10 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .home {
-    top: 5vw;
-  }
-}
-
 @media (max-width: 950px) {
   .home {
+    top: 12vw;
+
     grid-template-columns: 45% 45%;
     gap: 5%;
   }
@@ -91,49 +103,65 @@
     grid-template-rows: 600px 122px 390px;
     grid-template-columns: 60%;
     gap: 20px;
+
+    margin: 0 auto 20%;
   }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 680px) {
   .home {
-    top: 6vw;
+    top: 13.5vw;
   }
 }
 
 @media (max-width: 600px) {
   .home {
     grid-template-columns: 80%;
-    top: 7vw;
+    top: 15vw;
+    margin: 0 auto 25%;
   }
 }
 
 @media (max-width: 550px) {
   .home {
-    top: 8vw;
+    top: 16vw;
   }
 }
 
 @media (max-width: 500px) {
   .home {
-    top: 9.4vw;
+    top: 18vw;
   }
 }
 
 @media (max-width: 450px) {
   .home {
+    top: 19vw;
     grid-template-rows: 510px 625px 390px;
+  }
+}
+
+@media (max-width: 420px) {
+  .home {
+    top: 21vw;
+    grid-template-columns: 95%;
   }
 }
 
 @media (max-width: 410px) {
   .home {
-    top: 5vw;
-    grid-template-columns: 95%;
+    top: 17vw;
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 360px) {
   .home {
-    top: 7vw;
+    top: 19vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .home {
+    top: 21vw;
   }
 }

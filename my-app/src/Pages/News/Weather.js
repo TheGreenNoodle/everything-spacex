@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useLocation } from "react-router";
 
 // Custom Components
-import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
+import NavBar from "../../Components/Heading/NavBar.jsx";
 import OutputData from "../../Components/GetData/GetWeather/OutputWeatherData";
 import SwitchUnitsBtn from "../../Components/Buttons/SwitchUnits";
 
@@ -27,7 +27,7 @@ function Weather() {
 
   return (
     <div>
-      <HeadingGroup title={title} />
+      <NavBar title={title} />
       <SwitchUnitsBtn handleClick={handleClick} unit={unit} />
 
       {weatherContent.map((data, index) => (

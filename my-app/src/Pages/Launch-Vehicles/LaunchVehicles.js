@@ -1,5 +1,5 @@
 // Custom Components
-import HeadingGroup from "../../Components/Heading/HeadingGroup";
+import NavBar from "../../Components/Heading/NavBar";
 import SmallCard from "../../Components/Cards/SmallCard";
 
 //Content
@@ -12,7 +12,7 @@ import boxClasses from "../../CSS/Cards/SmallCard/boxClasses.module.css";
 function LaunchVehicles() {
   return (
     <div>
-      <HeadingGroup title={"Launch Vehicles"} />
+      <NavBar title={"Launch Vehicles"} />
 
       <div className={posContent.launchVehicles}>
         {vehiclesContent.map((data, index) => (

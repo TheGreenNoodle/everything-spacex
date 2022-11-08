@@ -1,5 +1,5 @@
 // Custom Components
-import HeadingGroup from "../Components/Heading/HeadingGroup";
+import NavBar from "../Components/Heading/NavBar.jsx";
 import SmallCard from "../Components/Cards/SmallCard";
 
 //Content
@@ -12,7 +12,7 @@ import boxClasses from "../CSS/Cards/SmallCard/boxClasses.module.css";
 function Mission() {
   return (
     <div>
-      <HeadingGroup title={"Mission"} />
+      <NavBar title={"Mission"} />
       <div className={posContent.mission}>
         {missionContent.map((data, index) => (
           <SmallCard

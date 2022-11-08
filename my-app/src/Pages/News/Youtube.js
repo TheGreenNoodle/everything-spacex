@@ -1,7 +1,7 @@
 import { useLocation } from "react-router";
 
 // Custom Components
-import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
+import NavBar from "../../Components/Heading/NavBar.jsx";
 
 //Get Profile
 import GetYoutubeProfile from "../../Components/GetData/GetProfile/GetYoutubeProfile";
@@ -15,7 +15,7 @@ function Youtube() {
   // {title === "News from YouTube" ?  : null}
   return (
     <div>
-      <HeadingGroup title={title} />
+      <NavBar title={title} />
 
       <div className={posContent.pos}>
         <div>

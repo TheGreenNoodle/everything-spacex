@@ -1,5 +1,5 @@
 // Custom Components
-import HeadingGroup from "../../Components/Heading/HeadingGroup.jsx";
+import NavBar from "../../Components/Heading/NavBar.jsx";
 import SmallCard from "../../Components/Cards/SmallCard";
 
 //Content
@@ -12,7 +12,7 @@ import boxClasses from "../../CSS/Cards/SmallCard/boxClasses.module.css";
 function News() {
   return (
     <div>
-      <HeadingGroup title={"News"} />
+      <NavBar title={"News"} />
       <div className={posContent.pos}>
         {newsRoutes.map((data, index) => (
           <SmallCard

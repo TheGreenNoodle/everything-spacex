@@ -62,7 +62,7 @@
   color: gray;
 
   font-size: 20px;
-  font-family: "Varela Round", sans-serif;
+
   text-decoration: none;
 
   margin: 0 0 10px;
@@ -105,7 +105,7 @@
 .title {
   font-size: var(--titleSize);
 
-  font-family: "Varela Round", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 .selected,
@@ -113,7 +113,6 @@
   color: gray;
 
   font-size: var(--navTextSize);
-  font-family: "Varela Round", sans-serif;
 
   text-decoration: none;
 

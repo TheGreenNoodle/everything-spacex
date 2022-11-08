@@ -1,7 +1,7 @@
 import { useLocation } from "react-router";
 
 // Custom Components
-import HeadingGroup from "../../Components/Heading/HeadingGroup";
+import NavBar from "../../Components/Heading/NavBar.jsx";
 import RenderVid from "../../Components/RenderVid";
 
 //CSS
@@ -14,7 +14,7 @@ function VehicleDemo() {
 
   return (
     <div>
-      <HeadingGroup title={title} />
+      <NavBar title={title} />
       <div className={posContent.pos}>
         <RenderVid
           controls={false}

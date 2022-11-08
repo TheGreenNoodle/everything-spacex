@@ -1,5 +1,5 @@
 // Custom Components
-import HeadingGroup from "../Components/Heading/HeadingGroup.jsx";
+import NavBar from "../Components/Heading/NavBar.jsx";
 import LargeCard from "../Components/Cards/LargeCard";
 
 //Content
@@ -11,7 +11,7 @@ import posContent from "../CSS/PostionContent/History.module.css";
 function History() {
   return (
     <div>
-      <HeadingGroup title={"History"} />
+      <NavBar title={"History"} />
 
       <div className={posContent.history}>
         {history.map((data, index) => (

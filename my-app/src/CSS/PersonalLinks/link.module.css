@@ -5,8 +5,8 @@
 
 .linkDiv {
   display: inline-block;
-  margin: 61px;
-  transform: scale(3);
+  margin: 80px;
+  transform: scale(4);
 }
 
 .link {
@@ -17,4 +17,22 @@
 
 .link:hover {
   color: #3f3f3f;
+}
+@media (max-width: 2200px) {
+  .linkDiv {
+    margin: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .linkDiv {
+    transform: scale(3.5);
+    margin: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .linkDiv {
+    transform: scale(3);
+  }
 }
