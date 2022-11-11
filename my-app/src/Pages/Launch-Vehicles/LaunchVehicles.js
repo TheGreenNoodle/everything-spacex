@@ -6,7 +6,7 @@ import SmallCard from "../../Components/Cards/SmallCard";
 import vehiclesContent from "../../Content/LaunchVehicles";
 
 //CSS
-import posContent from "../../CSS/PostionContent/posContent.module.css";
+import posContent from "../../CSS/PostionContent/LaunchVehicles.module.css";
 import boxClasses from "../../CSS/Cards/SmallCard/boxClasses.module.css";
 
 function LaunchVehicles() {

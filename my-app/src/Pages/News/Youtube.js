@@ -6,9 +6,6 @@ import NavBar from "../../Components/Heading/NavBar.jsx";
 //Get Profile
 import GetYoutubeProfile from "../../Components/GetData/GetProfile/GetYoutubeProfile";
 
-//CSS
-import posContent from "../../CSS/PostionContent/posContent.module.css";
-
 function Youtube() {
   const { state } = useLocation();
   const { title, text } = state; // Read values passed on state
@@ -17,13 +14,11 @@ function Youtube() {
     <div>
       <NavBar title={title} />
 
-      <div className={posContent.pos}>
-        <div>
-          <GetYoutubeProfile
-            channelId="UC1XvxnHFtWruS9egyFasP1Q"
-            videosToGet={10}
-          />
-        </div>
+      <div>
+        <GetYoutubeProfile
+          channelId="UC1XvxnHFtWruS9egyFasP1Q"
+          videosToGet={10}
+        />
       </div>
     </div>
   );

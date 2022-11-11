@@ -5,7 +5,7 @@ import NavBar from "../../Components/Heading/NavBar.jsx";
 import RenderVid from "../../Components/RenderVid";
 
 //CSS
-import posContent from "../../CSS/PostionContent/posContent.module.css";
+import posContent from "../../CSS/PostionContent/LaunchVehicles.module.css";
 
 function VehicleDemo() {
   // Data from InfoBtn.jsx
@@ -14,16 +14,18 @@ function VehicleDemo() {
 
   return (
     <div>
-      <NavBar title={title} />
-      <div className={posContent.pos}>
+      <NavBar />
+
+      <div className={posContent.vehicleDemo}>
+        <h1 className={posContent.title}>{title}</h1>
         <RenderVid
-          controls={false}
+          controls={true}
           playing={true}
           loop={true}
           muted={true}
           onlyThumbNail={false}
           vidId={vidUrl}
-          desc={text}
+          title={text}
         />
       </div>
     </div>

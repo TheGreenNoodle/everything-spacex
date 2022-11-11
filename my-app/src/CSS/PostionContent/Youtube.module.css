@@ -1,0 +1,12 @@
+.wrapper {
+  display: grid;
+
+  grid-template-rows: auto;
+  grid-template-columns: 47% 47%;
+  gap: 20px;
+
+  position: relative;
+  top: 7.3vw;
+
+  justify-content: center;
+}

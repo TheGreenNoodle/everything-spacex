@@ -1,0 +1,37 @@
+.title {
+  margin-bottom: 20px;
+}
+.vehicleDemo {
+  position: relative;
+  top: 12vw;
+}
+
+@media (min-width: 2000px) {
+  .vehicleDemo {
+  }
+}
+
+@media (max-width: 2000px) {
+  .vehicleDemo {
+  }
+}
+
+@media (max-width: 1600px) {
+  .vehicleDemo {
+  }
+}
+
+@media (max-width: 1400px) {
+  .vehicleDemo {
+  }
+}
+
+@media (max-width: 1200px) {
+  .vehicleDemo {
+  }
+}
+
+@media (max-width: 950px) {
+  .vehicleDemo {
+  }
+}

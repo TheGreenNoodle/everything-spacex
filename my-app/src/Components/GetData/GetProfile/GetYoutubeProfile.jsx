@@ -8,20 +8,23 @@ import LoadingScreen from "../LoadingScreen";
 import GetData from "./Data/YoutubeData";
 import RenderVid from "../../RenderVid";
 
+//CSS
+import posContent from "../../../CSS/PostionContent/Youtube.module.css";
+
 function GetYoutubeProfile(props) {
   const [data, setData] = useState([]);
   const [dataRecived, setDataRecived] = useState(false);
 
   useEffect(() => {
     GetData({ setData, setDataRecived, props });
-  });
+  }, []);
 
   return (
     <div>
       {!dataRecived ? (
         <LoadingScreen />
       ) : (
-        <div>
+        <div className={posContent.wrapper}>
           {data.map((data, index) => (
             <div key={index}>
               <RenderVid

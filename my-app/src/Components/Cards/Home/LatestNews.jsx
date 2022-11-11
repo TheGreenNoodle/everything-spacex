@@ -19,7 +19,7 @@ function LatestNews(props) {
 
   useEffect(() => {
     GetData({ setData, setDataRecived, props });
-  });
+  }, []);
 
   return (
     <div className={homeCard.card}>
