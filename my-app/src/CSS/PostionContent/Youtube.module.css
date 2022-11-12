@@ -1,7 +1,6 @@
 .wrapper {
   display: grid;
 
-  grid-template-rows: auto;
   grid-template-columns: 47% 47%;
   gap: 20px;
 
@@ -9,4 +8,92 @@
   top: 7.3vw;
 
   justify-content: center;
+
+  margin-bottom: 20vh;
+}
+
+@media (max-width: 2000px) {
+  .wrapper {
+    top: 8.5vw;
+  }
+}
+
+@media (max-width: 1600px) {
+  .wrapper {
+    top: 9.5vw;
+  }
+}
+
+@media (max-width: 1400px) {
+  .wrapper {
+    grid-template-columns: 75%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    top: 10.5vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    top: 11.5vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 90%;
+    top: 12.5vw;
+    margin-bottom: 18vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    top: 14.5vw;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 550px) {
+  .wrapper {
+    grid-template-columns: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    top: 16.5vw;
+  }
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    top: 19.5vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    top: 21.5vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    top: 17.5vw;
+    grid-template-columns: 95%;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper {
+    top: 19.5vw;
+  }
+}
+
+@media (max-width: 330px) {
+  .wrapper {
+    top: 22.5vw;
+  }
 }

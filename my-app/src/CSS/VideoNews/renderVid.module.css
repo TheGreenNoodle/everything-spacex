@@ -8,6 +8,7 @@
   border-color: #3f3f3f;
   border-radius: 5px;
 
+  overflow: hidden;
   margin: auto;
 }
 
@@ -25,8 +26,12 @@
   align-items: center;
 }
 .header {
-  width: 90%;
+  max-height: 200px;
+  overflow: hidden;
+
   margin: 0 auto;
+
+  width: 90%;
 }
 
 .vidBox {
@@ -35,4 +40,52 @@
 .vidPlayer {
   height: 225px;
   margin: auto;
+}
+
+@media (min-width: 2000px) {
+  .vidPlayer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 1400px) {
+  .header {
+    font-size: 20px;
+  }
+  .vidPlayer {
+    height: 170px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .vidPlayer {
+    height: 260px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vidPlayer {
+    height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .vidPlayer {
+    height: 250px;
+  }
+  .wrapper {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 424px) {
+  .vidPlayer {
+    height: 180px;
+  }
+}
+
+@media (max-width: 320px) {
+  .vidPlayer {
+    height: 140px;
+  }
 }

@@ -22,7 +22,7 @@ function RenderVid(props) {
       </div>
 
       <div className={renderVid.headerBox}>
-        <h3 className={renderVid.header}>{props.title}</h3>
+        <h4 className={renderVid.header}>{props.title}</h4>
       </div>
     </div>
   );

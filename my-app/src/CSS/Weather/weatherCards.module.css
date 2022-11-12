@@ -1,7 +1,9 @@
 .box {
   border-style: solid;
   border-color: #3f3f3f;
-  border-radius: 40px;
+  border-radius: 5px;
+
+  background-color: #3f3f3f;
 
   color: white;
   display: inline-block;
