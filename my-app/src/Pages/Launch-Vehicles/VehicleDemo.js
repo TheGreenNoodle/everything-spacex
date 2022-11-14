@@ -2,7 +2,7 @@ import { useLocation } from "react-router";
 
 // Custom Components
 import NavBar from "../../Components/Heading/NavBar.jsx";
-import RenderVid from "../../Components/RenderVid";
+import RenderVid from "../../Components/Videos/VehicleDemo";
 
 //CSS
 import posContent from "../../CSS/PostionContent/LaunchVehicles.module.css";
@@ -17,7 +17,6 @@ function VehicleDemo() {
       <NavBar />
 
       <div className={posContent.vehicleDemo}>
-        <h1 className={posContent.title}>{title}</h1>
         <RenderVid
           controls={true}
           playing={true}
@@ -25,7 +24,8 @@ function VehicleDemo() {
           muted={true}
           onlyThumbNail={false}
           vidId={vidUrl}
-          title={text}
+          title={title}
+          text={text}
         />
       </div>
     </div>

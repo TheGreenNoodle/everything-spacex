@@ -28,7 +28,7 @@ function LatestNews(props) {
 
       {!dataRecived ? (
         <div className={homeCard.centerLoading}>
-          <LoadingScreen />
+          <LoadingScreen color={"#FFFFFF"} />
         </div>
       ) : (
         <div className={latestNews.videoPlayerDiv}>

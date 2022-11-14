@@ -2,11 +2,17 @@
 import ReactPlayer from "react-player/youtube";
 
 // CSS
-import renderVid from "../CSS/VideoNews/renderVid.module.css";
+import renderVid from "../../CSS/VideoNews/vehicleDemo.module.css";
 
 function RenderVid(props) {
   return (
     <div className={renderVid.wrapper}>
+      <div className={renderVid.descBox}>
+        <h1 className={renderVid.title}>{props.title}</h1>
+        <hr />
+        <h4 className={renderVid.desc}>{props.text}</h4>
+      </div>
+
       <div className={renderVid.vidBox}>
         <ReactPlayer
           className={renderVid.vidPlayer}
@@ -19,10 +25,6 @@ function RenderVid(props) {
           height={renderVid.vidPlayer}
           width={renderVid.vidPlayer}
         />
-      </div>
-
-      <div className={renderVid.headerBox}>
-        <h4 className={renderVid.header}>{props.title}</h4>
       </div>
     </div>
   );

@@ -7,7 +7,6 @@ import newsRoutes from "../../Content/NewsRoutes";
 
 //CSS
 import posContent from "../../CSS/PostionContent/posContent.module.css";
-import boxClasses from "../../CSS/Cards/SmallCard/boxClasses.module.css";
 
 function News() {
   return (
@@ -16,7 +15,6 @@ function News() {
       <div className={posContent.pos}>
         {newsRoutes.map((data, index) => (
           <SmallCard
-            class={boxClasses.newsBox}
             key={index}
             title={data.title}
             subTitle={data.subTitle}

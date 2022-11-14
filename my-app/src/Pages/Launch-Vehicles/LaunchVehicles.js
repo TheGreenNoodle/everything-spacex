@@ -1,33 +1,31 @@
 // Custom Components
 import NavBar from "../../Components/Heading/NavBar";
 import SmallCard from "../../Components/Cards/SmallCard";
+import RenderVid from "../../Components/Videos/VehicleDemo";
 
 //Content
 import vehiclesContent from "../../Content/LaunchVehicles";
 
 //CSS
 import posContent from "../../CSS/PostionContent/LaunchVehicles.module.css";
-import boxClasses from "../../CSS/Cards/SmallCard/boxClasses.module.css";
 
 function LaunchVehicles() {
   return (
     <div>
       <NavBar title={"Launch Vehicles"} />
 
-      <div className={posContent.launchVehicles}>
+      <div className={posContent.vehicleDemo}>
         {vehiclesContent.map((data, index) => (
-          <SmallCard
-            class={boxClasses.vehiclesBox}
+          <RenderVid
             key={index}
+            controls={true}
+            playing={false}
+            loop={false}
+            muted={false}
+            onlyThumbNail={false}
+            vidId={data.vidId}
             title={data.title}
-            subTitle={data.subTitle}
             text={data.text}
-            hasImg={true}
-            src={data.imgSrc}
-            alt={data.imgAlt}
-            route={data.route}
-            btn={true}
-            vidUrl={data.vidId}
           />
         ))}
       </div>

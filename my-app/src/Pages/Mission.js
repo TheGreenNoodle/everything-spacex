@@ -7,7 +7,6 @@ import missionContent from "../Content/Mission";
 
 //CSS
 import posContent from "../CSS/PostionContent/posContent.module.css";
-import boxClasses from "../CSS/Cards/SmallCard/boxClasses.module.css";
 
 function Mission() {
   return (
@@ -16,7 +15,6 @@ function Mission() {
       <div className={posContent.mission}>
         {missionContent.map((data, index) => (
           <SmallCard
-            class={boxClasses.missionBox}
             key={index}
             title={data.title}
             subTitle={data.text}

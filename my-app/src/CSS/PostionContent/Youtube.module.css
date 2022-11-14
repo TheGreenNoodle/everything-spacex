@@ -12,6 +12,17 @@
   margin-bottom: 20vh;
 }
 
+.centerLoading {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Width */
+
 @media (max-width: 2000px) {
   .wrapper {
     top: 8.5vw;
@@ -95,5 +106,18 @@
 @media (max-width: 330px) {
   .wrapper {
     top: 22.5vw;
+  }
+}
+
+/* Height */
+@media (max-width: 850px) and (min-height: 900px) {
+  .wrapper {
+    margin-bottom: 40vh;
+  }
+}
+
+@media (max-width: 950px) and (min-height: 1200px) {
+  .wrapper {
+    margin-bottom: 50vh;
   }
 }

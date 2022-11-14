@@ -1,9 +1,8 @@
-.title {
-  margin-bottom: 20px;
-}
 .vehicleDemo {
   position: relative;
-  top: 12vw;
+  top: 16vh;
+  margin: auto;
+  width: 90%;
 }
 
 @media (min-width: 2000px) {

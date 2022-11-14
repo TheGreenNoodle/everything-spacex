@@ -27,7 +27,7 @@ function OutputDataSm(props) {
       {!dataRecived ? (
         props.showLoader ? (
           <div className={homeCard.centerLoading}>
-            <LoadingScreen />
+            <LoadingScreen color={"#FFFFFF"} />
           </div>
         ) : null
       ) : (

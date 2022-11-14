@@ -6,7 +6,7 @@ import LoadingScreen from "../LoadingScreen";
 
 //Custom Components
 import GetData from "./Data/YoutubeData";
-import RenderVid from "../../RenderVid";
+import RenderVid from "../../Videos/RenderVid";
 
 //CSS
 import posContent from "../../../CSS/PostionContent/Youtube.module.css";
@@ -22,7 +22,9 @@ function GetYoutubeProfile(props) {
   return (
     <div>
       {!dataRecived ? (
-        <LoadingScreen />
+        <div className={posContent.centerLoading}>
+          <LoadingScreen color={"#3F3F3F"} />
+        </div>
       ) : (
         <div className={posContent.wrapper}>
           {data.map((data, index) => (

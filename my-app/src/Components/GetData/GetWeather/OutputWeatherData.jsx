@@ -28,7 +28,7 @@ function OutputWeatherData(props) {
       <h1 className={outputWeather.headers}>{props.site}</h1>
       {!dataRecived ? (
         <div>
-          <LoadingScreen />
+          <LoadingScreen color={"#FFFFFF"} />
         </div>
       ) : (
         <div className={outputWeather.box}>
