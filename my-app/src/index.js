@@ -7,7 +7,7 @@ import Home from "./Pages/Home";
 import Mission from "./Pages/Mission";
 //Launch vehicles and launch vehicle subpaths
 import LaunchVehicles from "./Pages/Launch-Vehicles/LaunchVehicles";
-import VehicleDemo from "./Pages/Launch-Vehicles/VehicleDemo";
+
 //News and news subpaths.
 import News from "./Pages/News/NewsRoutes";
 import Youtube from "./Pages/News/Youtube";
@@ -31,10 +31,6 @@ root.render(
         <Route path="/mission" element={<Mission />} />
 
         <Route path="/launch-vehicles" element={<LaunchVehicles />} />
-        <Route path="/launch-vehicles/starship" element={<VehicleDemo />} />
-        <Route path="/launch-vehicles/falcon-nine" element={<VehicleDemo />} />
-        <Route path="/launch-vehicles/falcon-heavy" element={<VehicleDemo />} />
-        <Route path="/launch-vehicles/dragon" element={<VehicleDemo />} />
 
         <Route path="/news" element={<News />} />
         <Route path="/news/youtube" element={<Youtube />} />

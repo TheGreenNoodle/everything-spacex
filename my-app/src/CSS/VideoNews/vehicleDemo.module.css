@@ -22,7 +22,6 @@
   margin: 0 auto;
   padding: 20px;
 
-  height: 50vh;
   width: 100%;
 }
 
@@ -39,13 +38,13 @@
   width: 100%;
 }
 .desc {
-  font-size: 120%;
+  font-size: 200%;
   max-height: 100%;
 }
 
 .title {
   margin-bottom: 20px;
-  font-size: 150%;
+  font-size: 300%;
 }
 
 .vidPlayer {
@@ -54,119 +53,160 @@
   margin: auto;
 }
 
-/* @media (max-width: 2000px) {
-  .vidBox,
-  .headerBox {
-    height: 280px;
-  }
-  .header {
-    font-size: 200%;
+@media (min-width: 2200px) {
+  .vidBox {
+    height: 700px;
   }
 }
 
-@media (max-width: 1700px) {
-  .vidBox,
-  .headerBox {
-    height: 225px;
+@media (max-width: 2200px) {
+  .vidBox {
+    height: 570px;
   }
-  .header {
+}
+
+@media (max-width: 1900px) {
+  .desc {
     font-size: 150%;
+  }
+
+  .title {
+    font-size: 200%;
+  }
+  .vidBox {
+    height: 490px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .desc {
+    font-size: 120%;
+  }
+  .title {
+    font-size: 170%;
+  }
+  .vidBox {
+    height: 415px;
   }
 }
 
 @media (max-width: 1400px) {
-  .vidBox,
-  .headerBox {
-    height: 310px;
+  .vidBox {
+    height: 365px;
   }
-  .header {
+}
+
+@media (max-width: 1260px) {
+  .desc {
+    font-size: 100%;
+  }
+  .title {
     font-size: 150%;
   }
-}
-
-@media (max-width: 1200px) {
-  .vidBox,
-  .headerBox {
-    height: 260px;
+  .vidBox {
+    height: 325px;
   }
 }
 
-@media (max-width: 1000px) {
-  .vidBox,
-  .headerBox {
-    height: 220px;
+@media (max-width: 1100px) {
+  .desc {
+    font-size: 80%;
+  }
+  .title {
+    font-size: 130%;
   }
 }
 
-@media (max-width: 900px) {
-  .vidBox,
-  .headerBox {
-    height: 240px;
+@media (max-width: 1050px) {
+  .vidBox {
+    height: 300px;
+  }
+}
+
+@media (max-width: 950px) {
+  .desc {
+    font-size: 60%;
+  }
+  .title {
+    font-size: 110%;
+  }
+  .vidBox {
+    height: 250px;
+  }
+}
+
+@media (max-width: 850px) {
+  .vidBox {
+    height: 222px;
+  }
+}
+
+@media (max-width: 800px) {
+  .descBox {
+    background-color: none;
+    border-style: none;
+
+    padding: 0;
+    height: 40%;
+    margin-bottom: 5%;
+  }
+
+  .vidBox {
+    height: 280px;
+    padding: 0;
+    border-color: white;
+  }
+
+  .wrapper {
+    display: block;
+    border-style: solid;
+    border-color: #3f3f3f;
+    border-radius: 5px;
+
+    background-color: #3f3f3f;
+    padding: 20px;
+    height: 25%;
+  }
+}
+
+@media (max-width: 800px) {
+  .vidBox {
+    height: 290px;
   }
 }
 
 @media (max-width: 750px) {
-  .vidBox,
-  .headerBox {
-    height: 200px;
+  .vidBox {
+    height: 210px;
   }
 }
 
-@media (max-width: 700px) {
-  .vidBox,
-  .headerBox {
-    height: 300px;
-  }
-  .header {
-    font-size: 220%;
-  }
-
-  .wrapper {
-    grid-template-columns: 100%;
+@media (max-width: 600px) {
+  .vidBox {
+    height: 185px;
   }
 }
 
-@media (max-width: 700px) {
-  .vidBox,
-  .headerBox {
-    height: 300px;
-  }
-  .header {
-    font-size: 190%;
-  }
-}
-
-@media (max-width: 550px) {
-  .vidBox,
-  .headerBox {
-    height: 280px;
-  }
-  .header {
-    font-size: 190%;
+@media (max-width: 500px) {
+  .vidBox {
+    height: 155px;
   }
 }
 
 @media (max-width: 450px) {
-  .vidBox,
-  .headerBox {
-    height: 230px;
-  }
-  .header {
-    font-size: 170%;
+  .wrapper {
+    padding: 10px;
   }
 }
 
-@media (max-width: 370px) {
-  .header {
-    font-size: 150%;
+@media (max-width: 380px) {
+  .vidBox {
+    height: 135px;
   }
 }
-@media (max-width: 330px) {
-  .vidBox,
-  .headerBox {
-    height: 190px;
+
+@media (max-width: 300px) {
+  .vidBox {
+    height: 125px;
   }
-  .header {
-    font-size: 120%;
-  }
-} */
+}

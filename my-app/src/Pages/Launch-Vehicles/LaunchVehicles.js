@@ -4,30 +4,33 @@ import SmallCard from "../../Components/Cards/SmallCard";
 import RenderVid from "../../Components/Videos/VehicleDemo";
 
 //Content
-import vehiclesContent from "../../Content/LaunchVehicles";
+import data from "../../Content/LaunchVehicles";
 
 //CSS
-import posContent from "../../CSS/PostionContent/LaunchVehicles.module.css";
+import grid from "../../CSS/PostionContent/LaunchVehicles.module.css";
+import posContent from "../../CSS/PostionContent/posContent.module.css";
 
 function LaunchVehicles() {
   return (
     <div>
       <NavBar title={"Launch Vehicles"} />
 
-      <div className={posContent.vehicleDemo}>
-        {vehiclesContent.map((data, index) => (
-          <RenderVid
-            key={index}
-            controls={true}
-            playing={false}
-            loop={false}
-            muted={false}
-            onlyThumbNail={false}
-            vidId={data.vidId}
-            title={data.title}
-            text={data.text}
-          />
-        ))}
+      <div className={posContent.pos}>
+        <div className={grid.vehicleDemo}>
+          {data.map((data, index) => (
+            <RenderVid
+              key={index}
+              controls={true}
+              playing={false}
+              loop={false}
+              muted={false}
+              onlyThumbNail={false}
+              vidId={data.vidId}
+              title={data.title}
+              text={data.text}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

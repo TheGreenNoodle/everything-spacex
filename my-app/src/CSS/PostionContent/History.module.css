@@ -1,6 +1,5 @@
 .history {
   position: relative;
-  top: 8vw;
 
   display: grid;
 
@@ -21,51 +20,39 @@
   }
 }
 
-@media (max-width: 1700px) {
-  .history {
-    top: 9vw;
-  }
-}
-
 /* Width */
 @media (max-width: 1500px) {
   .history {
-    top: 10vw;
     grid-template-columns: 45% 45%;
   }
 }
 
 @media (max-width: 1000px) {
   .history {
-    top: 13vw;
     grid-template-columns: 70%;
   }
 }
 
 @media (max-width: 700px) {
   .history {
-    top: 15vw;
     grid-template-columns: 90%;
   }
 }
 
 @media (max-width: 550px) {
   .history {
-    top: 18vw;
     margin-bottom: 25%;
   }
 }
 
 @media (max-width: 490px) {
   .history {
-    top: 20vw;
     margin-bottom: 30%;
   }
 }
 
 @media (max-width: 428px) {
   .history {
-    top: 22vw;
     margin-bottom: 33%;
   }
 }

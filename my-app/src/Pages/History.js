@@ -6,24 +6,27 @@ import LargeCard from "../Components/Cards/LargeCard";
 import history from "../Content/History";
 
 //CSS
-import posContent from "../CSS/PostionContent/History.module.css";
+import grid from "../CSS/PostionContent/History.module.css";
+import posContent from "../CSS/PostionContent/posContent.module.css";
 
 function History() {
   return (
     <div>
       <NavBar title={"History"} />
 
-      <div className={posContent.history}>
-        {history.map((data, index) => (
-          <LargeCard
-            key={index}
-            title={data.year}
-            text={data.text}
-            src={data.imgSrc}
-            hasRoute={false}
-            alt={data.imgAlt}
-          />
-        ))}
+      <div className={posContent.pos}>
+        <div className={grid.history}>
+          {history.map((data, index) => (
+            <LargeCard
+              key={index}
+              title={data.year}
+              text={data.text}
+              src={data.imgSrc}
+              hasRoute={false}
+              alt={data.imgAlt}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

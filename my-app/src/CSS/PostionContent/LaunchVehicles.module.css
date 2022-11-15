@@ -1,36 +1,28 @@
 .vehicleDemo {
-  position: relative;
-  top: 16vh;
   margin: auto;
   width: 90%;
 }
 
-@media (min-width: 2000px) {
+@media (max-width: 800px) {
   .vehicleDemo {
+    width: 70%;
   }
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 600px) {
   .vehicleDemo {
+    width: 80%;
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 450px) {
   .vehicleDemo {
+    width: 90%;
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 350px) {
   .vehicleDemo {
-  }
-}
-
-@media (max-width: 1200px) {
-  .vehicleDemo {
-  }
-}
-
-@media (max-width: 950px) {
-  .vehicleDemo {
+    width: 95%;
   }
 }
