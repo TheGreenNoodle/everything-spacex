@@ -9,7 +9,7 @@ function RenderVid(props) {
     <div className={renderVid.wrapper}>
       <div className={renderVid.descBox}>
         <h1 className={renderVid.title}>{props.title}</h1>
-        <hr />
+        <hr className={renderVid.line} />
         <h4 className={renderVid.desc}>{props.text}</h4>
       </div>
 

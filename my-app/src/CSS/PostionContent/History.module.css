@@ -7,11 +7,11 @@
   grid-template-columns: 20% 20% 20% 20%;
 
   grid-auto-flow: dense;
-  gap: 30px;
-
-  margin-bottom: 20%;
+  gap: 10px;
 
   justify-content: center;
+
+  margin-bottom: 10px;
 }
 
 @media (max-width: 2200px) {
@@ -36,36 +36,5 @@
 @media (max-width: 700px) {
   .history {
     grid-template-columns: 90%;
-  }
-}
-
-@media (max-width: 550px) {
-  .history {
-    margin-bottom: 25%;
-  }
-}
-
-@media (max-width: 490px) {
-  .history {
-    margin-bottom: 30%;
-  }
-}
-
-@media (max-width: 428px) {
-  .history {
-    margin-bottom: 33%;
-  }
-}
-
-/* Height */
-@media (max-width: 850px) and (min-height: 900px) {
-  .history {
-    margin-bottom: 55%;
-  }
-}
-
-@media (max-width: 950px) and (min-height: 1200px) {
-  .history {
-    margin-bottom: 70%;
   }
 }

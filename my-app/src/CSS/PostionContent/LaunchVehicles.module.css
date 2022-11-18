@@ -1,28 +1,22 @@
 .vehicleDemo {
-  margin: auto;
+  margin: 0 auto 10px;
   width: 90%;
 }
 
 @media (max-width: 800px) {
   .vehicleDemo {
-    width: 70%;
+    width: 95%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 420px) {
   .vehicleDemo {
     width: 80%;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 300px) {
   .vehicleDemo {
-    width: 90%;
-  }
-}
-
-@media (max-width: 350px) {
-  .vehicleDemo {
-    width: 95%;
+    width: 85%;
   }
 }

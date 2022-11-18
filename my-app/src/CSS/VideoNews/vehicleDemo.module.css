@@ -2,9 +2,9 @@
   display: grid;
 
   grid-template-rows: auto;
-  grid-template-columns: 30% 68.5%;
+  grid-template-columns: 30.5% auto;
 
-  gap: 0 1.5%;
+  gap: 0 10px;
 
   color: white;
 
@@ -20,8 +20,9 @@
   background-color: #3f3f3f;
 
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px 50px;
 
+  min-height: 600px;
   width: 100%;
 }
 
@@ -34,6 +35,8 @@
   justify-content: center;
   align-items: center;
 
+  overflow: hidden;
+
   height: 100%;
   width: 100%;
 }
@@ -43,8 +46,10 @@
 }
 
 .title {
-  margin-bottom: 20px;
   font-size: 300%;
+}
+.line {
+  margin: 30px auto;
 }
 
 .vidPlayer {
@@ -53,46 +58,41 @@
   margin: auto;
 }
 
-@media (min-width: 2200px) {
-  .vidBox {
-    height: 700px;
-  }
-}
-
-@media (max-width: 2200px) {
-  .vidBox {
-    height: 570px;
-  }
-}
-
 @media (max-width: 1900px) {
+  .descBox {
+    min-height: 500px;
+  }
   .desc {
     font-size: 150%;
   }
-
   .title {
     font-size: 200%;
   }
-  .vidBox {
-    height: 490px;
+
+  .line {
+    margin: 20px auto;
   }
 }
 
 @media (max-width: 1600px) {
+  .descBox {
+    padding: 20px 40px;
+    min-height: 400px;
+  }
   .desc {
     font-size: 120%;
   }
   .title {
     font-size: 170%;
   }
-  .vidBox {
-    height: 415px;
-  }
 }
 
-@media (max-width: 1400px) {
-  .vidBox {
-    height: 365px;
+@media (max-width: 1300px) {
+  .descBox {
+    min-height: 300px;
+  }
+  .line {
+    margin: 15px auto;
   }
 }
 
@@ -103,23 +103,22 @@
   .title {
     font-size: 150%;
   }
-  .vidBox {
-    height: 325px;
-  }
 }
 
 @media (max-width: 1100px) {
+  .descBox {
+    padding: 20px 30px;
+    min-height: 250px;
+  }
   .desc {
     font-size: 80%;
   }
   .title {
     font-size: 130%;
   }
-}
 
-@media (max-width: 1050px) {
-  .vidBox {
-    height: 300px;
+  .line {
+    margin: 10px auto;
   }
 }
 
@@ -130,15 +129,6 @@
   .title {
     font-size: 110%;
   }
-  .vidBox {
-    height: 250px;
-  }
-}
-
-@media (max-width: 850px) {
-  .vidBox {
-    height: 222px;
-  }
 }
 
 @media (max-width: 800px) {
@@ -146,67 +136,63 @@
     background-color: none;
     border-style: none;
 
-    padding: 0;
-    height: 40%;
-    margin-bottom: 5%;
+    min-height: 150px;
+
+    padding: 5px;
   }
 
   .vidBox {
-    height: 280px;
     padding: 0;
-    border-color: white;
+    border-style: none;
   }
 
   .wrapper {
-    display: block;
     border-style: solid;
     border-color: #3f3f3f;
     border-radius: 5px;
 
     background-color: #3f3f3f;
+
+    grid-template-columns: 30% auto;
+    gap: 20px;
+
     padding: 20px;
     height: 25%;
   }
 }
 
-@media (max-width: 800px) {
-  .vidBox {
-    height: 290px;
+@media (max-width: 550px) {
+  .desc {
+    font-size: 50%;
   }
-}
-
-@media (max-width: 750px) {
-  .vidBox {
-    height: 210px;
+  .title {
+    font-size: 90%;
   }
-}
-
-@media (max-width: 600px) {
-  .vidBox {
-    height: 185px;
+  .line {
+    margin: 8px auto;
   }
-}
-
-@media (max-width: 500px) {
-  .vidBox {
-    height: 155px;
-  }
-}
-
-@media (max-width: 450px) {
   .wrapper {
     padding: 10px;
   }
 }
 
-@media (max-width: 380px) {
-  .vidBox {
-    height: 135px;
+@media (max-width: 420px) {
+  .descBox {
+    border-style: none;
+    padding: 0;
+    min-height: 100px;
+    margin-bottom: 5px;
   }
-}
+  .desc {
+    font-size: 60%;
+  }
+  .title {
+    font-size: 110%;
+  }
+  .wrapper {
+    grid-template-columns: 100%;
+    gap: 0;
 
-@media (max-width: 300px) {
-  .vidBox {
-    height: 125px;
+    padding: 20px 30px;
   }
 }

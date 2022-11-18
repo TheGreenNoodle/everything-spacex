@@ -49,6 +49,7 @@
 .dropDownMenu {
   display: none;
   background-color: black;
+  position: absolute;
 
   padding: 0 var(--navPadding) 10px;
 
@@ -96,8 +97,10 @@
 
   width: 100%;
 }
-.posFixed {
-  position: fixed;
+.posSticky {
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 2;
 }

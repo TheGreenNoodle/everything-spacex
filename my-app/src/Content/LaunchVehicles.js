@@ -2,7 +2,7 @@ const data = [
   {
     title: "Dragon",
     text:
-      "Used to resupply missions to the ISS. Currently, only American-made crew capsules that can shuttle astronauts to and from the ISS. Was used in the first all-civilian space flight around the world.",
+      "Used on resupply missions to the ISS. Currently, only American-made crew capsules that can shuttle astronauts to and from the ISS. Was used in the first all-civilian space flight around the world.",
     vidId: "sZlzYzyREAI",
   },
   {

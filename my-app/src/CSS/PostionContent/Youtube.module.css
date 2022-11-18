@@ -2,13 +2,13 @@
   display: grid;
 
   grid-template-columns: 47% 47%;
-  gap: 20px;
+  gap: 10px;
 
   position: relative;
 
   justify-content: center;
 
-  margin-bottom: 20vh;
+  margin-bottom: 10px;
 }
 
 .centerLoading {
@@ -31,8 +31,6 @@
 @media (max-width: 900px) {
   .wrapper {
     grid-template-columns: 90%;
-
-    margin-bottom: 18vh;
   }
 }
 
@@ -45,18 +43,5 @@
 @media (max-width: 400px) {
   .wrapper {
     grid-template-columns: 95%;
-  }
-}
-
-/* Height */
-@media (max-width: 850px) and (min-height: 900px) {
-  .wrapper {
-    margin-bottom: 40vh;
-  }
-}
-
-@media (max-width: 950px) and (min-height: 1200px) {
-  .wrapper {
-    margin-bottom: 50vh;
   }
 }

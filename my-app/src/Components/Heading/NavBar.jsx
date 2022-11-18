@@ -30,7 +30,7 @@ function NavBar() {
   }
 
   return (
-    <div className="posFixed">
+    <div className="posSticky">
       <div className="navBox">
         <div className="title">Everything SpaceX</div>
 
