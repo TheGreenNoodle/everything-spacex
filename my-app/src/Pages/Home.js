@@ -19,7 +19,7 @@ function Home() {
           videosToGet={1}
           route="/news/youtube"
         />
-        <Weather title="Current Weather" route="/news/weather" />
+        <Weather title="Launch Site Weather" route="/news/weather" />
         <PersonalLinks />
       </div>
     </div>

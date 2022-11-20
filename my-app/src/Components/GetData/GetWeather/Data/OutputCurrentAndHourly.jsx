@@ -1,17 +1,14 @@
+//Function
 import unixToTime from "../Functions/unixToTime";
 
 //Components
 import GetCurrent from "./OutputCurrent";
-import Carousel from "react-multi-carousel";
+import SubTitle from "../SubTitleGroup";
+
 import { useEffect, useState } from "react";
 
-//Responsiveness Carousel
-import responsive from "../../../../CSS/Weather/responsiveness";
-
 //CSS
-import "react-multi-carousel/lib/styles.css";
 import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
-import "../../../../CSS/Weather/carousel.css";
 
 function CurrentAndHourly(props) {
   const hourly = props.getHourly;
@@ -27,16 +24,10 @@ function CurrentAndHourly(props) {
 
   return (
     <div>
-      <Carousel
-        itemClass="item"
-        centerMode={true}
-        minimumTouchDrag={1}
-        arrows={false}
-        responsive={responsive}
-      >
-        <div>
-          <GetCurrent data={props.getCurrent} unit={props.unit} />
-        </div>
+      <SubTitle subTitle="Hourly" />
+
+      <div className={weatherCards.grid}>
+        <GetCurrent data={props.getCurrent} unit={props.unit} />
 
         {hourly.slice(1, props.numToGet + 1).map((data, index) => (
           <div key={index} className={weatherCards.box}>
@@ -68,7 +59,7 @@ function CurrentAndHourly(props) {
             </p>
           </div>
         ))}
-      </Carousel>
+      </div>
     </div>
   );
 }

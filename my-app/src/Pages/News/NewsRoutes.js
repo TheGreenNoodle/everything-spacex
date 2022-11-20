@@ -5,12 +5,15 @@ import SmallCard from "../../Components/Cards/SmallCard";
 //Content
 import newsRoutes from "../../Content/NewsRoutes";
 
+//CSS
+import grid from "../../CSS/PostionContent/NewsRoutes.module.css";
+
 function News() {
   return (
     <div>
       <NavBar title={"News"} />
 
-      <div>
+      <div className={grid.wrapper}>
         {newsRoutes.map((data, index) => (
           <SmallCard
             key={index}

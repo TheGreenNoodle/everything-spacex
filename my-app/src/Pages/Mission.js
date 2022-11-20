@@ -6,13 +6,14 @@ import SmallCard from "../Components/Cards/SmallCard";
 import missionContent from "../Content/Mission";
 
 //CSS
+import grid from "../CSS/PostionContent/Mission.module.css";
 
 function Mission() {
   return (
     <div>
       <NavBar title={"Mission"} />
 
-      <div>
+      <div className={grid.wrapper}>
         {missionContent.map((data, index) => (
           <SmallCard
             key={index}

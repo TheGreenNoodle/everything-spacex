@@ -2,16 +2,13 @@
 import unixToDate from "../Functions/unixToDate";
 
 //Components
-import Carousel from "react-multi-carousel";
 import { useEffect, useState } from "react";
 
-//Responsiveness Carousel
-import responsive from "../../../../CSS/Weather/responsiveness";
+//Custom Components
+import SubTitle from "../SubTitleGroup";
 
 //CSS
-import "react-multi-carousel/lib/styles.css";
 import weatherCards from "../../../../CSS/Weather/weatherCards.module.css";
-import "../../../../CSS/Weather/carousel.css";
 
 function GetDaily(props) {
   const daily = props.data;
@@ -25,14 +22,10 @@ function GetDaily(props) {
 
   return (
     <div>
-      <Carousel
-        itemClass="item"
-        centerMode={true}
-        minimumTouchDrag={1}
-        arrows={false}
-        responsive={responsive}
-      >
-        {daily.slice(1, 8).map((data, index) => (
+      <SubTitle subTitle="Daily" />
+
+      <div className={weatherCards.grid}>
+        {daily.slice(1, 5).map((data, index) => (
           <div key={index} className={weatherCards.box}>
             <h2 className={weatherCards.forecastName}>{unixToDate(data.dt)}</h2>
 
@@ -54,7 +47,7 @@ function GetDaily(props) {
             </div>
           </div>
         ))}
-      </Carousel>
+      </div>
     </div>
   );
 }

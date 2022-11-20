@@ -1,0 +1,34 @@
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+}
+.headerBox {
+  display: inline-block;
+
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+
+  text-align: center;
+
+  width: 20%;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.line {
+  border-color: white;
+
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+
+  display: inline-block;
+  margin: 0 0 0 30px;
+
+  width: 90%;
+}

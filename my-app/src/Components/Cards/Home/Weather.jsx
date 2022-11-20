@@ -4,6 +4,10 @@ import { useState } from "react";
 // Buttons
 import MoreInfo from "../../Buttons/RoutingBtn";
 import SwitchUnits from "../../Buttons/SwitchUnits";
+
+//Custom Components
+import Line from "../Line";
+
 //Data to get
 import weatherContent from "../../../Content/Weather";
 
@@ -30,7 +34,7 @@ function Weather(props) {
   return (
     <div className={homeCard.weatherBox}>
       <h3 className={homeCard.title}>{props.title}</h3>
-      <hr className={homeCard.line} />
+      <Line />
       <SwitchUnits handleClick={changeUnits} unit={unit} />
 
       <div className={homeCard.weatherCardsGrid}>

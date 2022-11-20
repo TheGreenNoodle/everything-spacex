@@ -1,6 +1,19 @@
+.grid {
+  display: grid;
+
+  grid-template-columns: 24% 24% 24% 24%;
+
+  gap: 1.33333333333%;
+  justify-content: center;
+
+  width: 100%;
+  margin: auto;
+}
+
 .box {
   border-style: solid;
-  border-color: #3f3f3f;
+  border-color: white;
+
   border-radius: 5px;
 
   background-color: #3f3f3f;
@@ -8,25 +21,12 @@
   color: white;
   display: inline-block;
 
-  width: 150px;
-
-  margin: 5px 0;
-
-  /* No text highlighting */
-  /* Chrome */
-  user-select: none;
-  /* Firefox */
-  -moz-user-select: none;
-  /* Safari */
-  -webkit-user-select: none;
-  /* IOS */
-  -webkit-touch-callout: none;
-  /* IE Edge */
-  -ms-user-select: none;
+  margin: 5px auto;
+  width: 100%;
 }
 
 .forecastName {
-  margin: 5px 0 0;
+  margin: 10px 0;
   padding: 0 10px;
 }
 
@@ -42,20 +42,14 @@
 .line {
   border-color: white;
   border-style: solid;
-  border-width: medium;
+  border-width: thin;
   border-radius: 5px;
 
   margin: 20px auto;
 
-  width: 40%;
+  width: 60%;
 }
 
 .makeInline {
   display: inline-block;
-}
-
-@media (max-width: 330px) {
-  .box {
-    width: 125px;
-  }
 }

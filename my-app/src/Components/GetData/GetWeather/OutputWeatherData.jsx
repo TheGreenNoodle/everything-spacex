@@ -24,19 +24,20 @@ function OutputWeatherData(props) {
   }, [props.getNewData]);
 
   return (
-    <div>
-      <h1 className={outputWeather.headers}>{props.site}</h1>
+    <div className={outputWeather.box}>
+      <h1 className={outputWeather.title}>{props.site}</h1>
+
       {!dataRecived ? (
-        <div>
+        <div className={outputWeather.centerLoader}>
           <LoadingScreen color={"#FFFFFF"} />
         </div>
       ) : (
-        <div className={outputWeather.box}>
+        <div>
           <CurrentAndHourly
             getCurrent={data.getCurrent}
             getHourly={data.getHourly}
             unit={props.unit}
-            numToGet={14}
+            numToGet={3}
           />
 
           <div>

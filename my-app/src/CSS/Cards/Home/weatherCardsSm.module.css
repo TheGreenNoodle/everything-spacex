@@ -15,18 +15,6 @@
   height: auto;
   min-height: 200px;
   width: 100%;
-
-  /* No text highlighting */
-  /* Chrome */
-  user-select: none;
-  /* Firefox */
-  -moz-user-select: none;
-  /* Safari */
-  -webkit-user-select: none;
-  /* IOS */
-  -webkit-touch-callout: none;
-  /* IE Edge */
-  -ms-user-select: none;
 }
 
 .forecastName {

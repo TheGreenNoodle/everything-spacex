@@ -12,11 +12,13 @@
 }
 
 .bigBtn {
+  border-color: #3f3f3f;
+
   margin-bottom: 20px;
   width: 90%;
   height: 100px;
 
-  font-size: 130%;
+  font-size: 24px;
 }
 
 .btn:hover,

@@ -5,6 +5,7 @@ import ReactPlayer from "react-player/lazy";
 // Custom Components
 import MoreInfo from "../../Buttons/RoutingBtn";
 import GetData from "../../GetData/GetProfile/Data/YoutubeData";
+import Line from "../Line";
 
 //Loading Animation
 import LoadingScreen from "../../GetData/LoadingScreen";
@@ -24,7 +25,7 @@ function LatestNews(props) {
   return (
     <div className={homeCard.card}>
       <h3 className={homeCard.title}>{props.title}</h3>
-      <hr className={homeCard.line} />
+      <Line />
 
       {!dataRecived ? (
         <div className={homeCard.centerLoading}>
@@ -35,6 +36,7 @@ function LatestNews(props) {
           {data.map((data, index) => (
             <div key={index}>
               <ReactPlayer
+                className={latestNews.videoPlayer}
                 controls={true}
                 loop={false}
                 light={true}
@@ -44,7 +46,7 @@ function LatestNews(props) {
                   "http://www.youtube.com/watch?v=" +
                   data.snippet.resourceId.videoId
                 }
-                height={190}
+                height={latestNews.videoPlayer}
                 width={latestNews.videoPlayer}
               />
             </div>
