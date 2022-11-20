@@ -3,7 +3,7 @@ import { useState } from "react";
 
 // Buttons
 import MoreInfo from "../../Buttons/RoutingBtn";
-import SwitchUnits from "../../Buttons/SwitchUnits";
+import SwitchUnits from "../../Buttons/SwitchUnitsHome";
 
 //Custom Components
 import Line from "../Line";
@@ -14,8 +14,6 @@ import weatherContent from "../../../Content/Weather";
 //Get Data
 import OutputData from "../../GetData/GetWeather/OutputDataSm";
 
-//Loading Animation
-import LoadingScreen from "../../GetData/LoadingScreen";
 // CSS
 import homeCard from "../../../CSS/Cards/Home/homeCards.module.css";
 

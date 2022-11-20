@@ -2,6 +2,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+//Scroll Function
+import ScrollToTop from "./Components/ScrollToTop";
+
 //Pages
 import Home from "./Pages/Home";
 import Mission from "./Pages/Mission";
@@ -26,6 +30,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mission" element={<Mission />} />

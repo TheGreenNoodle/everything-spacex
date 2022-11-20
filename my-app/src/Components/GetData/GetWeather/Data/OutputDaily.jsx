@@ -18,7 +18,7 @@ function GetDaily(props) {
 
   useEffect(() => {
     unit === "Imperial" ? setTempUnit("°F") : setTempUnit("°C");
-  });
+  }, []);
 
   return (
     <div>

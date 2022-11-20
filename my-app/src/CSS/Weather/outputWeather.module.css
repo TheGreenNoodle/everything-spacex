@@ -11,20 +11,8 @@
 
   padding: 20px;
 
-  margin: 0 auto 10px;
   min-height: 500px;
-  width: 50%;
-  /* No text highlighting */
-  /* Chrome */
-  user-select: none;
-  /* Firefox */
-  -moz-user-select: none;
-  /* Safari */
-  -webkit-user-select: none;
-  /* IOS */
-  -webkit-touch-callout: none;
-  /* IE Edge */
-  -ms-user-select: none;
+  width: 100%;
 }
 .centerLoader {
   display: flex;
@@ -46,32 +34,8 @@
   margin: 5px;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 2100px) {
   .box {
-    width: 60%;
-  }
-}
-
-@media (max-width: 1500px) {
-  .box {
-    width: 70%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .box {
-    width: 80%;
-  }
-}
-
-@media (max-width: 950px) {
-  .box {
-    width: 90%;
-  }
-}
-
-@media (max-width: 850px) {
-  .box {
-    width: 95%;
+    margin-bottom: 10px;
   }
 }

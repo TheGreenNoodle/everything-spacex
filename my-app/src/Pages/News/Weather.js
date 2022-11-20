@@ -10,6 +10,9 @@ import SwitchUnitsBtn from "../../Components/Buttons/SwitchUnits";
 //Content
 import weatherContent from "../../Content/Weather";
 
+//CSS
+import positionConent from "../../CSS/PostionContent/Weather.module.css";
+
 function Weather() {
   const { state } = useLocation();
   const { title } = state; // Read values passed on state
@@ -30,16 +33,18 @@ function Weather() {
       <NavBar title={title} />
       <SwitchUnitsBtn handleClick={handleClick} unit={unit} />
 
-      {weatherContent.map((data, index) => (
-        <OutputData
-          key={index}
-          site={data.site}
-          lat={data.lat}
-          lon={data.lon}
-          unit={unit}
-          getNewData={isMetric}
-        />
-      ))}
+      <div className={positionConent.grid}>
+        {weatherContent.map((data, index) => (
+          <OutputData
+            key={index}
+            site={data.site}
+            lat={data.lat}
+            lon={data.lon}
+            unit={unit}
+            getNewData={isMetric}
+          />
+        ))}
+      </div>
     </div>
   );
 }

@@ -53,3 +53,21 @@
 .makeInline {
   display: inline-block;
 }
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 49% 49%;
+    gap: 10px;
+  }
+
+  .box {
+    margin: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .grid {
+    grid-template-columns: 100%;
+    gap: 10px;
+  }
+}

@@ -20,7 +20,7 @@ function CurrentAndHourly(props) {
   useEffect(() => {
     unit === "Imperial" ? setTempUnit("°F") : setTempUnit("°C");
     unit === "Imperial" ? setWindUnit("mph") : setWindUnit("m/s");
-  });
+  }, []);
 
   return (
     <div>

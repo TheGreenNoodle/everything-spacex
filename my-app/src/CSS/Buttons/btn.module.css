@@ -1,5 +1,6 @@
 .btn,
-.bigBtn {
+.bigBtn,
+.bigBtnHome {
   border-style: solid;
   border-radius: 5px;
   border-width: 3px;
@@ -11,30 +12,82 @@
   color: white;
 }
 
-.bigBtn {
+.bigBtn,
+.bigBtnHome {
+  display: block;
+
   border-color: #3f3f3f;
 
-  margin-bottom: 20px;
-  width: 90%;
-  height: 100px;
-
   font-size: 24px;
+
+  margin: 0 auto 20px;
+  height: 100px;
+  width: 80%;
+}
+
+.bigBtnHome {
+  width: 90%;
+  border-color: white;
 }
 
 .btn:hover,
-.bigBtn:hover {
+.bigBtn:hover,
+.bigBtnHome:hover {
   background-color: white;
   color: black;
 }
 
 .btn:focus,
-.bigBtn:focus {
+.bigBtn:focus,
+.bigBtnHome:focus {
   background-color: white;
   color: black;
 }
 
-/* @media (max-width: 829px) {
+@media (max-width: 2100px) {
   .bigBtn {
-    width: 55%;
+    width: 60%;
   }
-} */
+}
+
+@media (max-width: 1500px) {
+  .bigBtn {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bigBtn {
+    width: 80%;
+  }
+}
+
+@media (max-width: 950px) {
+  .bigBtn {
+    width: 90%;
+  }
+}
+
+@media (max-width: 850px) {
+  .bigBtn {
+    width: 95%;
+  }
+}
+
+@media (max-width: 800px) {
+  .bigBtn {
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .bigBtn {
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .bigBtn {
+    width: 95%;
+  }
+}
