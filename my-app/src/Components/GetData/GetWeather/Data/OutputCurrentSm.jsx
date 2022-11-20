@@ -8,11 +8,9 @@ function GetCurrent(props) {
   const unit = props.unit;
 
   const [tempUnit, setTempUnit] = useState("°C");
-  const [windUnit, setWindUnit] = useState("m/s");
 
   useEffect(() => {
     unit === "Imperial" ? setTempUnit("°F") : setTempUnit("°C");
-    unit === "Imperial" ? setWindUnit("mph") : setWindUnit("m/s");
   }, []);
 
   return (

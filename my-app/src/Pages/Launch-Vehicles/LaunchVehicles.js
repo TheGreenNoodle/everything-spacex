@@ -1,6 +1,5 @@
 // Custom Components
 import NavBar from "../../Components/Heading/NavBar";
-import SmallCard from "../../Components/Cards/SmallCard";
 import RenderVid from "../../Components/Videos/VehicleDemo";
 
 //Content

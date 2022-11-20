@@ -8,7 +8,7 @@ import GetYoutubeProfile from "../../Components/GetData/GetProfile/GetYoutubePro
 
 function Youtube() {
   const { state } = useLocation();
-  const { title, text } = state; // Read values passed on state
+  const { title } = state; // Read values passed on state
   // {title === "News from YouTube" ?  : null}
   return (
     <div>
