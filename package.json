@@ -5,7 +5,7 @@
   "main": "server/app.js",
   "scripts": {
     "build": "cd my-app && npm run build",
-    "install-my-app": "cd my-app && npm install",
+    "install-my-app": "cd my-app && npm install && npm i react-scripts",
     "render-postbuild": "npm run install-my-app && npm run build",
     "server": "nodemon server.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix my-app\"",
