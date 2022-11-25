@@ -4,14 +4,13 @@
   "description": "SpaceX info site.",
   "main": "server/app.js",
   "scripts": {
-    "deploy": {
-      "build": "cd my-app && npm run build",
-      "install-my-app": "cd my-app && npm install",
-      "render-postbuild": "npm run install-my-app && npm run build",
-      "server": "nodemon server.js"
-    },
+    "build": "cd my-app && npm run build",
+    "install-my-app": "cd my-app && npm install",
+    "render-postbuild": "npm run install-my-app && npm run build",
+    "server": "nodemon server.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix my-app\"",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix my-app\""
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix my-app\"",
+    "deploy": " npm run build && npm run install-my-app && npm run render-postbuild && npm run server"
   },
   "engines": {
     "node": "16.14.0",
