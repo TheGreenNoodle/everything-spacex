@@ -14,7 +14,7 @@ const fs = require("fs");
 
 app.use(cors());
 
-app.use(express.static(path.resolve(__dirname, "./my-app/build")));
+app.use(express.static(path.resolve(__dirname, "../my-app/build")));
 
 //Data from openweathermap
 app.route("/api/weather").get((req, res) => {
@@ -76,7 +76,7 @@ app.route("/api/youtube").get((req, res) => {
 
 //sends back the react frontend
 app.get("*", function (request, response) {
-  response.sendFile(path.resolve(__dirname, "./my-app/build", "index.html"));
+  response.sendFile(path.resolve(__dirname, "../my-app/build", "index.html"));
 });
 
 app.listen(PORT, () => {
