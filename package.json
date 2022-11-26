@@ -8,7 +8,7 @@
     "install-my-app": "cd my-app && npm install",
     "render-postbuild": "npm run install-my-app && npm run build",
     "build-server": "cd server && npm i",
-    "start": "nodemon app.js",
+    "start": "cd server && npm start",
     "deploy": "npm run render-postbuild && npm run build-server"
   },
   "engines": {
