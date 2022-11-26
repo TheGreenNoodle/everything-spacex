@@ -7,10 +7,10 @@
     "build": "cd my-app && npm run build",
     "install-my-app": "cd my-app && npm install",
     "render-postbuild": "npm run install-my-app && npm run build",
-    "server": "nodemon server.js",
+    "build-server": "cd server && npm i",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix my-app\"",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix my-app\"",
-    "deploy": " npm run build && npm run install-my-app && npm run render-postbuild && npm run server"
+    "deploy": "npm run render-postbuild && npm run build-server"
   },
   "engines": {
     "node": "16.14.0",
