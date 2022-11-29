@@ -42,7 +42,6 @@ function Weather(props) {
             site={data.site}
             lat={data.lat}
             lon={data.lon}
-            showLoader={data.showLoader}
             unit={unit}
             getNewData={isMetric}
           />

@@ -10,6 +10,7 @@ import Current from "./Data/OutputCurrentSm";
 import LoadingScreen from "../LoadingScreen";
 //CSS
 import homeCard from "../../../CSS/Cards/Home/homeCards.module.css";
+import weatherCards from "../../../CSS/Cards/Home/weatherCardsSm.module.css";
 
 function OutputDataSm(props) {
   const [data, setData] = useState({});
@@ -25,11 +26,9 @@ function OutputDataSm(props) {
   return (
     <div>
       {!dataRecived ? (
-        props.showLoader ? (
-          <div className={homeCard.centerLoading}>
-            <LoadingScreen color={"#FFFFFF"} />
-          </div>
-        ) : null
+        <div className={weatherCards.card}>
+          <LoadingScreen color={"#FFFFFF"} />
+        </div>
       ) : (
         <Current site={props.site} data={data.getCurrent} unit={props.unit} />
       )}
